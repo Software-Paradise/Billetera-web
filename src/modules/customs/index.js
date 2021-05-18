@@ -1,4 +1,4 @@
-import BottomBar from './components/BottomBar.component'
 import NavBar from './components/NavBar.component'
+import NavLink from './components/NavLink.component'
 
-export { BottomBar, NavBar }
+export { NavBar, NavLink }

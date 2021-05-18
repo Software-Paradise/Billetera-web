@@ -1,13 +1,7 @@
 //react import
 import React from 'react'
 //component import
-import {
-	Button,
-	SelectLanguage,
-	TextField,
-	TextGroup,
-	BottomBar,
-} from 'modules/customs'
+import { Button, SelectLanguage, TextField, TextGroup } from 'modules/customs'
 //redux import
 import { useSelector } from 'react-redux'
 //utils
@@ -15,6 +9,7 @@ import { selectLanguage } from 'utils/language.util'
 //screen imports
 import {
 	Affiliates,
+	Bottom,
 	Currency,
 	Ecommerce,
 	Functions,
@@ -39,7 +34,7 @@ function Landing() {
 			<Perks />
 			<Ecommerce />
 			<Affiliates />
-			<BottomBar />
+			<Bottom />
 		</main>
 	)
 }
