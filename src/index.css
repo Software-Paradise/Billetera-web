@@ -1,0 +1,50 @@
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+	outline: none;
+}
+
+i {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+	display: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply custom styles to base html tags */
+@layer base {
+	@import url('./styles/partials/_base');
+}
+
+/* Import custom component implementing Tailwind css */
+@layer components {
+	/* React datepicker component */
+	.react-datepicker-wrapper {
+		@apply w-full;
+	}
+
+	/* Custom tooltip */
+	@import url('./styles/components/tooltip.style');
+
+	/* Custom navlink */
+	@import url('./styles/components/navlink.style');
+
+	/* Custom dropdown */
+	@import url('./styles/components/dropdown.style');
+}

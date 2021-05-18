@@ -1,0 +1,25 @@
+/* Custom scrollbar */
+*::-webkit-scrollbar {
+	@apply bg-gray-600 rounded w-1 h-1;
+}
+
+*::-webkit-scrollbar-thumb {
+	@apply bg-yellow-500 rounded;
+}
+
+/* CUstom checkbox */
+input[type='checkbox'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	@apply appearance-none m-1 p-1.5 bg-transparent border-2 border-yellow-400 rounded cursor-pointer focus:outline-none;
+}
+
+input[type='checkbox']:checked {
+	@apply bg-yellow-400 shadow;
+}
+
+select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
