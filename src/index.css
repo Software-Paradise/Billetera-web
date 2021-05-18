@@ -3,7 +3,6 @@
 *:after {
 	padding: 0;
 	margin: 0;
-	user-select: none;
 	-webkit-tap-highlight-color: transparent;
 }
 
@@ -38,13 +37,4 @@ input[type='password']::-ms-clear {
 	.react-datepicker-wrapper {
 		@apply w-full;
 	}
-
-	/* Custom tooltip */
-	@import url('./styles/components/tooltip.style');
-
-	/* Custom navlink */
-	@import url('./styles/components/navlink.style');
-
-	/* Custom dropdown */
-	@import url('./styles/components/dropdown.style');
 }

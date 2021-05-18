@@ -1,7 +1,0 @@
-.navlink {
-	@apply text-white py-0.5 px-2 sm:px-4 font-medium rounded-full;
-}
-
-.navlink-active {
-	@apply bg-yellow-400 text-gray-800;
-}

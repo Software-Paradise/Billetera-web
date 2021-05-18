@@ -1,18 +1,15 @@
-import AppRoutes from 'app.routes'
-import { AppLoader, AppStartup, Notification } from 'modules/customs'
+//react import
 import React from 'react'
 import { HashRouter } from 'react-router-dom'
+//import routes
+import AppRoutes from 'app.routes'
 
 function App() {
 	return (
 		<>
 			<HashRouter>
-				<AppStartup>
-					<AppRoutes />
-				</AppStartup>
+				<AppRoutes />
 			</HashRouter>
-			<AppLoader />
-			<Notification />
 		</>
 	)
 }
