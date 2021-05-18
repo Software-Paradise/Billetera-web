@@ -21,7 +21,7 @@ import {
 	Info,
 	Perks,
 	Top,
-} from './screens'
+} from '../screens'
 
 /**
  * Public Login View
