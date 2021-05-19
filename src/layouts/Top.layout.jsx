@@ -17,7 +17,7 @@ function Top({ children }) {
 		{ label: 'Comercios', to: 'AffiliatesScreen' },
 	]
 	return (
-		<div className='TopLayout min-h-screen'>
+		<div className='TopLayout min-h-screen flex flex-col'>
 			<NavBar links={links} />
 			{children}
 		</div>

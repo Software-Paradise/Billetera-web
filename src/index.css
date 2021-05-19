@@ -54,4 +54,7 @@ input[type='password']::-ms-clear {
 
 	/* Custom styles for NavLink */
 	@import url('./styles/components/NavLink.style');
+
+	/* Custom styles for bottom div of TopScreen */
+	@import url('./styles/screens/TopScreen.style');
 }
