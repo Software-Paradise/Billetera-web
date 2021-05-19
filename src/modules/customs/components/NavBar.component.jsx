@@ -1,14 +1,8 @@
 //react import
 import React from 'react'
-import {
-	Link,
-	DirectLink,
-	Element,
-	Events,
-	animateScroll,
-	scrollSpy,
-	scroller,
-} from 'react-scroll'
+import { animateScroll } from 'react-scroll'
+//icon import
+import { FaHome } from 'react-icons/fa'
 //assets import
 import { logo } from 'assets'
 //component imports
@@ -16,27 +10,30 @@ import NavLink from './NavLink.component'
 
 /**
  *
- * @param {*} param0
- * @returns
+ * @param {Array} links - array of objects, each of them has a "label" key and a "to" key
+ * @returns {React.FunctionComponent}
  */
 const NavBar = ({ links = [] }) => {
 	return (
-		<section className='NavBar bg-gray-900 md:flex py-5'>
+		<section className='NavBar'>
 			<img
 				src={logo}
 				alt='AlyPay - El futuro ¡Ahora!'
-				className='w-64 mx-auto md:mx-4 mb-5 md:mb-0'
+				className='w-64 mx-auto md:mx-4'
 			/>
-			<div className='flex sm:flex-row justify-center items-center flex-grow'>
-				<nav className='flex max-w-max flex-grow p-0.5 mx-auto sm:mx-4 items-center'>
-					<NavLink
-						label='AlyPay'
-						className='text-yellow-400 font-semibold'
-						to='InfoScreen'
-						duration={200}
-					/>
-				</nav>
+			<div className='hidden mr-16 justify-end items-center overflow-x-scroll'>
+				{links.map(({ label, to }) => (
+					<NavLink label={label} to={to} duration={200} />
+				))}
 			</div>
+			<NavLink
+				id='topScroll'
+				icon={<FaHome />}
+				className='fixed bg-yellow-400 text-gray-900
+				flex justify-center p-2 w-14 text-3xl right-0 top-8 rounded-l-full'
+				to='TopScreen'
+				duration={150}
+			/>
 		</section>
 	)
 }

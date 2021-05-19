@@ -37,4 +37,21 @@ input[type='password']::-ms-clear {
 	.react-datepicker-wrapper {
 		@apply w-full;
 	}
+
+	/* Custom NavBar */
+	.NavBar {
+		@apply w-full bg-gray-900 flex flex-col md:flex-row py-5 md:justify-between;
+	}
+
+	/* Custom Styles for NavBar */
+	@import url('./styles/components/NavBar.style');
+
+	/* React scroll Link used in NavLink custom component */
+	.NavLink {
+		@apply cursor-pointer text-gray-200 font-semibold flex min-w-max flex-grow 
+		p-0.5 items-center pr-4;
+	}
+
+	/* Custom styles for NavLink */
+	@import url('./styles/components/NavLink.style');
 }

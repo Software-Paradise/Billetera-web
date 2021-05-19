@@ -4,24 +4,28 @@ import { Link } from 'react-scroll'
 
 /**
  *
- * @param {*} param0
- * @returns
+ * @param {String} label - text for the link to show
+ * @param {String} to - name of the component to scroll to
+ * @param {String} className - for more custom styles
+ * @param {Number} duration - time on millisecons to reach destiny
+ * @param {React.Component} icon - if icon is given
+ * @returns {React.FunctionComponent}
  */
 const NavLink = ({
 	label = '',
 	to = '',
 	className = '',
 	duration = 300,
-	onCLick = () => {},
-	...rest
+	icon = null,
 }) => {
 	return (
 		<Link
-			className={`cursor-pointer ${className}`}
+			className={`NavLink ${className}`}
 			to={to}
 			smooth={true}
 			duration={duration}>
-			{label}
+			{label && <span>{label}</span>}
+			{icon}
 		</Link>
 	)
 }

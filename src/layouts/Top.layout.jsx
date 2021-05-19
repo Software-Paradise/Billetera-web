@@ -8,9 +8,17 @@ import { NavBar } from 'modules/customs'
  * @returns {React.FunctionComponent}
  */
 function Top({ children }) {
+	const links = [
+		{ label: 'AlyPay', to: 'InfoScreen' },
+		{ label: 'Funciones', to: 'FunctionsScreen' },
+		{ label: 'Moneda', to: 'CurrencyScreen' },
+		{ label: 'Beneficios', to: 'PerksScreen' },
+		{ label: 'E-commerce', to: 'EcommerceScreen' },
+		{ label: 'Comercios', to: 'AffiliatesScreen' },
+	]
 	return (
 		<div className='TopLayout min-h-screen'>
-			<NavBar />
+			<NavBar links={links} />
 			{children}
 		</div>
 	)

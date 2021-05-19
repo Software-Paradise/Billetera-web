@@ -1,0 +1,15 @@
+.NavBar div a::after {
+	content: '';
+	border-right: 1px solid #facc15;
+	height: 1.6rem;
+	margin-left: 1rem;
+}
+
+.NavBar div a:first-child {
+	color: #facc15;
+}
+
+.NavBar div a:last-child::after {
+	content: '';
+	border: none;
+}
