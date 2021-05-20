@@ -4,7 +4,7 @@ import { NavBar } from 'modules/customs'
 
 /**
  * Layout to print the top screen
- * @param
+ * @param children - children will be placed under the navbar
  * @returns {React.FunctionComponent}
  */
 function Top({ children }) {

@@ -34,9 +34,9 @@ const Button = ({
 
 			case 'outline':
 				setBaseStyle(
-					'bg-transparent border border-yellow-400 text-base'
+					'bg-transparent border border-yellow-600 text-base'
 				)
-				setHoverStyle('hover:border-yellow-500 active:bg-transparent')
+				setHoverStyle('hover:border-yellow-600 active:bg-transparent')
 				setLabelStyle(
 					'text-yellow-400 group-hover:text-gray-900 active:text-yellow-600'
 				)

@@ -1,12 +1,28 @@
 //react import
 import React from 'react'
-import { Element } from 'react-scroll'
+import { Button } from 'modules/customs'
+//icon import
+import { DiAndroid } from 'react-icons/di'
 
 function Info() {
 	return (
-		<Element name='InfoScreen' className='InfoScreen min-h-screen'>
-			InfoScreen
-		</Element>
+		<section name='InfoScreen' className='InfoScreen min-h-screen md:flex'>
+			<article className='md:w-2/4 md:h-screen bg-gray-300 flex justify-center items-end'>
+				<Button
+					label='Descárgala ya'
+					variant='outline'
+					className='capitalize text-xl md:p- relative hover:bg-yellow-600 
+					active:text-gray-200 2xl:px-12 2xl:py-5'>
+					<p className='text-4xl'>
+						<DiAndroid />
+					</p>
+				</Button>
+			</article>
+			<article className='md:w-2/4 md:h-screen'>
+				<h2></h2>
+				<p></p>
+			</article>
+		</section>
 	)
 }
 

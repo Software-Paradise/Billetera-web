@@ -1,0 +1,16 @@
+@media (max-width: 640px) {
+	.InfoScreen {
+		display: flex;
+		flex-direction: column;
+	}
+	.InfoScreen section {
+		flex: 1;
+	}
+}
+
+.InfoScreen article:first-child {
+	background-image: url('/src/assets/images/Cellphones.png');
+	background-size: 130vh;
+	background-repeat: no-repeat;
+	background-position: center top;
+}

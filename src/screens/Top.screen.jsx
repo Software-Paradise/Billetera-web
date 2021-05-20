@@ -4,6 +4,7 @@ import React from 'react'
 import { TopLayout } from 'layouts'
 //component import
 import { Button } from 'modules/customs'
+//icon import
 import { DiAndroid } from 'react-icons/di'
 
 function Top() {
@@ -26,7 +27,7 @@ function Top() {
 					<Button
 						label='Descárgala ya'
 						variant='outline'
-						className='capitalize text-xl p-8 mb-3 hover:bg-yellow-600 active:text-gray-200'>
+						className='capitalize text-xl mb-3 hover:bg-yellow-600 active:text-gray-200'>
 						<p className='text-4xl'>
 							<DiAndroid />
 						</p>
