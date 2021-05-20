@@ -1,6 +1,20 @@
 .TopScreen .BottomDiv {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.5) 5%,
+			rgba(0, 0, 0, 0.9) 80%
+		),
+		url('/src/assets/images/TopBackground.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .BottomDiv h1 {
 	max-width: 58.45rem;
+	background: linear-gradient(
+		90deg,
+		rgba(246, 240, 240, 0) 5%,
+		rgba(255, 255, 255, 0.2) 50%,
+		rgba(246, 240, 240, 0) 95%
+	);
 }

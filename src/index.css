@@ -57,4 +57,7 @@ input[type='password']::-ms-clear {
 
 	/* Custom styles for bottom div of TopScreen */
 	@import url('./styles/screens/TopScreen.style');
+
+	/*Custom styles for the Button component */
+	@import url('./styles/components/Button.style');
 }

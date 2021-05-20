@@ -1,12 +1,13 @@
 //react import
 import React from 'react'
-import { animateScroll } from 'react-scroll'
 //icon import
 import { FaHome } from 'react-icons/fa'
 //assets import
 import { logo } from 'assets'
 //component imports
 import NavLink from './NavLink.component'
+//util imports
+import { randomKey } from 'utils'
 
 /**
  *
@@ -14,6 +15,7 @@ import NavLink from './NavLink.component'
  * @returns {React.FunctionComponent}
  */
 const NavBar = ({ links = [] }) => {
+	const rkey = randomKey()
 	return (
 		<section className='NavBar'>
 			<img
@@ -22,8 +24,13 @@ const NavBar = ({ links = [] }) => {
 				className='w-64 mx-auto md:mx-4'
 			/>
 			<div className='hidden mr-16 justify-end items-center overflow-x-scroll'>
-				{links.map(({ label, to }) => (
-					<NavLink label={label} to={to} duration={200} />
+				{links.map(({ label, to }, index) => (
+					<NavLink
+						label={label}
+						to={to}
+						duration={200}
+						key={`${rkey}_${index}`}
+					/>
 				))}
 			</div>
 			<NavLink
