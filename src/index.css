@@ -71,4 +71,17 @@ input[type='password']::-ms-clear {
 
 	/* Custom styles for the title component */
 	@import url('./styles/components/Title.style');
+
+	/* Card displayer component styles */
+	.CardDisplayer {
+		@apply flex shadow-lg rounded-md;
+	}
+
+	/* Custom styles fo the CardDisplayer component */
+	@import url('./styles/components/CardDisplayer.style');
+
+	/* Card component styles */
+	.VerticalCard {
+		@apply flex-1 min-w-max flex flex-col justify-center items-center;
+	}
 }

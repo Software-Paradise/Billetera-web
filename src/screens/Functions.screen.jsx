@@ -1,7 +1,7 @@
 //react import
 import React from 'react'
 //component import
-import { Title } from 'modules/customs'
+import { Title, CardDisplayer } from 'modules/customs'
 
 function Functions() {
 	return (
@@ -13,6 +13,7 @@ function Functions() {
 				highlight={['AlyPay']}
 				highlightStyle='font-bold'
 			/>
+			<CardDisplayer className='bg-gray-500'/>
 		</section>
 	)
 }
