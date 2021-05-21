@@ -38,7 +38,7 @@ const Button = ({
 
 			case 'outline':
 				setBaseStyle('bg-transparent border-yellow-400 text-base')
-				setHoverStyle('hover:border-yellow-600 active:bg-transparent')
+				setHoverStyle('hover:border-yellow-400 active:bg-transparent')
 				setLabelStyle(
 					twLabel
 						? twLabel
@@ -62,7 +62,7 @@ const Button = ({
 				)
 				break
 		}
-	}, [variant])
+	}, [variant, twLabel])
 
 	return (
 		<button
@@ -78,7 +78,7 @@ const Button = ({
 				<i
 					className={`${
 						label
-							? 'transition duration-100 transform group-hover:text-gray-900 group-hover:-translate-x-2 pl-2 pr-2'
+							? 'transition duration-100 transform group-hover:-translate-x-2 pl-2 pr-2'
 							: ''
 					} ${twIcon}
 					`}>

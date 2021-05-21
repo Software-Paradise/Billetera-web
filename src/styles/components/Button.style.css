@@ -4,10 +4,7 @@
 
 .InfoScreen .Button {
 	bottom: 11vh;
-	border-width: 0.3rem;
 	border-radius: 3rem;
-	padding: 0.6rem 0.8rem;
-
 	border-color: #171717;
 }
 
