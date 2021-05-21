@@ -1,14 +1,19 @@
 //react import
 import React from 'react'
-import { Element } from 'react-scroll'
+//component import
+import { Title } from 'modules/customs'
 
 function Functions() {
 	return (
-		<Element
+		<section
 			name='FunctionsScreen'
 			className='FunctionsScreen min-h-screen'>
-			FunctionsScreen
-		</Element>
+			<Title
+				title='Funciones de AlyPay'
+				highlight={['AlyPay']}
+				highlightStyle='font-bold'
+			/>
+		</section>
 	)
 }
 

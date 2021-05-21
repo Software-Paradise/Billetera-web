@@ -1,6 +1,6 @@
 //react import
 import React from 'react'
-import { Button } from 'modules/customs'
+import { Button, Title } from 'modules/customs'
 //icon import
 import { DiAndroid } from 'react-icons/di'
 
@@ -22,9 +22,12 @@ function Info() {
 			<article
 				className='md:w-2/4 md:h-screen text-center items-center 
 			flex flex-col justify-center'>
-				<h2 className='text-yellow-400 text-4xl font-light'>
-					¿Qué es <span className='font-bold'>AlyPay</span>?
-				</h2>
+				<Title
+					className='text-yellow-400'
+					title='¿Qué es AlyPay?'
+					highlight={['AlyPay?']}
+					highlightStyle='font-bold'
+				/>
 				<p className='text-gray-200 text-3xl font-light max-w-lg pt-24'>
 					Es el sistema de{' '}
 					<span className='font-bold'>AlySystem</span> para usuarios
