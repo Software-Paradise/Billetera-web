@@ -37,7 +37,6 @@
 	border-right: 0.3rem solid #fbbf24;
 	height: 60%;
 }
-
 .InfoScreen article:last-child::before {
 	content: '';
 	position: absolute;

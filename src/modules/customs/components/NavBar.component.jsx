@@ -10,7 +10,7 @@ import NavLink from './NavLink.component'
 import { randomKey } from 'utils'
 
 /**
- *
+ *Nav bar on top of the first screen
  * @param {Array} links - array of objects, each of them has a "label" key and a "to" key
  * @returns {React.FunctionComponent}
  */

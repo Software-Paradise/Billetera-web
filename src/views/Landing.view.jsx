@@ -17,7 +17,7 @@ import {
 } from '../screens'
 
 /**
- * Public Login View
+ * Landind view
  * @returns {React.FunctionComponent}
  */
 function Landing() {

@@ -1,3 +1,4 @@
+/* background image of top screen */
 .TopScreen .BottomDiv {
 	background: linear-gradient(
 			90deg,
@@ -9,6 +10,7 @@
 	background-position: center;
 }
 
+/* styles for the title */
 .BottomDiv h1 {
 	max-width: 58.45rem;
 	background: linear-gradient(

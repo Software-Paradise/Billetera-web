@@ -7,6 +7,10 @@ import { Button } from 'modules/customs'
 //icon import
 import { DiAndroid } from 'react-icons/di'
 
+/**
+ *First screen to display in the landing page
+ * @returns {React.FunctionComponent}
+ */
 function Top() {
 	return (
 		<div className='TopScreen'>

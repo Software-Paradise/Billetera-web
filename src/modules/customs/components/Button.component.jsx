@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 /**
- * CUstom component for button
+ * Custom component for button
  * @param {String} label - text showing on button
  * @param {String} className - class name for custom utilities -width won't overwrite
  * @param {String} variant - type of button. Can be 'filled', 'outline' & 'text'
