@@ -1,3 +1,4 @@
+/* yellow separator after each nav link */
 .NavBar div a::after {
 	content: '';
 	border-right: 1px solid #facc15;
@@ -5,10 +6,12 @@
 	margin-left: 1rem;
 }
 
+/* color for the first navlink */
 .NavBar div a:first-child {
 	color: #facc15;
 }
 
+/* the last navlink won't be showing it's separator */
 .NavBar div a:last-child::after {
 	content: '';
 	border: none;
