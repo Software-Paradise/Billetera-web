@@ -4,4 +4,7 @@ import powered from './images/powered.svg'
 import alyCoin from './images/aly-coin.png'
 import empty from './images/empty.svg'
 
-export { background, logo, powered, alyCoin, empty }
+//landing page images
+import cellphones from './images/Cellphones.png'
+
+export { background, logo, powered, alyCoin, empty, cellphones }

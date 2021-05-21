@@ -1,4 +1,5 @@
-import BottomBar from './components/BottomBar.component'
 import NavBar from './components/NavBar.component'
+import NavLink from './components/NavLink.component'
+import Button from './components/Button.component'
 
-export { BottomBar, NavBar }
+export { NavBar, NavLink, Button }
