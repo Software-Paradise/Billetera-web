@@ -11,8 +11,8 @@ function Info() {
 				<Button
 					label='Descárgala ya'
 					variant='outline'
-					className='capitalize text-xl md:p- relative hover:bg-yellow-600 
-					active:text-gray-200 2xl:px-12 2xl:py-5'>
+					className='capitalize text-xl border-gray-900 relative 
+					 2xl:px-12 2xl:py-5'>
 					<p className='text-4xl'>
 						<DiAndroid />
 					</p>

@@ -6,6 +6,8 @@ import React, { useEffect, useState } from 'react'
  * @param {String} className - class name for custom utilities -width won't overwrite
  * @param {String} variant - type of button. Can be 'filled', 'outline' & 'text'
  * @param {Boolean} disabled - current state for the button
+ * @param {String} twLabel - tailwind styles for the label
+ * @param {String} twIcon - tailwind styles for the icon
  * @param {Function} onClick - event function
  * @param {Object} children - children must be a react icon component
  * @param {Object} rest - others props for button tag
@@ -16,6 +18,8 @@ const Button = ({
 	className = '',
 	variant = '',
 	disabled = false,
+	twLabel = null,
+	twIcon = null,
 	onClick = () => {},
 	children = null,
 	...rest
@@ -29,16 +33,16 @@ const Button = ({
 			case 'filled':
 				setBaseStyle('bg-yellow-400 text-base')
 				setHoverStyle('hover:bg-yellow-500 active:bg-yellow-600')
-				setLabelStyle('text-gray-900')
+				setLabelStyle(twLabel ? twLabel : 'text-gray-900')
 				break
 
 			case 'outline':
-				setBaseStyle(
-					'bg-transparent border border-yellow-600 text-base'
-				)
+				setBaseStyle('bg-transparent border-yellow-400 text-base')
 				setHoverStyle('hover:border-yellow-600 active:bg-transparent')
 				setLabelStyle(
-					'text-yellow-400 group-hover:text-gray-900 active:text-yellow-600'
+					twLabel
+						? twLabel
+						: 'text-yellow-400 group-hover:text-gray-900'
 				)
 				break
 
@@ -46,7 +50,7 @@ const Button = ({
 				setBaseStyle('text-base')
 				setHoverStyle('')
 				setLabelStyle(
-					'text-yellow-400 hover:text-yellow-500 active:text-yellow-600'
+					twLabel ? twLabel : 'text-yellow-400 hover:text-yellow-500'
 				)
 				break
 
@@ -54,7 +58,7 @@ const Button = ({
 				setBaseStyle('normal-case text-sm')
 				setHoverStyle('')
 				setLabelStyle(
-					'text-gray-200 hover:text-gray-300 active:text-gray-400'
+					twLabel ? twLabel : 'text-gray-200 hover:text-gray-300'
 				)
 				break
 		}
@@ -62,7 +66,7 @@ const Button = ({
 
 	return (
 		<button
-			className={`Button group uppercase ${baseStyle} rounded-3xl flex flex-row py-1 px-2 items-center ${
+			className={`Button group uppercase ${baseStyle} flex flex-row py-1 px-2 items-center ${
 				children && label ? 'justify-between' : 'justify-center'
 			} ${
 				disabled ? '' : hoverStyle
@@ -72,11 +76,12 @@ const Button = ({
 			{...rest}>
 			{children ? (
 				<i
-					className={
+					className={`${
 						label
 							? 'transition duration-100 transform group-hover:text-gray-900 group-hover:-translate-x-2 pl-2 pr-2'
 							: ''
-					}>
+					} ${twIcon}
+					`}>
 					{children}
 				</i>
 			) : null}
@@ -84,7 +89,7 @@ const Button = ({
 				<span
 					className={`truncate ${labelStyle} font-semibold ${
 						children ? 'mr-2' : ''
-					}`}>
+					} ${twLabel}`}>
 					{label}
 				</span>
 			)}

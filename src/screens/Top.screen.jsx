@@ -27,7 +27,8 @@ function Top() {
 					<Button
 						label='Descárgala ya'
 						variant='outline'
-						className='capitalize text-xl mb-3 hover:bg-yellow-600 active:text-gray-200'>
+						className='capitalize text-xl mb-3 hover:bg-yellow-600 border-4 px-4 py-2'
+						twIcon='text-yellow-400'>
 						<p className='text-4xl'>
 							<DiAndroid />
 						</p>
