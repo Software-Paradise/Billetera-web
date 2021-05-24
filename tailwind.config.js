@@ -29,6 +29,7 @@ module.exports = {
 				'active',
 				'group-focus',
 			],
+			outline: ['active'],
 		},
 	},
 	plugins: [],

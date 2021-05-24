@@ -74,14 +74,20 @@ input[type='password']::-ms-clear {
 
 	/* Card displayer component styles */
 	.CardDisplayer {
-		@apply flex shadow-lg rounded-md;
+		@apply flex shadow-xl rounded-md overflow-visible;
 	}
 
-	/* Custom styles fo the CardDisplayer component */
+	/* Custom styles for the CardDisplayer component */
 	@import url('./styles/components/CardDisplayer.style');
 
 	/* Card component styles */
 	.VerticalCard {
 		@apply flex-1 min-w-max flex flex-col justify-center items-center;
 	}
+	.HiddenCard {
+		@apply text-center items-center flex flex-col justify-start cursor-pointer;
+	}
+
+	/* Custom styles for the vertical cards */
+	@import url('./styles/components/VerticalCard.style');
 }
