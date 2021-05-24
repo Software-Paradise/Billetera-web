@@ -61,6 +61,33 @@ input[type='password']::-ms-clear {
 	/* Custom styles for info screen */
 	@import url('./styles/screens/InfoScreen.style');
 
-	/*Custom styles for the Button component */
+	/* Custom styles for the Button component */
 	@import url('./styles/components/Button.style');
+
+	/* Styles for the functions screen */
+	.FunctionsScreen {
+		@apply bg-gray-400;
+	}
+
+	/* Custom styles for the title component */
+	@import url('./styles/components/Title.style');
+
+	/* Card displayer component styles */
+	.CardDisplayer {
+		@apply flex shadow-xl rounded-md overflow-visible;
+	}
+
+	/* Custom styles for the CardDisplayer component */
+	@import url('./styles/components/CardDisplayer.style');
+
+	/* Card component styles */
+	.VerticalCard {
+		@apply flex-1 min-w-max flex flex-col justify-center items-center;
+	}
+	.HiddenCard {
+		@apply text-center items-center flex flex-col justify-start cursor-pointer;
+	}
+
+	/* Custom styles for the vertical cards */
+	@import url('./styles/components/VerticalCard.style');
 }

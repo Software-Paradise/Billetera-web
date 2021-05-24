@@ -1,0 +1,13 @@
+/* Hidden card styles and opacity transition */
+.CardDisplayer .HiddenCard {
+	position: absolute;
+	top: -6rem;
+	min-width: calc(100% + 5px);
+	min-height: 160%;
+	max-height: 160%;
+	box-shadow: -2px 0px 5px 0px rgb(12, 12, 12, 0.26) inset;
+	-webkit-box-shadow: -2px 0px 5px 0px rgb(12, 12, 12, 0.26) inset;
+	-moz-box-shadow: -2px 0px 5px 0px rgb(12, 12, 12, 0.26) inset;
+
+	transition: opacity 0.1s;
+}
