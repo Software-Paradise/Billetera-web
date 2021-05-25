@@ -47,7 +47,9 @@ const VerticalCard = ({
 				<div
 					className={`HiddenCard bg-gray-800 ${hiddenState}`}
 					onClick={toggleHiddenState}>
-					<span className='text-6xl text-yellow-400 pt-20 pb-3'>
+					<span
+						className='text-6xl text-yellow-400 pt-20 pb-3'
+						style={{ fill: '#facc15' }}>
 						{icon}
 					</span>
 					<p className={`${twContent}`}>{content}</p>
