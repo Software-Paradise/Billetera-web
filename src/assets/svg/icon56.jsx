@@ -6,10 +6,10 @@ const ATM = () => (
 		height='1em'
 		width='1em'
 		stroke='curentColor'
-		stroke-width='2'
+		strokeWidth='2'
 		viewBox='0 0 43.74 42.11'
-		stroke-linecap='round'
-		stroke-linejoin='round'>
+		strokeLinecap='round'
+		strokeLinejoin='round'>
 		<g id='Capa_2' data-name='Capa 2'>
 			<g id='Capa_1-2' data-name='Capa 1'>
 				<path d='M8.92,39.66H30v-29a1.23,1.23,0,0,1,1-1.37A1.2,1.2,0,0,1,32.4,10.6q0,4.28,0,8.55,0,10.73,0,21.45c0,1.09-.41,1.51-1.48,1.51H8c-1,0-1.46-.44-1.46-1.43V10.62a1.22,1.22,0,0,1,2.36-.51,2.32,2.32,0,0,1,.07.7V39.66Z' />

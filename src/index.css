@@ -90,4 +90,12 @@ input[type='password']::-ms-clear {
 
 	/* Custom styles for the vertical cards */
 	@import url('./styles/components/VerticalCard.style');
+
+	/* Styles for the currency screen */
+	.CurrencyScreen {
+		@apply flex;
+	}
+
+	/* Custom styles for the currency screen */
+	@import url('./styles/screens/CurrencyScreen.style');
 }

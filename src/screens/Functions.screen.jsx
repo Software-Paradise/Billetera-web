@@ -4,7 +4,7 @@ import React from 'react'
 import { Title, CardDisplayer } from 'modules/customs'
 //icon imports
 import { FiCreditCard, FiRotateCw, FiShoppingCart } from 'react-icons/fi'
-import { BiMoney, BiTransfer } from 'react-icons/bi'
+import { BiTransfer } from 'react-icons/bi'
 import { ATM } from '../assets/index'
 
 function Functions() {
