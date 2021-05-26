@@ -1,9 +1,21 @@
 //react import
 import React from 'react'
 //component imports
-import { Title } from 'modules/customs'
+import { Exhibitor, Title } from 'modules/customs'
+//icon imports
+import { BTC, DASH, DOGE, ETH, LTC, USDT, ALY } from '../assets/index'
 
 function Currency() {
+	const elementsTop = [
+		{ image: BTC, title: 'Bitcoin' },
+		{ image: ETH, title: 'Ethereum' },
+		{ image: LTC, title: 'Litecoin' },
+	]
+	const elementsBottom = [
+		{ image: DASH, title: 'Dash' },
+		{ image: USDT, title: 'Tether' },
+		{ image: DOGE, title: 'Dogecoin' },
+	]
 	return (
 		<section name='CurrencyScreen' className='CurrencyScreen min-h-screen'>
 			<article>
@@ -11,16 +23,44 @@ function Currency() {
 					title='Monedas AlyPay'
 					highlight={['AlyPay']}
 					highlightStyle='font-bold'
-					className='text-gray-200 pl-11 py-11 absolute top-0'
+					className='text-gray-200 pl-11 py-11 absolute top-0 left-0'
 				/>
+				<div className='flex items-center bg-gray-900 border-4 border-yellow-400 w-auto'>
+					<img alt='Alycoin' src={ALY} className='h-24 p-2' />
+					<p className='text-yellow-400 text-3xl font-bold'>
+						Alycoin |
+					</p>
+					<p className='text-gray-200 text-xl font-light px-4'>
+						conoce nuestra moneda
+					</p>
+				</div>
+				<Title
+					title='Criptomoneda fee basada en ethereum creada para
+					efectuar transacciones a un bajo costo auspiciada y
+					gestionada por AlySystem.'
+					highlight={['Criptomoneda', 'AlySystem.']}
+					highlightStyle='font-bold'
+					className='text-gray-200 w-auto font-normal mx-10 my-6 rounded-lg p-7'
+				/>
+			</article>
+			<article>
 				<Title
 					title='TRABAJAMOS CON LAS PRINCIPALES CRIPTOMONEDAS DEL MERCADO'
 					highlight={['CRIPTOMONEDAS']}
 					highlightStyle='font-bold text-yellow-400'
-					className='text-gray-200 py-11 pl-11'
+					className='text-gray-200 pt-10 px-11 mx-16 text-center flex-1'
 				/>
+				<div className='flex-1 pb-11'>
+					<Exhibitor
+						elements={elementsTop}
+						twTitles='text-yellow-400 text-xl'
+					/>
+					<Exhibitor
+						elements={elementsBottom}
+						twTitles='text-yellow-400 text-xl'
+					/>
+				</div>
 			</article>
-			<article>article 2sssssssss</article>
 		</section>
 	)
 }

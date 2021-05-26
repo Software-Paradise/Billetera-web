@@ -6,15 +6,24 @@
 }
 
 /* styles for titles in the currency screen */
-.CurrencyScreen .Title:last-of-type {
+.CurrencyScreen article:last-of-type .Title {
 	background: linear-gradient(
-		90deg,
-		rgba(255, 255, 255, 0.3) 0%,
-		rgba(246, 240, 240, 0) 95%
+		180deg,
+		rgba(255, 255, 255, 0.25) 0%,
+		rgba(246, 240, 240, 0) 100%
 	);
 }
 
-@media (min-width: 640px) {
+.CurrencyScreen article:first-of-type .Title:last-of-type {
+	font-size: 2rem;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.3) 100%,
+		rgba(246, 240, 240, 0) 100%
+	);
+}
+
+/* @media (min-width: 640px) {
 	.CurrencyScreen .Title:last-of-type {
 		line-height: 3rem;
 	}
@@ -26,4 +35,4 @@
 		font-size: 3rem;
 		line-height: 4rem;
 	}
-}
+} */

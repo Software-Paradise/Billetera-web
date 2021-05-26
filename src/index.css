@@ -98,4 +98,7 @@ input[type='password']::-ms-clear {
 
 	/* Custom styles for the currency screen */
 	@import url('./styles/screens/CurrencyScreen.style');
+
+	/* Custom styles for the Exhibitor component */
+	@import url('./styles/components/Exhibitor');
 }

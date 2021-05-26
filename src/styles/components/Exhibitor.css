@@ -1,0 +1,12 @@
+.Exhibitor .ImagesExhibitor {
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.3) 100%,
+		rgba(246, 240, 240, 0) 100%
+	);
+	border-radius: 4rem;
+}
+
+.Exhibitor {
+	margin-bottom: 1rem;
+}

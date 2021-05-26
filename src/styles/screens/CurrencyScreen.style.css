@@ -19,5 +19,10 @@
 
 .CurrencyScreen article:first-of-type {
 	position: relative;
-    justify-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.CurrencyScreen article:first-of-type div:last-of-type {
+	border-radius: 4rem;
 }
