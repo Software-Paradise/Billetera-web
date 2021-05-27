@@ -101,4 +101,12 @@ input[type='password']::-ms-clear {
 
 	/* Custom styles for the Exhibitor component */
 	@import url('./styles/components/Exhibitor');
+
+	/* Styles for perks screen */
+	.PerksScreen {
+		@apply flex flex-col p-11 bg-gray-500;
+	}
+
+	/* Custom styles for perks screen */
+	@import url('./styles/screens/PerksScreen.style');
 }
