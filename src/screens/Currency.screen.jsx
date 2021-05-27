@@ -23,15 +23,16 @@ function Currency() {
 					title='Monedas AlyPay'
 					highlight={['AlyPay']}
 					highlightStyle='font-bold'
-					className='text-gray-200 pl-11 py-11 absolute top-0 left-0'
+					className='text-gray-200 absolute top-11 left-11'
 				/>
-				<div className='flex items-center bg-gray-900 border-4 border-yellow-400 w-auto'>
+				<div className='absolute left-11 top-36 flex items-center bg-gray-900 border-4 border-yellow-400'>
 					<img alt='Alycoin' src={ALY} className='h-24 p-2' />
-					<p className='text-yellow-400 text-3xl font-bold'>
-						Alycoin |
+					<p className='text-yellow-400 text-4xl font-bold'>
+						Alycoin
 					</p>
 					<p className='text-gray-200 text-xl font-light px-4'>
-						conoce nuestra moneda
+						<span className='text-yellow-400'>| </span>conoce
+						nuestra moneda
 					</p>
 				</div>
 				<Title
@@ -40,7 +41,7 @@ function Currency() {
 					gestionada por AlySystem.'
 					highlight={['Criptomoneda', 'AlySystem.']}
 					highlightStyle='font-bold'
-					className='text-gray-200 w-auto font-normal mx-10 my-6 rounded-lg p-7'
+					className='absolute p-7 left-11 bottom-28 text-gray-200 font-normal rounded-lg'
 				/>
 			</article>
 			<article>

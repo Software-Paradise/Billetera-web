@@ -7,7 +7,7 @@
 		),
 		url('/src/assets/images/tablet.png');
 	background-size: 220vh;
-	background-position: center -2rem;
+	background-position: 2rem -4rem;
 }
 
 /* styles of left and right sides */
@@ -23,6 +23,7 @@
 	align-items: center;
 }
 
-.CurrencyScreen article:first-of-type div:last-of-type {
+.CurrencyScreen article:first-of-type div {
 	border-radius: 4rem;
+	width: 33rem;
 }
