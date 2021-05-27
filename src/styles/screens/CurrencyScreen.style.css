@@ -1,0 +1,28 @@
+/* Currency screen background image */
+.CurrencyScreen {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.8) 0%
+		),
+		url('/src/assets/images/tablet.png');
+	background-size: 220vh;
+	background-position: 2rem -4rem;
+}
+
+/* styles of left and right sides */
+.CurrencyScreen article {
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.CurrencyScreen article:first-of-type {
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.CurrencyScreen article:first-of-type div div {
+	border-radius: 4rem;
+}

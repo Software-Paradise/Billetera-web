@@ -1,5 +1,38 @@
+/* styles for title in the functions screen */
 .FunctionsScreen .Title {
 	position: relative;
 	top: 8vh;
 	left: 4vw;
 }
+
+/* styles for titles in the currency screen */
+.CurrencyScreen article:last-of-type .Title {
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.25) 0%,
+		rgba(246, 240, 240, 0) 100%
+	);
+}
+
+.CurrencyScreen article:first-of-type div .Title {
+	font-size: 2rem;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.3) 100%,
+		rgba(246, 240, 240, 0) 100%
+	);
+}
+
+/* @media (min-width: 640px) {
+	.CurrencyScreen .Title:last-of-type {
+		line-height: 3rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.CurrencyScreen .Title:last-of-type {
+		width: 40rem;
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+} */

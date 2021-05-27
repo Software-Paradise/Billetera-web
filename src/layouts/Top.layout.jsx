@@ -11,7 +11,7 @@ function Top({ children }) {
 	const links = [
 		{ label: 'AlyPay', to: 'InfoScreen' },
 		{ label: 'Funciones', to: 'FunctionsScreen' },
-		{ label: 'Moneda', to: 'CurrencyScreen' },
+		{ label: 'Monedas', to: 'CurrencyScreen' },
 		{ label: 'Beneficios', to: 'PerksScreen' },
 		{ label: 'E-commerce', to: 'EcommerceScreen' },
 		{ label: 'Comercios', to: 'AffiliatesScreen' },
