@@ -25,24 +25,26 @@ function Currency() {
 					highlightStyle='font-bold'
 					className='text-gray-200 absolute top-11 left-11'
 				/>
-				<div className='absolute left-11 top-36 flex items-center bg-gray-900 border-4 border-yellow-400'>
-					<img alt='Alycoin' src={ALY} className='h-24 p-2' />
-					<p className='text-yellow-400 text-4xl font-bold'>
-						Alycoin
-					</p>
-					<p className='text-gray-200 text-xl font-light px-4'>
-						<span className='text-yellow-400'>| </span>conoce
-						nuestra moneda
-					</p>
-				</div>
-				<Title
-					title='Criptomoneda fee basada en ethereum creada para
+				<div className='grid gap-8 px-5 xl:px-24 absolute'>
+					<div className='flex items-center bg-gray-900 border-4 border-yellow-400'>
+						<img alt='Alycoin' src={ALY} className='h-24 p-2' />
+						<p className='text-yellow-400 text-4xl font-bold'>
+							Alycoin
+						</p>
+						<p className='text-gray-200 text-xl font-light px-4'>
+							<span className='text-yellow-400'>| </span>conoce
+							nuestra moneda
+						</p>
+					</div>
+					<Title
+						title='Criptomoneda fee basada en ethereum creada para
 					efectuar transacciones a un bajo costo auspiciada y
 					gestionada por AlySystem.'
-					highlight={['Criptomoneda', 'AlySystem.']}
-					highlightStyle='font-bold'
-					className='absolute p-7 left-11 bottom-28 text-gray-200 font-normal rounded-lg'
-				/>
+						highlight={['Criptomoneda', 'AlySystem.']}
+						highlightStyle='font-bold'
+						className='p-7 text-gray-200 font-normal rounded-lg'
+					/>
+				</div>
 			</article>
 			<article>
 				<Title
