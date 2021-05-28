@@ -6,243 +6,134 @@ export const en = {
 		{ lang: 'English', code: 'en' },
 		{ lang: 'Spanish', code: 'es' },
 	],
-	/* Welcome */
-	welcome: 'Welcome to AlyPay Web! Select a wallet to get started!',
-	/* Login view */
-	loginView: {
-		email: {
-			title: 'Email',
-			placeholder: 'Enter email here',
-			required: 'Email is required',
-			error: 'Invalid email',
-		},
-		password: {
-			title: 'Password',
-			placeholder: 'Enter the password here',
-			required: 'Password is required',
-			error: '',
-		},
-		title: 'Log in',
-		actions: {
-			recovery: 'I forgot my password',
-			register: 'Sign up',
-			login: 'Log in',
-			select: 'Select a language',
-		},
-	},
-	/* RegisterView */
-	registerView: {
-		title: 'User register',
-		name: {
-			title: 'Name',
-			placeholder: 'Enter name',
-			required: 'The name is required',
-			error: '',
-		},
-		lastname: {
-			title: 'Last Name',
-			placeholder: 'Enter the last name',
-			required: 'The last name is requerid',
-			error: '',
-		},
-		date: {
-			title: 'Date of birth',
-			placeholder: 'Enter date of birth',
-			required: 'Date of birth is required',
-			error: '',
-		},
-		telephone: {
-			title: 'Telephone',
-			placeholder: 'Enter the phone',
-			required: 'The phone is required',
-			error: 'The phone should only contain numbers',
-			atLeast: 'The phone must contain at least 7 digits',
-		},
-		email: {
-			title: 'Email',
-			placeholder: 'Enter email',
-			required: 'Email is required',
-			error: '',
-		},
-		username: {
-			title: 'Username',
-			placeholder: 'Enter username',
-			required: 'Username is required',
-			error: '',
-		},
-		password: {
-			title: 'Password',
-			placeholder: 'Enter the password here',
-			required: 'Password is required',
-			error: 'Password must contain at least 6 characters',
-		},
-		repeatPassword: {
-			title: 'Repeat password',
-			placeholder: 'Repeat password',
-			required: 'Password is required',
-			error: 'Passwords do not match',
-		},
-		country: {
-			title: 'Country',
-			placeholder: 'Select country',
-			required: 'The country is required',
-			error: '',
-		},
-		actions: {
-			accepted: 'I accept the',
-			terms: 'Terms and Conditions',
-			register: 'Sign up',
-			back: 'Go back to login',
-		},
-	},
-	/*Nav */
-	navView: {
-		source: {
-			placeholder: 'Search hash',
-			error: '',
-		},
-		actions: {
-			back: 'Back to wallet list',
-			init: 'Home',
+	/* NavBar */
+	navBar: {
+		navLinks: {
 			alypay: 'AlyPay',
-			commerces: 'Commerces',
-			logout: 'Log out',
+			functions: 'Functions',
+			currency: 'Cryptocurrencies',
+			perks: 'Benefits',
+			ecommerce: 'E-commerce',
+			afilliates: 'Commerces',
 		},
 	},
-	/*Wallet */
-	walletView: {
-		title: 'Wallet',
-		placeholder: 'Search wallet',
-		coin: {
-			marketPrice: 'Market price',
-			balance: 'Balance',
-			balanceUSD: 'Balance USD',
+	/* TopScreen */
+	topScreen: {
+		title: 'THE EASIEST, FASTEST AND SAFEST WAY OF DOING BUSINESS WITH CRYPTOCURRENCIES',
+		downloadButton: 'Download it now',
+		bottomText: {
+			text: 'For IOS and web users, click ',
+			linkText: 'here',
+		},
+		languageSelect: 'Select a language',
+	},
+	/* InfoScreen */
+	infoScreen: {
+		leftSide: {
+			downloadButton: 'Download it now',
+		},
+		rightSide: {
+			title: 'What is AlyPay?',
+			content:
+				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all the associated commerces worldwide.",
 		},
 	},
-	/* Table */
-	tableView: {
-		previous: 'Previous page',
-		next: 'Next page',
-		pp: 'Per page',
-	},
-	/* List */
-	listView: {
-		toTop: 'Scroll to top',
-	},
-	/* ExecutiveView */
-	executiveView: {
-		title: 'Executive',
-		/*Earnings */
-		earnings: {
-			title: 'Profit record',
-			placeholder: 'Filter gain record',
-			column: {
-				commerce: 'Commerce',
-				commission: 'Commission',
-				earnings: 'Earnings',
+	/* FunctionsScreen */
+	functionsScreen: {
+		title: 'AlyPay Functions',
+		cards: {
+			deposit: {
+				title: 'Deposit',
+				content: 'External deposit of money to your AlyPay wallet.',
 			},
-			actions: {
-				retire: 'Retire',
+			buy: {
+				title: 'Buy Alycoin',
+				content:
+					'You can purchase as much as you need of our fee cryptocurrency, Alycoin so you can use it on your transactions at the lowest cost in the market.',
 			},
-		},
-		/*Historical */
-		history: {
-			title: 'Withdrawal history',
-			placeholder: 'Filter withdrawal history',
-			columns: {
-				description: 'Description',
-				hash: 'Hash',
-				hour: 'Hour',
-				date: 'Date',
-				amount: 'Amount',
+			transfer: {
+				title: 'Transfer',
+				content:
+					'Easy funds movement from your wallet to another AlyPay user or viceversa.',
 			},
-		},
-	},
-	/**CommerceView */
-	commerceView: {
-		title: 'Commerce',
-		lists: {
-			title: 'Trade listing',
-			placeholder: 'Filter business list',
-			balanceUSD: 'Balance USD',
-			address: 'Address',
-		},
-	},
-	/*HistoricalTransactionView */
-	historyView: {
-		title: 'History',
-		story: {
-			title: 'Transaction history',
-			placeholder: 'Filter transaction history',
-			columns: {
-				description: 'Description',
-				hash: 'Hash',
-				hashCopy: 'Hash was successful copied',
-				hour: 'Hour',
-				date: 'Date',
-				amount: 'Amount',
+			payment: {
+				title: 'Payment',
+				content:
+					'Purchase of products and/or services with your cryptocurrencies through our platform.',
+			},
+			withdraw: {
+				title: 'Withdraw',
+				content:
+					'Funds movement from your AlyPay wallet to an external one.',
 			},
 		},
-		details: {
-			title: 'Transaction detail',
-			description: 'Description',
-			hash: 'Hash',
-			hashCopy: 'Hash was successful copied',
-			hour: 'Hour',
-			date: 'Date',
-			amountTransaction: 'Transaction amount',
-			amountUSD: 'Amount USD',
-			currency: 'Currency',
-			fee: 'Fee USD',
-			total: 'Total USD',
-			walletFrom: 'Wallet from',
-			walletFromCopy: 'Wallet from  was successful copied',
-			walletTo: 'Wallet to',
-			walletToCopy: 'Wallet to  was successful copied',
+	},
+	/* CurrencyScreen */
+	currencyScreen: {
+		title: 'AlyPay Cryptocurrencies',
+		badge: 'know our own cryptocurrency',
+		info: {
+			text: 'Fee cryptocurrency based on Ethereum, created to make transactions at a low cost. Managed and powered by AlySystem.',
+			highlight: ['cryptocurrency', 'AlySystem.'],
+		},
+		cryptoTitle: {
+			text: 'WE WORK WITH THE MAIN CRYPTOCURRENCIES IN THE MARKET',
+			highlight: ['CRYPTOCURRENCIES'],
 		},
 	},
-	/**ReceiveView */
-	receiveView: {
-		title: 'Receive',
-		information: {
-			title: 'Receive funds',
-			marketPrice: 'Market price',
-			balance: 'Balance',
-			balanceUSD: 'Balance USD',
-			address: 'Wallet address',
-		},
-		recharge: {
-			title: 'Recharge wallet',
-			address: 'Wallet address',
-			amount: 'Amount',
-			amountUSD: 'Amount (USD)',
-			hash: 'Transaction hash',
-		},
-		actions: {
-			confirm: 'Confirm',
+	/* PerksScreen */
+	perksScreen: {
+		title: 'Benefits',
+		table: {
+			leftSide: {
+				title: 'Alypay',
+				content:
+					'Hand in hand with blockchain technology AlyPay offers users and businesses fast, secure and easy transactions and a very low fee rate on each of their transfers. Making cryptocurrencies the best payment method worldwide.',
+			},
+			rightSide: {
+				title: 'Alypay E-commerce',
+				content:
+					'Being part of AlyPay E-Commerce when selling your products you will be charged at a very low fee for each product that you charge through our system. Helping you save on your expenses.',
+			},
 		},
 	},
-	/**SendView */
-	sendView: {
-		title: 'Send',
-		information: {
-			title: 'Send funds',
-			marketPrice: 'Market price',
-			balance: 'Balance',
-			balanceUSD: 'Balance USD',
-			address: 'Wallet address',
-			amount: 'Amount',
-			amountUSD: 'Amount (USD)',
+	/* EcommerceScreen */
+	ecommerceScreen: {
+		title: 'E-commerce',
+		content:
+			'It is the AlySystem solution for business that gives you the opportunity to offer your products and services, receiving cryptocurrencies as a form of payment worldwide.',
+		bottomContent: {
+			question: 'How to be part of AlyPay E-Commerce?',
+			sections: {
+				1: 'Download our App (PLayStore) or visit our Website.',
+				2: 'Complete the registry.',
+				3: 'Open the activation email.',
+				4: 'Star using the AlyPay benefits.',
+			},
 		},
-		retire: {
-			title: 'Withdraw fondos',
-			address: 'Wallet address',
-			amount: 'Amount',
-			amountUSD: 'Amount(USD) approx.',
+		support: '24/7 online support',
+	},
+	/* AffiliatesScreen */
+	affiliatesScreen: {
+		title: 'Associated Commerces',
+		content:
+			'We work hand in hand with the best business worldwide. All for you to make use of your cryptocurrencies.',
+	},
+	/* Footer */
+	footer: {
+		contact: {
+			title: 'Contact us',
+			address1:
+				'Discover Building #1, 3rd floor, Villa Fontana. Managua, Nicaragua.',
+			address2:
+				'Torrez Building, Paseo Colón, 9th floor, office #909. San José, Costa Rica.',
 		},
-		action: {
-			next: 'Next',
-			confirm: 'Confirm',
+		support: {
+			title: 'Support',
+		},
+		download: {
+			button: 'Download it now',
+			bottomText: 'For IOS and web users, click here',
 		},
 	},
 }

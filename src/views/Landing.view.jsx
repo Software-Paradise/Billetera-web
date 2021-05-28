@@ -7,7 +7,6 @@ import { selectLanguage } from 'utils/language.util'
 //screen imports
 import {
 	Affiliates,
-	Bottom,
 	Currency,
 	Ecommerce,
 	Functions,
@@ -32,7 +31,6 @@ function Landing() {
 			<Perks />
 			<Ecommerce />
 			<Affiliates />
-			<Bottom />
 		</main>
 	)
 }

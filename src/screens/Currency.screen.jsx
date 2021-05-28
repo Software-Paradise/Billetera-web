@@ -4,8 +4,15 @@ import React from 'react'
 import { Exhibitor, Title } from 'modules/customs'
 //icon imports
 import { BTC, DASH, DOGE, ETH, LTC, USDT, ALY } from '../assets/index'
+//language imports
+import { useSelector } from 'react-redux'
+import { selectLanguage } from 'utils/language.util'
 
 function Currency() {
+	//language selector
+	const { currencyScreen } = useSelector(selectLanguage)
+
+	//cyptos in exhibitor
 	const elementsTop = [
 		{ image: BTC, title: 'Bitcoin' },
 		{ image: ETH, title: 'Ethereum' },
@@ -20,7 +27,7 @@ function Currency() {
 		<section name='CurrencyScreen' className='CurrencyScreen min-h-screen'>
 			<article>
 				<Title
-					title='Monedas AlyPay'
+					title={currencyScreen.title}
 					highlight={['AlyPay']}
 					highlightStyle='font-bold'
 					className='text-gray-200 absolute top-11 left-11'
@@ -31,16 +38,16 @@ function Currency() {
 						<p className='text-yellow-400 text-4xl font-bold'>
 							Alycoin
 						</p>
-						<p className='text-gray-200 text-xl font-light px-4'>
-							<span className='text-yellow-400'>| </span>conoce
-							nuestra moneda
+						<span className='text-yellow-400 text-xl font-light px-4'>
+							|{' '}
+						</span>
+						<p className='text-gray-200 text-xl font-light'>
+							{currencyScreen.badge}
 						</p>
 					</div>
 					<Title
-						title='Criptomoneda fee basada en ethereum creada para
-					efectuar transacciones a un bajo costo auspiciada y
-					gestionada por AlySystem.'
-						highlight={['Criptomoneda', 'AlySystem.']}
+						title={currencyScreen.info.text}
+						highlight={currencyScreen.info.highlight}
 						highlightStyle='font-bold'
 						className='p-7 text-gray-200 font-normal rounded-lg'
 					/>
@@ -48,8 +55,8 @@ function Currency() {
 			</article>
 			<article>
 				<Title
-					title='TRABAJAMOS CON LAS PRINCIPALES CRIPTOMONEDAS DEL MERCADO'
-					highlight={['CRIPTOMONEDAS']}
+					title={currencyScreen.cryptoTitle.text}
+					highlight={currencyScreen.cryptoTitle.highlight}
 					highlightStyle='font-bold text-yellow-400'
 					className='text-gray-200 pt-10 px-11 mx-16 text-center flex-1'
 				/>
