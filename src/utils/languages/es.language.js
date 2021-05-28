@@ -25,6 +25,7 @@ export const es = {
 			text: 'Para usuarios ios y web ingresar ',
 			linkText: 'aquí',
 		},
+		languageSelect: 'Seleccione un idioma'
 	},
 	/* InfoScreen */
 	infoScreen: {

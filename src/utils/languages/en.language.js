@@ -25,6 +25,7 @@ export const en = {
 			text: 'For IOS and web users, click ',
 			linkText: 'here',
 		},
+		languageSelect: 'Select a language',
 	},
 	/* InfoScreen */
 	infoScreen: {

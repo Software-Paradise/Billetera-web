@@ -3,11 +3,11 @@ import React from 'react'
 //layout import
 import { TopLayout } from 'layouts'
 //component import
-import { Button } from 'modules/customs'
+import { Button, SelectLanguage } from 'modules/customs'
 //icon import
 import { DiAndroid } from 'react-icons/di'
 //language imports
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { selectLanguage } from 'utils/language.util'
 
 /**
@@ -19,7 +19,12 @@ function Top() {
 	return (
 		<div className='TopScreen'>
 			<TopLayout>
-				<div className='BottomDiv items-center flex-grow flex flex-col justify-center'>
+				<div className='BottomDiv relative items-center flex-grow flex flex-col justify-center'>
+					<SelectLanguage
+						className='absolute top-4'
+						zoom={0.9}
+					/>
+					,
 					<h1 className='font-light text-gray-200 text-3xl md:text-6xl text-center py-16 md:my-8'>
 						{topScreen.title}
 					</h1>
