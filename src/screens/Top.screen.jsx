@@ -6,30 +6,25 @@ import { TopLayout } from 'layouts'
 import { Button } from 'modules/customs'
 //icon import
 import { DiAndroid } from 'react-icons/di'
+//language imports
+import { useSelector } from 'react-redux'
+import { selectLanguage } from 'utils/language.util'
 
 /**
  *First screen to display in the landing page
  * @returns {React.FunctionComponent}
  */
 function Top() {
+	const { topScreen } = useSelector(selectLanguage)
 	return (
 		<div className='TopScreen'>
 			<TopLayout>
 				<div className='BottomDiv items-center flex-grow flex flex-col justify-center'>
 					<h1 className='font-light text-gray-200 text-3xl md:text-6xl text-center py-16 md:my-8'>
-						LA MANERA MÁS{' '}
-						<span className='text-yellow-400 font-bold'>FÁCIL</span>
-						,{' '}
-						<span className='text-yellow-400 font-bold'>
-							RÁPIDA
-						</span>{' '}
-						Y SEGURA DE HACER NEGOCIOS CON{' '}
-						<span className='text-yellow-400 font-bold'>
-							CRIPTOMONEDAS
-						</span>
+						{topScreen.title}
 					</h1>
 					<Button
-						label='Descárgala ya'
+						label={topScreen.downloadButton}
 						variant='outline'
 						className='capitalize text-xl mb-3 hover:bg-yellow-400 border-4 px-4 py-2'
 						twIcon='text-yellow-400 group-hover:text-gray-900'>
@@ -38,9 +33,9 @@ function Top() {
 						</p>
 					</Button>
 					<p className='text-gray-200 mb-8'>
-						Para usuarios ios y web ingresar{' '}
+						{topScreen.bottomText.text}
 						<a href='#' className='text-yellow-400'>
-							aquí
+							{topScreen.bottomText.linkText}
 						</a>
 					</p>
 				</div>

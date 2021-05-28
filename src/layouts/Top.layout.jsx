@@ -1,6 +1,9 @@
 import React from 'react'
 //component import
 import { NavBar } from 'modules/customs'
+//language imports
+import { useSelector } from 'react-redux'
+import { selectLanguage } from 'utils/language.util'
 
 /**
  * Layout to print the top screen
@@ -8,13 +11,16 @@ import { NavBar } from 'modules/customs'
  * @returns {React.FunctionComponent}
  */
 function Top({ children }) {
+	const { navBar, code } = useSelector(selectLanguage)
+	console.log(code)
+
 	const links = [
-		{ label: 'AlyPay', to: 'InfoScreen' },
-		{ label: 'Funciones', to: 'FunctionsScreen' },
-		{ label: 'Monedas', to: 'CurrencyScreen' },
-		{ label: 'Beneficios', to: 'PerksScreen' },
-		{ label: 'E-commerce', to: 'EcommerceScreen' },
-		{ label: 'Comercios', to: 'AffiliatesScreen' },
+		{ label: navBar.navLinks.alypay, to: 'InfoScreen' },
+		{ label: navBar.navLinks.functions, to: 'FunctionsScreen' },
+		{ label: navBar.navLinks.currency, to: 'CurrencyScreen' },
+		{ label: navBar.navLinks.perks, to: 'PerksScreen' },
+		{ label: navBar.navLinks.ecommerce, to: 'EcommerceScreen' },
+		{ label: navBar.navLinks.afilliates, to: 'AffiliatesScreen' },
 	]
 	return (
 		<div className='TopLayout min-h-screen flex flex-col'>

@@ -6,33 +6,37 @@ import { Title, CardDisplayer } from 'modules/customs'
 import { FiCreditCard, FiRotateCw, FiShoppingCart } from 'react-icons/fi'
 import { BiTransfer } from 'react-icons/bi'
 import { ATM } from '../assets/index'
+//language imports
+import { useSelector } from 'react-redux'
+import { selectLanguage } from 'utils/language.util'
 
 function Functions() {
+	const { functionsScreen } = useSelector(selectLanguage)
 	const cardContents = [
 		{
-			text: 'Recargas',
+			text: functionsScreen.cards.deposit.title,
 			icon: <FiRotateCw />,
-			hidden: 'Ingreso externo de fondos hacia su wallet Alypay.',
+			hidden: functionsScreen.cards.deposit.content,
 		},
 		{
-			text: 'Compra Alycoin',
+			text: functionsScreen.cards.buy.title,
 			icon: <FiShoppingCart />,
-			hidden: 'Facilidad de comprar con sus fondos en criptomonedas, cuanto necesite de nuestra moneda fee, Alycoin para poder llevar a cabo sus transacciones.',
+			hidden: functionsScreen.cards.buy.content,
 		},
 		{
-			text: 'Transferencia',
+			text: functionsScreen.cards.transfer.title,
 			icon: <BiTransfer />,
-			hidden: 'Movimiento de fondos de un usuario a otro dentro del sistema',
+			hidden: functionsScreen.cards.transfer.content,
 		},
 		{
-			text: 'Pago',
+			text: functionsScreen.cards.payment.title,
 			icon: <FiCreditCard />,
-			hidden: 'Compra de productos y/o servicios con sus criptomonedas a traves de nuestra plataforma',
+			hidden: functionsScreen.cards.payment.content,
 		},
 		{
-			text: 'Retirar',
+			text: functionsScreen.cards.withdraw.title,
 			icon: <ATM />,
-			hidden: 'Movimiento de fondos de su wallet Alypay a una de terceros',
+			hidden: functionsScreen.cards.withdraw.content,
 		},
 	]
 
@@ -41,7 +45,7 @@ function Functions() {
 			name='FunctionsScreen'
 			className='FunctionsScreen min-h-screen'>
 			<Title
-				title='Funciones de AlyPay'
+				title={functionsScreen.title}
 				highlight={['AlyPay']}
 				highlightStyle='font-bold'
 			/>

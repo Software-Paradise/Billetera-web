@@ -8,7 +8,7 @@ export const en = {
 	],
 	/* NavBar */
 	navBar: {
-		NavLinks: {
+		navLinks: {
 			alypay: 'AlyPay',
 			functions: 'Functions',
 			currency: 'Cryptocurrencies',
@@ -21,7 +21,10 @@ export const en = {
 	topScreen: {
 		title: 'THE EASIEST, FASTEST AND SAFEST WAY OF DOING BUSINESS WITH CRYPTOCURRENCIES',
 		downloadButton: 'Download it now',
-		bottomText: 'For IOS and web users, click Here',
+		bottomText: {
+			text: 'For IOS and web users, click ',
+			linkText: 'here',
+		},
 	},
 	/* InfoScreen */
 	infoScreen: {
@@ -38,26 +41,26 @@ export const en = {
 	functionsScreen: {
 		title: 'AlyPay Functions',
 		cards: {
-			1: {
+			deposit: {
 				title: 'Deposit',
 				content: 'External deposit of money to your AlyPay wallet.',
 			},
-			2: {
+			buy: {
 				title: 'Buy Alycoin',
 				content:
 					'You can purchase as much as you need of our fee cryptocurrency, Alycoin so you can use it on your transactions at the lowest cost in the market.',
 			},
-			3: {
+			transfer: {
 				title: 'Transfer',
 				content:
 					'Easy funds movement from your wallet to another AlyPay user or viceversa.',
 			},
-			4: {
+			payment: {
 				title: 'Payment',
 				content:
-					'Purchase of products and/or services with your cryptocurrencies through oir platform.',
+					'Purchase of products and/or services with your cryptocurrencies through our platform.',
 			},
-			5: {
+			withdraw: {
 				title: 'Withdraw',
 				content:
 					'Funds movement from your AlyPay wallet to an external one.',
@@ -68,8 +71,14 @@ export const en = {
 	currencyScreen: {
 		title: 'AlyPay Cryptocurrencies',
 		badge: 'know our own cryptocurrency',
-		info: 'Fee cryptocurrency based on Ethereum, created to make transactions at a low cost. Managed and powered by AlySystem.',
-		cryptoTitle: 'WE WORK WITH THE MAIN CRYPTOCURRENCIES IN THE MARKET',
+		info: {
+			text: 'Fee cryptocurrency based on Ethereum, created to make transactions at a low cost. Managed and powered by AlySystem.',
+			highlight: ['cryptocurrency', 'AlySystem.'],
+		},
+		cryptoTitle: {
+			text: 'WE WORK WITH THE MAIN CRYPTOCURRENCIES IN THE MARKET',
+			highlight: ['CRYPTOCURRENCIES'],
+		},
 	},
 	/* PerksScreen */
 	perksScreen: {
@@ -80,7 +89,7 @@ export const en = {
 				content:
 					'Hand in hand with blockchain technology AlyPay offers users and businesses fast, secure and easy transactions and a very low fee rate on each of their transfers. Making cryptocurrencies the best payment method worldwide.',
 			},
-			rigthSide: {
+			rightSide: {
 				title: 'Alypay E-commerce',
 				content:
 					'Being part of AlyPay E-Commerce when selling your products you will be charged at a very low fee for each product that you charge through our system. Helping you save on your expenses.',
@@ -123,7 +132,7 @@ export const en = {
 		},
 		download: {
 			button: 'Download it now',
-			bottomText: 'For IOS and web users, click Here',
+			bottomText: 'For IOS and web users, click here',
 		},
 	},
 }

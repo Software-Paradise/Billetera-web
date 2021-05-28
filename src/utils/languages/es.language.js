@@ -8,7 +8,7 @@ export const es = {
 	],
 	/* NavBar */
 	navBar: {
-		NavLinks: {
+		navLinks: {
 			alypay: 'AlyPay',
 			functions: 'Funciones',
 			currency: 'Monedas',
@@ -21,7 +21,10 @@ export const es = {
 	topScreen: {
 		title: 'LA MANERA MÁS FÁCIL, RÁPIDA Y SEGURA DE HACER NEGOCIOS CON CRIPTOMONEDAS.',
 		downloadButton: 'Descárgala ya',
-		bottomText: 'Para usuarios ios y web ingresar aquí',
+		bottomText: {
+			text: 'Para usuarios ios y web ingresar ',
+			linkText: 'aquí',
+		},
 	},
 	/* InfoScreen */
 	infoScreen: {
@@ -38,26 +41,26 @@ export const es = {
 	functionsScreen: {
 		title: 'Funciones de AlyPay',
 		cards: {
-			1: {
+			deposit: {
 				title: 'Recargas',
 				content: 'Ingreso externode fondos hacia su wallet Alypay.',
 			},
-			2: {
+			buy: {
 				title: 'Compra Alycoin',
 				content:
 					'Facilidad de comprar con sus fondos en criptomonedas, cuanto necesite de nuestra moneda fee, Alycoin para poder llevar a cabo sus transacciones.',
 			},
-			3: {
+			transfer: {
 				title: 'Transferencia',
 				content:
 					'Movimiento de fondos de un usuario a otro dentro del sistema.',
 			},
-			4: {
+			payment: {
 				title: 'Pago',
 				content:
 					'Compra de productos y/o servicios con sus criptomonedas a través de nuestra plataforma.',
 			},
-			5: {
+			withdraw: {
 				title: 'Retirar',
 				content:
 					'Movimiento de fondosde su wallet Alypay a una de terceros.',
@@ -68,8 +71,14 @@ export const es = {
 	currencyScreen: {
 		title: 'Monedas AlyPay',
 		badge: 'conoce nuestra moneda',
-		info: 'Criptomoneda fee basada en ethereum creada para efectuar transacciones a un bajo costo auspiciada y gestionada por AlySystem.',
-		cryptoTitle: 'TRABAJAMOS CON LAS PRINCIPALES CRIPTOMONEDAS DEL MERCADO',
+		info: {
+			text: 'Criptomoneda fee basada en ethereum creada para efectuar transacciones a un bajo costo auspiciada y gestionada por AlySystem.',
+			highlight: ['Criptomoneda', 'AlySystem.'],
+		},
+		cryptoTitle: {
+			text: 'TRABAJAMOS CON LAS PRINCIPALES CRIPTOMONEDAS DEL MERCADO',
+			highlight: ['CRIPTOMONEDAS'],
+		},
 	},
 	/* PerksScreen */
 	perksScreen: {
@@ -80,7 +89,7 @@ export const es = {
 				content:
 					'De la mano con la tecnología blockchain AlyPay ofrece a los usuarios y comercios transacciones rápidas, seguras y una tasa fee muy baja en cada una de sus transferencias. Haciendo de las criptomonedas el mejor medio de pagos a nivel mundial.',
 			},
-			rigthSide: {
+			rightSide: {
 				title: 'Alypay E-commerce',
 				content:
 					'Siendo parte de AlyPay E-Commerce a la hora de vender tus productos se le debitará un fee muy bajo por cada producto que cobre a través de nuestro sistema. Ayudándote a ahorrar en tus gastos.',

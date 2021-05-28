@@ -3,13 +3,17 @@ import React from 'react'
 import { Button, Title } from 'modules/customs'
 //icon import
 import { DiAndroid } from 'react-icons/di'
+//language imports
+import { useSelector } from 'react-redux'
+import { selectLanguage } from 'utils/language.util'
 
 function Info() {
+	const { infoScreen } = useSelector(selectLanguage)
 	return (
 		<section name='InfoScreen' className='InfoScreen min-h-screen md:flex'>
 			<article className='md:w-2/4 md:h-screen bg-gray-300 flex justify-center items-end'>
 				<Button
-					label='Descárgala ya'
+					label={infoScreen.leftSide.downloadButton}
 					variant='outline'
 					className='capitalize text-xl relative border-4 px-4 py-2 hover:bg-gray-900'
 					twLabel='text-gray-900 group-hover:text-gray-200'
@@ -24,16 +28,12 @@ function Info() {
 			flex flex-col justify-center'>
 				<Title
 					className='text-yellow-400'
-					title='¿Qué es AlyPay?'
+					title={infoScreen.rightSide.title}
 					highlight={['AlyPay?']}
 					highlightStyle='font-bold'
 				/>
 				<p className='text-gray-200 text-3xl font-light max-w-lg pt-24'>
-					Es el sistema de{' '}
-					<span className='font-bold'>AlySystem</span> para usuarios
-					que le brinda la oportunidad de hacer uso de sus
-					criptomonedas, utilizándolas como medio de pago en los
-					distintos comercios afiliados a nivel mundial
+					{infoScreen.rightSide.content}
 				</p>
 			</article>
 		</section>
