@@ -19,7 +19,10 @@ export const en = {
 	},
 	/* TopScreen */
 	topScreen: {
-		title: 'THE EASIEST, FASTEST AND SAFEST WAY OF DOING BUSINESS WITH CRYPTOCURRENCIES',
+		title: {
+			text: 'THE EASIEST, FASTEST AND SAFEST WAY OF DOING BUSINESS WITH CRYPTOCURRENCIES',
+			highlight: ['EASIEST', 'FASTEST', 'SAFEST'],
+		},
 		downloadButton: 'Download it now',
 		bottomText: {
 			text: 'For IOS and web users, click ',

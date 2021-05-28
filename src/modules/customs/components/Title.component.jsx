@@ -8,7 +8,7 @@ import { randomKey } from 'utils'
  * @param {Array} highlight - array of strings to highlight
  * @param {String} highlightStyle - tailwind styles for the highlight
  * @param {String} title - text to show in the component
- * @param {String} className - fo tailwind styles
+ * @param {String} className - for tailwind styles
  * @returns {React.FunctionComponent}
  */
 const Title = ({
@@ -19,20 +19,35 @@ const Title = ({
 }) => {
 	const rkey = randomKey()
 	const txtArray = title.split(' ').map((word, index) => {
-		let filter = highlight.filter(highlightWord => highlightWord === word)
-		return filter.length > 0 ? (
-			<span
-				key={`${rkey}_${index}`}
-				className={`${highlightStyle}`}>{`${word} `}</span>
+		let filter = highlight.filter(
+			highlightWord => highlightWord === word.replace(/[,?¿.]/g, '')
+		)
+		const nonAlphaNumeric = word.replace(/[a-z0-9áéíóú+]+/gi, '')
+		return nonAlphaNumeric !== '' ? (
+			filter.length > 0 ? (
+				<>
+					<span
+						key={`${rkey}_${index}`}
+						className={`${highlightStyle}`}>
+						{`${word.replace(/[,?¿.]/g, '')}`}
+					</span>
+					{`${nonAlphaNumeric} `}
+				</>
+			) : (
+				`${word} `
+			)
+		) : filter.length > 0 ? (
+			<span key={`${rkey}_${index}`} className={`${highlightStyle}`}>
+				{`${word} `}
+			</span>
 		) : (
 			`${word} `
 		)
 	})
-	return (
-		<h2 className={`Title max-w-max text-4xl font-light ${className}`}>
+	return 
+		(<span className={`Title max-w-max font-light ${className}`}>
 			{txtArray}
-		</h2>
-	)
+		</span>)
 }
 
 export default React.memo(Title)

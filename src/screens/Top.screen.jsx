@@ -3,11 +3,11 @@ import React from 'react'
 //layout import
 import { TopLayout } from 'layouts'
 //component import
-import { Button, SelectLanguage } from 'modules/customs'
+import { Button, SelectLanguage, Title } from 'modules/customs'
 //icon import
 import { DiAndroid } from 'react-icons/di'
 //language imports
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { selectLanguage } from 'utils/language.util'
 
 /**
@@ -20,14 +20,17 @@ function Top() {
 		<div className='TopScreen'>
 			<TopLayout>
 				<div className='BottomDiv relative items-center flex-grow flex flex-col justify-center'>
-					<SelectLanguage
-						className='absolute top-4'
-						zoom={0.9}
-					/>
-					,
-					<h1 className='font-light text-gray-200 text-3xl md:text-6xl text-center py-16 md:my-8'>
+					<SelectLanguage className='absolute top-4' zoom={0.9} />,
+					{/* <h1 className='font-light text-gray-200 text-3xl md:text-6xl text-center py-16 md:my-8'>
 						{topScreen.title}
-					</h1>
+					</h1> */}
+					<Title
+						title={topScreen.title.text}
+						highlight={topScreen.title.highlight}
+						highlightStyle='text-yellow-400 font-bold'
+						className='text-gray-200 text-3xl md:text-6xl text-center py-16 md:my-8'
+						textComponent='h1'
+					/>
 					<Button
 						label={topScreen.downloadButton}
 						variant='outline'

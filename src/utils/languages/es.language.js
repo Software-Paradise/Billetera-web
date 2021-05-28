@@ -19,13 +19,16 @@ export const es = {
 	},
 	/* TopScreen */
 	topScreen: {
-		title: 'LA MANERA MÁS FÁCIL, RÁPIDA Y SEGURA DE HACER NEGOCIOS CON CRIPTOMONEDAS.',
+		title: {
+			text: '¿LA MANERA MÁS FÁCIL, RÁPIDA Y SEGURA DE HACER NEGOCIOS CON CRIPTOMONEDAS.',
+			highlight: ['LA', 'FÁCIL', 'RÁPIDA', 'SEGURA', 'CRIPTOMONEDAS'],
+		},
 		downloadButton: 'Descárgala ya',
 		bottomText: {
 			text: 'Para usuarios ios y web ingresar ',
 			linkText: 'aquí',
 		},
-		languageSelect: 'Seleccione un idioma'
+		languageSelect: 'Seleccione un idioma',
 	},
 	/* InfoScreen */
 	infoScreen: {

@@ -12,7 +12,6 @@ import { selectLanguage } from 'utils/language.util'
  */
 function Top({ children }) {
 	const { navBar, code } = useSelector(selectLanguage)
-	console.log(code)
 
 	const links = [
 		{ label: navBar.navLinks.alypay, to: 'InfoScreen' },
