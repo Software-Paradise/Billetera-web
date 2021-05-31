@@ -21,16 +21,13 @@ function Top() {
 			<TopLayout>
 				<div className='BottomDiv relative items-center flex-grow flex flex-col justify-center'>
 					<SelectLanguage className='absolute top-4' zoom={0.9} />,
-					{/* <h1 className='font-light text-gray-200 text-3xl md:text-6xl text-center py-16 md:my-8'>
-						{topScreen.title}
-					</h1> */}
-					<Title
-						title={topScreen.title.text}
-						highlight={topScreen.title.highlight}
-						highlightStyle='text-yellow-400 font-bold'
-						className='text-gray-200 text-3xl md:text-6xl text-center py-16 md:my-8'
-						textComponent='h1'
-					/>
+					<h1 className='font-light text-gray-200 text-3xl md:text-6xl text-center py-16 md:my-8'>
+						<Title
+							title={topScreen.title.text}
+							highlight={topScreen.title.highlight}
+							highlightStyle='text-yellow-400 font-bold'
+						/>
+					</h1>
 					<Button
 						label={topScreen.downloadButton}
 						variant='outline'

@@ -1,5 +1,6 @@
 //react import
 import React from 'react'
+import { Fragment } from 'react'
 //util imports
 import { randomKey } from 'utils'
 
@@ -19,20 +20,30 @@ const Title = ({
 }) => {
 	const rkey = randomKey()
 	const txtArray = title.split(' ').map((word, index) => {
+		//filter the words in highlight array if any is equal to the words in the title
 		let filter = highlight.filter(
 			highlightWord => highlightWord === word.replace(/[,?¿.]/g, '')
 		)
-		const nonAlphaNumeric = word.replace(/[a-z0-9áéíóú+]+/gi, '')
-		return nonAlphaNumeric !== '' ? (
+		/* if there is any words in filter, then apply highlight styles to that word and 
+		return it */
+
+		/* check if there is some non alpha numeric character inside that word, if there is one or more then 
+		return the first character before the highlighted word and the rest after */
+		const nonAlphaNumericArray = [...word.replace(/[a-z0-9áéíóú'+]+/gi, '')]
+		const nonAlphaNumericIndexes = nonAlphaNumericArray.map(
+			nonAlphaNumeric => word.indexOf(nonAlphaNumeric)
+		)
+		return nonAlphaNumericArray.length > 0 ? (
 			filter.length > 0 ? (
-				<>
-					<span
-						key={`${rkey}_${index}`}
-						className={`${highlightStyle}`}>
+				<Fragment key={`${rkey}_${index}`}>
+					{nonAlphaNumericIndexes.find(value => value === 0) === 0
+						? `${nonAlphaNumericArray.shift()}`
+						: null}
+					<span className={`${highlightStyle}`}>
 						{`${word.replace(/[,?¿.]/g, '')}`}
 					</span>
-					{`${nonAlphaNumeric} `}
-				</>
+					{`${nonAlphaNumericArray} `}
+				</Fragment>
 			) : (
 				`${word} `
 			)
@@ -44,10 +55,7 @@ const Title = ({
 			`${word} `
 		)
 	})
-	return 
-		(<span className={`Title max-w-max font-light ${className}`}>
-			{txtArray}
-		</span>)
+	return <span className={`Title ${className}`}>{txtArray}</span>
 }
 
 export default React.memo(Title)

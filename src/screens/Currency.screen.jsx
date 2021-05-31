@@ -26,16 +26,17 @@ function Currency() {
 	return (
 		<section name='CurrencyScreen' className='CurrencyScreen min-h-screen'>
 			<article>
-				<Title
-					title={currencyScreen.title}
-					highlight={['AlyPay']}
-					highlightStyle='font-bold'
-					className='text-gray-200 absolute top-11 left-11'
-				/>
-				<div className='grid gap-8 px-5 xl:px-24 absolute'>
+				<h2 className='text-gray-200 text-4xl absolute top-11 left-11'>
+					<Title
+						title={currencyScreen.title}
+						highlight={['AlyPay']}
+						highlightStyle='font-bold'
+					/>
+				</h2>
+				<div className='grid gap-8 px-11 absolute'>
 					<div className='flex items-center bg-gray-900 border-4 border-yellow-400'>
 						<img alt='Alycoin' src={ALY} className='h-24 p-2' />
-						<p className='text-yellow-400 text-4xl font-bold'>
+						<p className='text-yellow-400 text-4xl pl-4 font-bold'>
 							Alycoin
 						</p>
 						<span className='text-yellow-400 text-xl font-light px-4'>
@@ -45,21 +46,24 @@ function Currency() {
 							{currencyScreen.badge}
 						</p>
 					</div>
-					<Title
-						title={currencyScreen.info.text}
-						highlight={currencyScreen.info.highlight}
-						highlightStyle='font-bold'
-						className='p-7 text-gray-200 font-normal rounded-lg'
-					/>
+					<p className='Info p-7 text-gray-200 font-normal rounded-lg'>
+						<Title
+							title={currencyScreen.info.text}
+							highlight={currencyScreen.info.highlight}
+							highlightStyle='font-bold'
+						/>
+					</p>
 				</div>
 			</article>
 			<article>
-				<Title
-					title={currencyScreen.cryptoTitle.text}
-					highlight={currencyScreen.cryptoTitle.highlight}
-					highlightStyle='font-bold text-yellow-400'
-					className='text-gray-200 pt-10 px-11 mx-16 text-center flex-1'
-				/>
+				<h2 className='text-gray-200 text-4xl pt-14 px-11 mx-16 text-center flex-1'>
+					<Title
+						title={currencyScreen.cryptoTitle.text}
+						highlight={currencyScreen.cryptoTitle.highlight}
+						highlightStyle='font-bold text-yellow-400'
+						className='inline-block w-96'
+					/>
+				</h2>
 				<div className='flex-1 pb-11'>
 					<Exhibitor
 						elements={elementsTop}

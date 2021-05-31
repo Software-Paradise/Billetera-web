@@ -26,14 +26,19 @@ function Info() {
 			<article
 				className='md:w-2/4 md:h-screen text-center items-center 
 			flex flex-col justify-center'>
-				<Title
-					className='text-yellow-400'
-					title={infoScreen.rightSide.title}
-					highlight={['AlyPay?']}
-					highlightStyle='font-bold'
-				/>
+				<h2 className='font-light text-yellow-400 text-4xl text-center'>
+					<Title
+						title={infoScreen.rightSide.title}
+						highlight={['AlyPay']}
+						highlightStyle='font-bold'
+					/>
+				</h2>
 				<p className='text-gray-200 text-3xl font-light max-w-lg pt-24'>
-					{infoScreen.rightSide.content}
+					<Title
+						title={infoScreen.rightSide.content}
+						highlight={infoScreen.rightSide.highlight}
+						highlightStyle='font-bold'
+					/>
 				</p>
 			</article>
 		</section>

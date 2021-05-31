@@ -6,7 +6,7 @@
 }
 
 /* styles for titles in the currency screen */
-.CurrencyScreen article:last-of-type .Title {
+.CurrencyScreen article:last-of-type h2 {
 	background: linear-gradient(
 		180deg,
 		rgba(255, 255, 255, 0.25) 0%,
@@ -14,7 +14,7 @@
 	);
 }
 
-.CurrencyScreen article:first-of-type div .Title {
+.CurrencyScreen article:first-of-type .Info {
 	font-size: 2rem;
 	background: linear-gradient(
 		180deg,
