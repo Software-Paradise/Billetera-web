@@ -1,19 +1,11 @@
-@media (max-width: 640px) {
-	.InfoScreen {
-		display: flex;
-		flex-direction: column;
-	}
-	.InfoScreen section {
-		flex: 1;
-	}
+/* image of cellphones in the left side */
+.InfoScreen article:first-child img {
+	max-width: 180vw;
 }
-
-/* background image for the left part os the info screen */
-.InfoScreen article:first-child {
-	background-image: url('/src/assets/images/Cellphones.png');
-	background-size: 130vh;
-	background-repeat: no-repeat;
-	background-position: center top;
+@media (min-width: 768px) {
+	.InfoScreen article:first-child img {
+		max-width: 50vw;
+	}
 }
 
 /* background image for the right part os the info screen */
@@ -29,7 +21,7 @@
 }
 
 /* yellow bar between the two parts */
-.InfoScreen article:first-child::after {
+/* .InfoScreen article:first-child::after {
 	content: '';
 	position: absolute;
 	right: 50%;
@@ -44,4 +36,8 @@
 	top: 120%;
 	border-right: 0.3rem solid #fbbf24;
 	height: 60%;
+} */
+
+.InfoScreen {
+	min-height: 200vh;
 }

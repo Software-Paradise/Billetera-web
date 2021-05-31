@@ -52,7 +52,7 @@ function Functions() {
 				/>
 			</h2>
 			<CardDisplayer
-				className='bg-gray-500'
+				className='hidden md:flex bg-gray-500'
 				cardContents={cardContents}
 			/>
 		</section>

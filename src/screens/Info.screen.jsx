@@ -6,16 +6,21 @@ import { DiAndroid } from 'react-icons/di'
 //language imports
 import { useSelector } from 'react-redux'
 import { selectLanguage } from 'utils/language.util'
+//assets imports
+import { cellphones } from '../assets/index'
 
 function Info() {
 	const { infoScreen } = useSelector(selectLanguage)
 	return (
-		<section name='InfoScreen' className='InfoScreen min-h-screen md:flex'>
-			<article className='md:w-2/4 md:h-screen bg-gray-300 flex justify-center items-end'>
+		<section name='InfoScreen' className='InfoScreen md:min-h-screen'>
+			<article
+				className='min-h-screen md:flex-1 bg-gray-300 flex flex-col 
+			justify-center items-center overflow-hidden'>
+				<img alt='AlyPay on movile' src={cellphones} />
 				<Button
 					label={infoScreen.leftSide.downloadButton}
 					variant='outline'
-					className='capitalize text-xl relative border-4 px-4 py-2 hover:bg-gray-900'
+					className='capitalize text-xl border-4 px-4 py-2 hover:bg-gray-900'
 					twLabel='text-gray-900 group-hover:text-gray-200'
 					twIcon='text-gray-900 group-hover:text-gray-200'>
 					<p className='text-4xl'>
@@ -24,7 +29,7 @@ function Info() {
 				</Button>
 			</article>
 			<article
-				className='md:w-2/4 md:h-screen text-center items-center 
+				className='min-h-screen md:flex-1 text-center items-center 
 			flex flex-col justify-center'>
 				<h2 className='font-light text-yellow-400 text-4xl text-center'>
 					<Title
@@ -33,7 +38,7 @@ function Info() {
 						highlightStyle='font-bold'
 					/>
 				</h2>
-				<p className='text-gray-200 text-3xl font-light max-w-lg pt-24'>
+				<p className='text-gray-200 text-2xl mx-4 md:mx-0 md:text-3xl font-light max-w-lg pt-24'>
 					<Title
 						title={infoScreen.rightSide.content}
 						highlight={infoScreen.rightSide.highlight}

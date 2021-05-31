@@ -33,7 +33,7 @@ function Currency() {
 						highlightStyle='font-bold'
 					/>
 				</h2>
-				<div className='grid gap-8 px-11 absolute'>
+				<div className='hidden md:grid gap-8 px-11 absolute'>
 					<div className='flex items-center bg-gray-900 border-4 border-yellow-400'>
 						<img alt='Alycoin' src={ALY} className='h-24 p-2' />
 						<p className='text-yellow-400 text-4xl pl-4 font-bold'>
@@ -56,7 +56,7 @@ function Currency() {
 				</div>
 			</article>
 			<article>
-				<h2 className='text-gray-200 text-4xl pt-14 px-11 mx-16 text-center flex-1'>
+				<h2 className='hidden md:block text-gray-200 text-4xl pt-14 px-11 mx-16 text-center flex-1'>
 					<Title
 						title={currencyScreen.cryptoTitle.text}
 						highlight={currencyScreen.cryptoTitle.highlight}
@@ -64,7 +64,7 @@ function Currency() {
 						className='inline-block w-96'
 					/>
 				</h2>
-				<div className='flex-1 pb-11'>
+				<div className='hidden md:block flex-1 pb-11'>
 					<Exhibitor
 						elements={elementsTop}
 						twTitles='text-yellow-400 text-xl'

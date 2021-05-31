@@ -12,7 +12,7 @@ function Perks() {
 			<h2 className='text-gray-200 text-4xl pb-11'>
 				<Title title={perksScreen.title} />
 			</h2>
-			<div className='flex relative flex-1 rounded-lg shadow-lg'>
+			<div className='hidden md:flex relative flex-1 rounded-lg shadow-lg'>
 				<div
 					style={{ width: '51%' }}
 					className='grid flex-1 p-11 gap-8 absolute h-full'>
