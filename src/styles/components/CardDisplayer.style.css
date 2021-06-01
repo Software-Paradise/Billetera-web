@@ -3,7 +3,7 @@
 	position: unset;
 	overflow-x: scroll;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 	.CardDisplayer {
 		position: relative;
 		top: 30vh;

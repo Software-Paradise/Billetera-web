@@ -71,7 +71,7 @@ input[type='password']::-ms-clear {
 
 	/* Styles for the functions screen */
 	.FunctionsScreen {
-		@apply bg-gray-400 relative pt-40 pb-4 md:p-0;
+		@apply bg-gray-400 relative pt-40 pb-4 lg:p-0;
 	}
 
 	/* Custom styles for the title component */
@@ -79,7 +79,7 @@ input[type='password']::-ms-clear {
 
 	/* Card displayer component styles */
 	.CardDisplayer {
-		@apply flex flex-col md:flex-row shadow-xl rounded-md overflow-visible;
+		@apply flex flex-col lg:flex-row shadow-xl rounded-md overflow-visible;
 	}
 
 	/* Custom styles for the CardDisplayer component */
@@ -87,7 +87,7 @@ input[type='password']::-ms-clear {
 
 	/* Card component styles */
 	.VerticalCard {
-		@apply flex-1 min-w-max flex flex-row md:flex-col justify-center items-center;
+		@apply flex-1 min-w-max flex flex-row lg:flex-col justify-center items-center;
 	}
 	.HiddenCard {
 		@apply text-center items-center flex flex-col justify-start cursor-pointer;

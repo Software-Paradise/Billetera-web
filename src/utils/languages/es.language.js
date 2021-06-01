@@ -48,7 +48,7 @@ export const es = {
 		cards: {
 			deposit: {
 				title: 'Recargas',
-				content: 'Ingreso externode fondos hacia su wallet Alypay.',
+				content: 'Ingreso externo de fondos hacia su wallet Alypay.',
 			},
 			buy: {
 				title: 'Compra Alycoin',
