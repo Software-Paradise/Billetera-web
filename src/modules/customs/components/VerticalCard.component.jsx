@@ -37,7 +37,9 @@ const VerticalCard = ({
 					className={`px-8 lg:px-0 py-24 lg:pb-12 lg:pt-20 ${twIcon}`}>
 					{icon}
 				</span>
-				<div className='flex flex-col flex-1 justify-center text-center lg:block'>
+				<div
+					className='flex flex-col md:flex-row lg:flex-col 
+				flex-1 justify-center items-center text-center lg:block'>
 					<p className={`overflow-ellipsis max-w-full ${twContent}`}>
 						{content}
 					</p>
