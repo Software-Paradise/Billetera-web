@@ -1,10 +1,3 @@
-/* styles for title in the functions screen */
-.FunctionsScreen .Title {
-	position: relative;
-	top: 8vh;
-	left: 4vw;
-}
-
 /* styles for titles in the currency screen */
 .CurrencyScreen article:last-of-type h2 {
 	background: linear-gradient(

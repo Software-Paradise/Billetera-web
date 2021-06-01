@@ -44,7 +44,7 @@ function Functions() {
 		<section
 			name='FunctionsScreen'
 			className='FunctionsScreen min-h-screen'>
-			<h2 className='text-gray-900 text-4xl font-light'>
+			<h2 className='absolute left-11 top-11 text-gray-900 text-4xl font-light'>
 				<Title
 					title={functionsScreen.title}
 					highlight={['AlyPay']}
@@ -52,7 +52,7 @@ function Functions() {
 				/>
 			</h2>
 			<CardDisplayer
-				className='hidden md:flex bg-gray-500'
+				className='bg-gray-500'
 				cardContents={cardContents}
 			/>
 		</section>
