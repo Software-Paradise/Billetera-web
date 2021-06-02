@@ -9,6 +9,12 @@
 	background-size: cover;
 	background-position: center;
 }
+@media (min-width: 1024px) {
+	.TopScreen .BottomDiv {
+		background-size: cover;
+		background-position: center;
+	}
+}
 
 /* styles for the title */
 .BottomDiv h1 {

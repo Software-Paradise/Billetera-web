@@ -16,19 +16,19 @@ const Exhibitor = ({
 }) => {
 	const rkey = randomKey()
 	return (
-		<div className='Exhibitor mx-16'>
+		<div className='Exhibitor mx-4 xl:mx-16'>
 			<div
-				className={`ImagesExhibitor flex justify-between h-32 p-4 ${twImagesExhibitor}`}>
+				className={`ImagesExhibitor flex justify-between xl:h-32 p-4 ${twImagesExhibitor}`}>
 				{elements.map(({ image, title }, index) => (
 					<img
 						alt={title}
 						src={image}
 						key={`${rkey}_${index}`}
-						className='h-24 w-24'
+						className='h-16 w-16 xl:h-24 xl:w-24'
 					/>
 				))}
 			</div>
-			<div className='TitlesExhibitor flex justify-between pt-1 px-4'>
+			<div className='TitlesExhibitor flex justify-between pt-1 xl:px-4'>
 				{elements.map(({ title }) => (
 					<p
 						className={`w-24 text-center ${twTitles}`}

@@ -25,14 +25,14 @@ function Currency() {
 	]
 	return (
 		<section name='CurrencyScreen' className='CurrencyScreen min-h-screen'>
-			<article>
-				<h2 className='text-gray-200 text-4xl absolute top-11 left-11'>
-					<Title
-						title={currencyScreen.title}
-						highlight={['AlyPay']}
-						highlightStyle='font-bold'
-					/>
-				</h2>
+			<h2 className='text-gray-200 text-4xl absolute top-11 left-11'>
+				<Title
+					title={currencyScreen.title}
+					highlight={['AlyPay']}
+					highlightStyle='font-bold'
+				/>
+			</h2>
+			<article className='flex flex-col relative justify-center items-center'>
 				<div className='hidden md:grid gap-8 px-11 absolute'>
 					<div className='flex items-center bg-gray-900 border-4 border-yellow-400'>
 						<img alt='Alycoin' src={ALY} className='h-24 p-2' />
@@ -55,16 +55,16 @@ function Currency() {
 					</p>
 				</div>
 			</article>
-			<article>
-				<h2 className='hidden md:block text-gray-200 text-4xl pt-14 px-11 mx-16 text-center flex-1'>
+			<article className='flex flex-col'>
+				<h2 className='hidden xl:block text-gray-200 text-4xl pt-14 px-11 mx-16 text-center flex-1'>
 					<Title
 						title={currencyScreen.cryptoTitle.text}
 						highlight={currencyScreen.cryptoTitle.highlight}
 						highlightStyle='font-bold text-yellow-400'
-						className='inline-block w-96'
+						className='inline-block'
 					/>
 				</h2>
-				<div className='hidden md:block flex-1 pb-11'>
+				<div className='flex-1 pb-11'>
 					<Exhibitor
 						elements={elementsTop}
 						twTitles='text-yellow-400 text-xl'

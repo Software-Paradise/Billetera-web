@@ -98,7 +98,7 @@ input[type='password']::-ms-clear {
 
 	/* Styles for the currency screen */
 	.CurrencyScreen {
-		@apply flex;
+		@apply flex relative flex-col-reverse xl:flex-row;
 	}
 
 	/* Custom styles for the currency screen */
