@@ -24,14 +24,14 @@ const Exhibitor = ({
 						alt={title}
 						src={image}
 						key={`${rkey}_${index}`}
-						className='h-16 w-16 xl:h-24 xl:w-24'
+						className='h-16 w-16 md:h-32 md:w-32 xl:h-24 xl:w-24'
 					/>
 				))}
 			</div>
-			<div className='TitlesExhibitor flex justify-between pt-1 xl:px-4'>
+			<div className='TitlesExhibitor flex justify-between pt-1 md:px-4 xl:px-4'>
 				{elements.map(({ title }) => (
 					<p
-						className={`w-24 text-center ${twTitles}`}
+						className={`w-24 md:w-32 xl:w-24 text-center ${twTitles}`}
 						key={`${rkey}_${title}`}>
 						{title}
 					</p>
