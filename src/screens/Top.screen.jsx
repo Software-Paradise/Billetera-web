@@ -20,7 +20,7 @@ function Top() {
 		<div className='TopScreen'>
 			<TopLayout>
 				<div className='BottomDiv relative items-center flex-grow flex flex-col justify-center'>
-					<SelectLanguage className='absolute top-2' zoom={0.9} />
+					<SelectLanguage className='absolute top-1' zoom={0.9} />
 					<h1 className='font-light text-gray-200 text-3xl md:text-6xl text-center py-16 mt-16 mb-8'>
 						<Title
 							title={topScreen.title.text}

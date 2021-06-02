@@ -8,6 +8,10 @@
 		url('/src/assets/images/tablet.jpg');
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
+
+	/* height */
+	min-height: max-content;
 }
 @media (min-width: 1280px) {
 	.CurrencyScreen {
@@ -28,5 +32,5 @@
 
 /* styles of alycoin text */
 .CurrencyScreen article:first-of-type div div {
-	border-radius: 4rem;
+	border-radius: 5rem;
 }

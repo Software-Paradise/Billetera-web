@@ -24,7 +24,9 @@ function Currency() {
 		{ image: DOGE, title: 'Dogecoin' },
 	]
 	return (
-		<section name='CurrencyScreen' className='CurrencyScreen min-h-screen'>
+		<section
+			name='CurrencyScreen'
+			className='CurrencyScreen xl:min-h-screen'>
 			<h2 className='text-gray-200 text-4xl absolute top-11 left-11'>
 				<Title
 					title={currencyScreen.title}
@@ -32,19 +34,25 @@ function Currency() {
 					highlightStyle='font-bold'
 				/>
 			</h2>
-			<article className='flex flex-col relative justify-center items-center'>
-				<div className='hidden md:grid gap-8 px-11 absolute'>
+			<article style={{minHeight: '70vh'}} className='flex flex-col relative justify-center items-center xl:min-h-screen'>
+				<div className='grid gap-8 px-2 xl:px-11 absolute'>
 					<div className='flex items-center bg-gray-900 border-4 border-yellow-400'>
-						<img alt='Alycoin' src={ALY} className='h-24 p-2' />
-						<p className='text-yellow-400 text-4xl pl-4 font-bold'>
-							Alycoin
-						</p>
-						<span className='text-yellow-400 text-xl font-light px-4'>
-							|{' '}
-						</span>
-						<p className='text-gray-200 text-xl font-light'>
-							{currencyScreen.badge}
-						</p>
+						<img
+							alt='Alycoin'
+							src={ALY}
+							className='h-32 xl:h-24 p-2'
+						/>
+						<div className='grid h-32 py-4 xl:p-0 xl:flex text-center'>
+							<p className='text-yellow-400 text-4xl xl:pl-4 font-bold'>
+								Alycoin
+							</p>
+							<span className='hidden xl:block text-yellow-400 text-xl font-light px-4'>
+								|{' '}
+							</span>
+							<p className='text-gray-200 text-xl font-light'>
+								{currencyScreen.badge}
+							</p>
+						</div>
 					</div>
 					<p className='Info p-7 text-gray-200 font-normal rounded-lg'>
 						<Title
@@ -55,8 +63,10 @@ function Currency() {
 					</p>
 				</div>
 			</article>
-			<article className='flex flex-col'>
-				<h2 className='hidden xl:block text-gray-200 text-4xl pt-14 px-11 mx-16 text-center flex-1'>
+			<article className='flex flex-col min-h-screen'>
+				<h2
+					className='block text-gray-200 text-2xl md:text-3xl xl:text-4xl 
+				pt-40 xl:pt-14 px-4 xl:px-11 xl:mx-16 text-center flex-1'>
 					<Title
 						title={currencyScreen.cryptoTitle.text}
 						highlight={currencyScreen.cryptoTitle.highlight}
@@ -64,7 +74,7 @@ function Currency() {
 						className='inline-block'
 					/>
 				</h2>
-				<div className='flex-1 pb-11'>
+				<div className='xl:flex-1 pb-11'>
 					<Exhibitor
 						elements={elementsTop}
 						twTitles='text-yellow-400 text-xl'

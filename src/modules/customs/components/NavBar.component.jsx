@@ -23,7 +23,7 @@ const NavBar = ({ links = [] }) => {
 				alt='AlyPay - El futuro ¡Ahora!'
 				className='w-64 mx-auto md:mx-4'
 			/>
-			<div className='hidden mr-16 justify-end items-center overflow-x-scroll'>
+			<div className='hidden mr-16 justify-end items-center overflow-x-auto'>
 				{links.map(({ label, to }, index) => (
 					<NavLink
 						label={label}
