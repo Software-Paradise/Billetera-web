@@ -30,6 +30,21 @@
 	}
 }
 
+/* heigth of the article of alycoin */
+.CurrencyScreen article:first-of-type {
+	min-height: 80vh;
+}
+@media (min-width: 0px) and (orientation: landscape) {
+	.CurrencyScreen article:first-of-type {
+		min-height: 110vh;
+	}
+}
+@media (min-width: 1280px) {
+	.CurrencyScreen article:first-of-type {
+		min-height: 100vh;
+	}
+}
+
 /* styles of alycoin text */
 .CurrencyScreen article:first-of-type div div {
 	border-radius: 5rem;

@@ -24,7 +24,7 @@ const Exhibitor = ({
 						alt={title}
 						src={image}
 						key={`${rkey}_${index}`}
-						className='h-16 w-16 md:h-32 md:w-32 xl:h-24 xl:w-24'
+						className='h-16 w-16 md:h-32 md:w-32 lg:h-36 lg:w-36 xl:h-24 xl:w-24'
 					/>
 				))}
 			</div>
