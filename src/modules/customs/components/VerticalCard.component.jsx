@@ -32,29 +32,44 @@ const VerticalCard = ({
 
 	return (
 		<>
-			<div className={`VerticalCard relative ${className}`}>
-				<span className={`${twIcon}`}>{icon}</span>
-				<p className={`overflow-ellipsis max-w-full ${twContent}`}>
-					{content}
-				</p>
-				<button
-					style={{ outline: 'none' }}
-					className={`relative py-12 px-20 ${twButton}`}>
-					<FaArrowCircleRight />
-				</button>
-
+			<div className={`VerticalCard relative flex ${className}`}>
+				<span
+					className={`px-8 lg:px-0 py-24 lg:pb-12 lg:pt-20 ${twIcon}`}>
+					{icon}
+				</span>
+				<div
+					className='flex flex-col md:flex-row lg:flex-col 
+				flex-1 justify-center items-center text-center lg:block'>
+					<p className={`overflow-ellipsis max-w-full ${twContent}`}>
+						{content}
+					</p>
+					<button
+						style={{ outline: 'none' }}
+						className={`relative max-w-max self-center p-4 lg:py-12 lg:px-20 ${twButton}`}>
+						<FaArrowCircleRight />
+					</button>
+				</div>
 				{/* Hidden card to show when button clicked */}
 				<div
 					className={`HiddenCard bg-gray-800 ${hiddenState}`}
 					onClick={toggleHiddenState}>
-					<span
-						className='text-6xl text-yellow-400 pt-20 pb-3'
-						style={{ fill: '#facc15' }}>
-						{icon}
-					</span>
-					<p className={`${twContent}`}>{content}</p>
-					<div className='flex flex-grow items-center justify-center'>
-						<p className='text-gray-200 text-lg px-5'>
+					<div className='flex flex-col w-full justify-center items-center pt-4'>
+						<span
+							className='hidden lg:block text-6xl text-yellow-400 lg:pt-20 lg:pb-3'
+							style={{ fill: '#facc15' }}>
+							{icon}
+						</span>
+						<p className={`${twContent}`}>{content}</p>
+					</div>
+					<div className='flex flex-grow text-center items-center w-full justify-around'>
+						<span
+							className='block lg:hidden text-6xl text-yellow-400 px-4 lg:pt-20 lg:pb-3'
+							style={{ fill: '#facc15' }}>
+							{icon}
+						</span>
+						<p
+							className='text-gray-200 text-sm sm:text-lg 
+						text-right w-2/3 lg:w-auto lg:text-center px-5'>
 							{hiddenContent}
 						</p>
 					</div>
@@ -62,16 +77,9 @@ const VerticalCard = ({
 			</div>
 
 			<div
-				className='Separator'
-				style={{
-					background: '#facc15',
-					width: '5px',
-					height: '10rem',
-					position: 'relative',
-					top: '5rem',
-					minWidth: '5px',
-					zIndex: '1',
-				}}></div>
+				className='Separator relative place-self-center lg:place-self-auto 
+			lg:top-20 z-10 bg-yellow-400 w-60 h-1 lg:w-1 lg:h-40'
+			/>
 		</>
 	)
 }

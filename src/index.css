@@ -61,12 +61,17 @@ input[type='password']::-ms-clear {
 	/* Custom styles for info screen */
 	@import url('./styles/screens/InfoScreen.style');
 
+	/* Styles for the Info screen */
+	.InfoScreen {
+		@apply flex flex-col-reverse md:flex-row;
+	}
+
 	/* Custom styles for the Button component */
 	@import url('./styles/components/Button.style');
 
 	/* Styles for the functions screen */
 	.FunctionsScreen {
-		@apply bg-gray-400;
+		@apply bg-gray-400 relative pt-40 pb-4 lg:p-0;
 	}
 
 	/* Custom styles for the title component */
@@ -74,7 +79,7 @@ input[type='password']::-ms-clear {
 
 	/* Card displayer component styles */
 	.CardDisplayer {
-		@apply flex shadow-xl rounded-md overflow-visible;
+		@apply flex flex-col lg:flex-row shadow-xl rounded-md overflow-visible;
 	}
 
 	/* Custom styles for the CardDisplayer component */
@@ -82,7 +87,7 @@ input[type='password']::-ms-clear {
 
 	/* Card component styles */
 	.VerticalCard {
-		@apply flex-1 min-w-max flex flex-col justify-center items-center;
+		@apply flex-1 min-w-max flex flex-row lg:flex-col justify-center items-center;
 	}
 	.HiddenCard {
 		@apply text-center items-center flex flex-col justify-start cursor-pointer;
@@ -93,7 +98,7 @@ input[type='password']::-ms-clear {
 
 	/* Styles for the currency screen */
 	.CurrencyScreen {
-		@apply flex;
+		@apply flex relative flex-col-reverse justify-end xl:justify-center xl:flex-row;
 	}
 
 	/* Custom styles for the currency screen */
@@ -104,7 +109,7 @@ input[type='password']::-ms-clear {
 
 	/* Styles for perks screen */
 	.PerksScreen {
-		@apply flex flex-col p-11 bg-gray-500;
+		@apply flex flex-col relative px-1 xl:px-11 pb-5 xl:pb-11 pt-28 bg-gray-500;
 	}
 
 	/* Custom styles for perks screen */

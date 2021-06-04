@@ -19,7 +19,10 @@ export const en = {
 	},
 	/* TopScreen */
 	topScreen: {
-		title: 'THE EASIEST, FASTEST AND SAFEST WAY OF DOING BUSINESS WITH CRYPTOCURRENCIES',
+		title: {
+			text: 'THE EASIEST, FASTEST AND SAFEST WAY OF DOING BUSINESS WITH CRYPTOCURRENCIES.',
+			highlight: ['EASIEST', 'FASTEST', 'SAFEST', 'CRYPTOCURRENCIES'],
+		},
 		downloadButton: 'Download it now',
 		bottomText: {
 			text: 'For IOS and web users, click ',
@@ -36,6 +39,7 @@ export const en = {
 			title: 'What is AlyPay?',
 			content:
 				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all the associated commerces worldwide.",
+			highlight: ["AlySystem's"],
 		},
 	},
 	/* FunctionsScreen */
@@ -74,7 +78,7 @@ export const en = {
 		badge: 'know our own cryptocurrency',
 		info: {
 			text: 'Fee cryptocurrency based on Ethereum, created to make transactions at a low cost. Managed and powered by AlySystem.',
-			highlight: ['cryptocurrency', 'AlySystem.'],
+			highlight: ['cryptocurrency', 'AlySystem'],
 		},
 		cryptoTitle: {
 			text: 'WE WORK WITH THE MAIN CRYPTOCURRENCIES IN THE MARKET',

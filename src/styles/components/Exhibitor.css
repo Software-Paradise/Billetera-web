@@ -4,7 +4,8 @@
 		rgba(255, 255, 255, 0.3) 100%,
 		rgba(246, 240, 240, 0) 100%
 	);
-	border-radius: 4rem;
+	border-radius: 5rem;
+	height: fit-content;
 }
 
 .Exhibitor {

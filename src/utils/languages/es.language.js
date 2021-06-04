@@ -19,13 +19,16 @@ export const es = {
 	},
 	/* TopScreen */
 	topScreen: {
-		title: 'LA MANERA MÁS FÁCIL, RÁPIDA Y SEGURA DE HACER NEGOCIOS CON CRIPTOMONEDAS.',
+		title: {
+			text: 'LA MANERA MÁS FÁCIL, RÁPIDA Y SEGURA DE HACER NEGOCIOS CON CRIPTOMONEDAS.',
+			highlight: ['FÁCIL', 'RÁPIDA', 'SEGURA', 'CRIPTOMONEDAS'],
+		},
 		downloadButton: 'Descárgala ya',
 		bottomText: {
 			text: 'Para usuarios ios y web ingresar ',
 			linkText: 'aquí',
 		},
-		languageSelect: 'Seleccione un idioma'
+		languageSelect: 'Seleccione un idioma',
 	},
 	/* InfoScreen */
 	infoScreen: {
@@ -36,6 +39,7 @@ export const es = {
 			title: '¿Qué es AlyPay?',
 			content:
 				'Es el sistema de AlySystem para usuarios que le brinda la oportunidad de hacer uso de sus criptomonedas, utilizándolas como medio de pago en los distintos comercios afiliados a nivel mundial.',
+			highlight: ['AlySystem'],
 		},
 	},
 	/* FunctionsScreen */
@@ -44,7 +48,7 @@ export const es = {
 		cards: {
 			deposit: {
 				title: 'Recargas',
-				content: 'Ingreso externode fondos hacia su wallet Alypay.',
+				content: 'Ingreso externo de fondos hacia su wallet Alypay.',
 			},
 			buy: {
 				title: 'Compra Alycoin',
@@ -64,7 +68,7 @@ export const es = {
 			withdraw: {
 				title: 'Retirar',
 				content:
-					'Movimiento de fondosde su wallet Alypay a una de terceros.',
+					'Movimiento de fondos de su wallet Alypay a una de terceros.',
 			},
 		},
 	},
@@ -74,7 +78,7 @@ export const es = {
 		badge: 'conoce nuestra moneda',
 		info: {
 			text: 'Criptomoneda fee basada en ethereum creada para efectuar transacciones a un bajo costo auspiciada y gestionada por AlySystem.',
-			highlight: ['Criptomoneda', 'AlySystem.'],
+			highlight: ['Criptomoneda', 'AlySystem'],
 		},
 		cryptoTitle: {
 			text: 'TRABAJAMOS CON LAS PRINCIPALES CRIPTOMONEDAS DEL MERCADO',

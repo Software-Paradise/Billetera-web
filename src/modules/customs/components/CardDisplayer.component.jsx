@@ -30,7 +30,7 @@ const CardDisplayer = ({
 					content={text}
 					hiddenContent={hidden}
 					key={`${rkey}_${index}`}
-					twIcon='text-6xl pb-12 pt-20'
+					twIcon='text-6xl'
 					twContent='text-gray-100 text-xl font-bold'
 					twButton='text-gray-300 text-3xl'
 				/>

@@ -1,12 +1,5 @@
-/* styles for title in the functions screen */
-.FunctionsScreen .Title {
-	position: relative;
-	top: 8vh;
-	left: 4vw;
-}
-
-/* styles for titles in the currency screen */
-.CurrencyScreen article:last-of-type .Title {
+/* styles for the title of cryptocurrencies */
+.CurrencyScreen article:last-of-type h2 {
 	background: linear-gradient(
 		180deg,
 		rgba(255, 255, 255, 0.25) 0%,
@@ -14,25 +7,27 @@
 	);
 }
 
-.CurrencyScreen article:first-of-type div .Title {
-	font-size: 2rem;
+/* styles for the info text below the badge of alycoin */
+.CurrencyScreen article:first-of-type .Info {
+	font-size: 1.3rem;
 	background: linear-gradient(
 		180deg,
 		rgba(255, 255, 255, 0.3) 100%,
 		rgba(246, 240, 240, 0) 100%
 	);
 }
-
-/* @media (min-width: 640px) {
-	.CurrencyScreen .Title:last-of-type {
-		line-height: 3rem;
+@media (min-width: 768px) {
+	.CurrencyScreen article:first-of-type .Info {
+		font-size: 2rem;
 	}
 }
-
-@media (min-width: 1280px) {
-	.CurrencyScreen .Title:last-of-type {
-		width: 40rem;
+@media (min-width: 1024px) {
+	.CurrencyScreen article:first-of-type .Info {
 		font-size: 3rem;
-		line-height: 4rem;
 	}
-} */
+}
+@media (min-width: 1280px) {
+	.CurrencyScreen article:first-of-type .Info {
+		font-size: 2rem;
+	}
+}

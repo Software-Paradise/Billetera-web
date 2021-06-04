@@ -1,3 +1,25 @@
+/* height of the screen */
+.PerksScreen {
+	height: 160vh;
+}
+@media (min-width: 768px) {
+	.PerksScreen {
+		height: 100vh;
+	}
+}
+@media (min-width: 1280px) {
+	.PerksScreen {
+		height: 100vh;
+	}
+}
+/* Height of the screen in landscape in cellphones*/
+@media (max-width: 1023px) and (orientation: landscape) {
+	.PerksScreen {
+		height: 200vh;
+	}
+}
+
+/* styles for the first panel */
 .PerksScreen div div:first-of-type {
 	background: linear-gradient(
 			90deg,
@@ -5,9 +27,23 @@
 			rgba(0, 0, 0, 0.8) 0%
 		),
 		url('/src/assets/images/Handshake.jpg');
-	background-size: 150%;
-	background-position: -5rem 0rem;
+	background-size: cover;
+	background-position: center;
 	box-shadow: -15px -1px 35px -13px rgba(0, 0, 0, 0.75) inset;
 	-webkit-box-shadow: -15px -1px 35px -13px rgba(0, 0, 0, 0.75) inset;
 	-moz-box-shadow: -15px -1px 35px -13px rgba(0, 0, 0, 0.75) inset;
+	width: 100%;
+	height: 51%;
+}
+@media (min-width: 768px) {
+	.PerksScreen div div:first-of-type {
+		width: 100%;
+		height: 51%;
+	}
+}
+@media (min-width: 1280px) {
+	.PerksScreen div div:first-of-type {
+		width: 51%;
+		height: 100%;
+	}
 }

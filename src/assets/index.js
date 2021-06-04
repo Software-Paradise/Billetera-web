@@ -17,6 +17,7 @@ import XRP from './svg/XRP.svg'
 
 //landing page images
 import cellphones from './images/Cellphones.png'
+import TopBackground from './images/TopBackground.jpg'
 
 export {
 	background,
@@ -34,4 +35,5 @@ export {
 	LTC,
 	USDT,
 	XRP,
+	TopBackground,
 }

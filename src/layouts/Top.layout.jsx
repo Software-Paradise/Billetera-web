@@ -11,8 +11,7 @@ import { selectLanguage } from 'utils/language.util'
  * @returns {React.FunctionComponent}
  */
 function Top({ children }) {
-	const { navBar, code } = useSelector(selectLanguage)
-	console.log(code)
+	const { navBar } = useSelector(selectLanguage)
 
 	const links = [
 		{ label: navBar.navLinks.alypay, to: 'InfoScreen' },

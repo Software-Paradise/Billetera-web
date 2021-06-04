@@ -5,24 +5,54 @@
 			rgba(0, 0, 0, 0) 0%,
 			rgba(0, 0, 0, 0.8) 0%
 		),
-		url('/src/assets/images/tablet.png');
-	background-size: 220vh;
-	background-position: 2rem -4rem;
+		url('/src/assets/images/tablet.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	/* height */
+	min-height: max-content;
+}
+@media (min-width: 1280px) {
+	.CurrencyScreen {
+		background-size: 220vh;
+		background-position: 2rem -4rem;
+	}
 }
 
 /* styles of left and right sides */
 .CurrencyScreen article {
-	width: 50vw;
-	display: flex;
-	flex-direction: column;
+	width: 100vw;
+}
+@media (min-width: 1280) {
+	.CurrencyScreen article {
+		width: 50vw;
+	}
 }
 
+/* heigth of the article of alycoin */
 .CurrencyScreen article:first-of-type {
-	position: relative;
-	justify-content: center;
-	align-items: center;
+	min-height: 80vh;
+}
+@media (min-width: 0px) and (orientation: landscape) {
+	.CurrencyScreen article:first-of-type {
+		min-height: 110vh;
+	}
+}
+@media (min-width: 1280px) {
+	.CurrencyScreen article:first-of-type {
+		min-height: 100vh;
+	}
 }
 
+/* styles of alycoin badge */
 .CurrencyScreen article:first-of-type div div {
-	border-radius: 4rem;
+	border-radius: 5rem;
+}
+@media (min-width: 0px) and (orientation: landscape) {
+	.CurrencyScreen article:first-of-type div div div {
+		display: flex;
+		flex: 1;
+		justify-content: space-evenly;
+	}
 }

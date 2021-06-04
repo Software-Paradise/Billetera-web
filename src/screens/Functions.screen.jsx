@@ -44,11 +44,13 @@ function Functions() {
 		<section
 			name='FunctionsScreen'
 			className='FunctionsScreen min-h-screen'>
-			<Title
-				title={functionsScreen.title}
-				highlight={['AlyPay']}
-				highlightStyle='font-bold'
-			/>
+			<h2 className='absolute left-11 top-11 text-gray-900 text-4xl font-light'>
+				<Title
+					title={functionsScreen.title}
+					highlight={['AlyPay']}
+					highlightStyle='font-bold'
+				/>
+			</h2>
 			<CardDisplayer
 				className='bg-gray-500'
 				cardContents={cardContents}
