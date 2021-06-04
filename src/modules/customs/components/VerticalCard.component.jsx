@@ -55,7 +55,7 @@ const VerticalCard = ({
 					onClick={toggleHiddenState}>
 					<div className='flex flex-col w-full justify-center items-center pt-4'>
 						<span
-							className='hidden lg:block text-6xl text-yellow-400 pr-4 lg:pt-20 lg:pb-3'
+							className='hidden lg:block text-6xl text-yellow-400 lg:pt-20 lg:pb-3'
 							style={{ fill: '#facc15' }}>
 							{icon}
 						</span>

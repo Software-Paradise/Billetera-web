@@ -39,7 +39,7 @@ export const es = {
 			title: '¿Qué es AlyPay?',
 			content:
 				'Es el sistema de AlySystem para usuarios que le brinda la oportunidad de hacer uso de sus criptomonedas, utilizándolas como medio de pago en los distintos comercios afiliados a nivel mundial.',
-			highlight: ["AlySystem"],
+			highlight: ['AlySystem'],
 		},
 	},
 	/* FunctionsScreen */
@@ -68,7 +68,7 @@ export const es = {
 			withdraw: {
 				title: 'Retirar',
 				content:
-					'Movimiento de fondosde su wallet Alypay a una de terceros.',
+					'Movimiento de fondos de su wallet Alypay a una de terceros.',
 			},
 		},
 	},

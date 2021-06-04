@@ -31,7 +31,7 @@ const Exhibitor = ({
 			<div className='TitlesExhibitor flex justify-between pt-1 md:px-4 xl:px-4'>
 				{elements.map(({ title }) => (
 					<p
-						className={`w-24 md:w-32 xl:w-24 text-center ${twTitles}`}
+						className={`w-24 md:w-32 xl:w-28 text-center ${twTitles}`}
 						key={`${rkey}_${title}`}>
 						{title}
 					</p>

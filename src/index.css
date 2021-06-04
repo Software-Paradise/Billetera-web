@@ -109,7 +109,7 @@ input[type='password']::-ms-clear {
 
 	/* Styles for perks screen */
 	.PerksScreen {
-		@apply flex flex-col p-11 bg-gray-500;
+		@apply flex flex-col relative px-1 xl:px-11 pb-5 xl:pb-11 pt-28 bg-gray-500;
 	}
 
 	/* Custom styles for perks screen */

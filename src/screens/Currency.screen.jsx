@@ -43,7 +43,7 @@ function Currency() {
 							className='h-32 xl:h-24 p-2'
 						/>
 						<div className='grid h-32 xl:h-auto py-4 xl:p-0 md:flex md:flex-1 items-center text-center'>
-							<p className='text-yellow-400 text-4xl md:text-5xl xl:pl-4 font-bold'>
+							<p className='text-yellow-400 text-4xl md:text-5xl font-bold'>
 								Alycoin
 							</p>
 							<span className='hidden md:block text-yellow-400 text-xl font-light px-1'>
