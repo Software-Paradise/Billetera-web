@@ -114,4 +114,12 @@ input[type='password']::-ms-clear {
 
 	/* Custom styles for perks screen */
 	@import url('./styles/screens/PerksScreen.style');
+
+	/* Styles for ecommerce screen */
+	.EcommerceScreen {
+		@apply flex;
+	}
+
+	/* Custom styles for ecommerce screen */
+	@import url('./styles/screens/EcommerceScreen.style');
 }
