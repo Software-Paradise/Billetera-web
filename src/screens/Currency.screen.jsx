@@ -46,7 +46,7 @@ function Currency() {
 							<p className='text-yellow-400 text-4xl md:text-5xl xl:pl-4 font-bold'>
 								Alycoin
 							</p>
-							<span className='hidden md:block text-yellow-400 text-xl font-light px-4'>
+							<span className='hidden md:block text-yellow-400 text-xl font-light px-1'>
 								|{' '}
 							</span>
 							<p className='text-gray-200 text-xl md:text-3xl xl:text-2xl font-light'>
