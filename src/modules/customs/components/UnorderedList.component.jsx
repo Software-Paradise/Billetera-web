@@ -5,7 +5,8 @@ import { randomKey } from 'utils'
 
 /**
  *
- * @param
+ * @param {String} className - tailwind styles for the ul tag
+ * @param {Array} items - array of srings to show individually as unordered items
  * @returns {React.FunctionComponent}
  */
 const UnorderedList = ({
@@ -15,10 +16,10 @@ const UnorderedList = ({
 	const rkey = randomKey()
 
 	return (
-		<ul className={className}>
+		<ul className={`UnorderedList ${className}`}>
 			{items.map((item, index) => (
 				<li
-					className='leading-loose flex items-center'
+					className='UnorderedItem leading-loose flex items-center'
 					key={`${rkey}_${index}`}>
 					<div
 						style={{

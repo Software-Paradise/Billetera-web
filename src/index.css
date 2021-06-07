@@ -122,4 +122,7 @@ input[type='password']::-ms-clear {
 
 	/* Custom styles for ecommerce screen */
 	@import url('./styles/screens/EcommerceScreen.style');
+
+	/* Custom styles for the PhoneCarosel component */
+	@import url('./styles/components/PhoneCarousel.style');
 }

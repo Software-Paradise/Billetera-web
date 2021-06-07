@@ -1,7 +1,7 @@
 //react import
 import React from 'react'
 //component imports
-import { Title, UnorderedList } from 'modules/customs'
+import { Title, UnorderedList, PhoneCarousel } from 'modules/customs'
 //language imports
 import { useSelector } from 'react-redux'
 import { selectLanguage } from 'utils/language.util'
@@ -32,8 +32,12 @@ function Ecommerce() {
 				/>
 			</article>
 			<article
-				className='EcommerceScreen__RigthSide flex-1 relative flex flex-col justify-center
+				className='EcommerceScreen__RigthSide flex-1 relative flex flex-col justify-center items-center
 			 bg-gray-200'>
+				<PhoneCarousel
+					className='h-3/4 items-center'
+					style={{ width: '85%' }}
+				/>
 				<h2 className='text-gray-800 text-3xl text-center'>
 					<Title
 						title={ecommerceScreen.support}

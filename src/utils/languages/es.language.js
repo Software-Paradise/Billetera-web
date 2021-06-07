@@ -109,7 +109,7 @@ export const es = {
 		bottomContent: {
 			question: '¿Cómo ser parte de AlyPay E-Commerce?',
 			sections: [
-				'Descarga nuestra App (PLayStore).',
+				'Descarga nuestra App (PlayStore).',
 				'Completa formulario de registro de empresa.',
 				'Revisa tu correo de activación.',
 				'Empieza a obtener los beneficios de AlyPay.',

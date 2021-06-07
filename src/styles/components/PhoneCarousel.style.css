@@ -1,0 +1,40 @@
+.CellImage {
+	width: 50%;
+	height: 100%;
+	background-image: url('../../assets/images/telefono/phone1.png');
+	background-size: cover;
+	background-position: center;
+	animation: switchCellImage 3s infinite;
+}
+
+@keyframes switchCellImage {
+	0% {
+		background-image: url('../../assets/images/telefono/phone1.png');
+	}
+	100% {
+		background-image: url('../../assets/images/telefono/phone1.png');
+	}
+}
+
+.Image {
+	width: 50%;
+	height: 80%;
+	background-image: url('../../assets/images/telefono/imagen1.png');
+	background-size: cover;
+	background-position: center;
+	animation: switchImage 3s infinite;
+}
+
+/* @keyframes switchImage {
+	0% {
+		background-image: url('../assets/1.png');
+	}
+	5%,
+	50% {
+		background-image: url('../assets/2.png');
+	}
+	55%,
+	100% {
+		background-image: url('../assets/1.png');
+	}
+} */
