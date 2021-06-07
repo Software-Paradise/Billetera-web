@@ -9,6 +9,7 @@ import SelectLanguage from './components/SelectLanguage.component'
 import AppLoader from './components/AppLoader.component'
 import AppStartup from './components/AppStartup.component'
 import Select from './components/Select.component'
+import UnorderedList from './components/UnorderedList.component'
 
 export {
 	NavBar,
@@ -22,4 +23,5 @@ export {
 	AppLoader,
 	AppStartup,
 	Select,
+	UnorderedList,
 }

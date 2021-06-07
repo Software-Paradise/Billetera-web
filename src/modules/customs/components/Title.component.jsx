@@ -29,7 +29,9 @@ const Title = ({
 
 		/* check if there is some non alpha numeric character inside that word, if there is one or more then 
 		return the first character before the highlighted word and the rest after */
-		const nonAlphaNumericArray = [...word.replace(/[a-z0-9áéíóú'+]+/gi, '')]
+		const nonAlphaNumericArray = [
+			...word.replace(/[a-z0-9áéíóú'+/]+/gi, '').replace('-', ''),
+		]
 		const nonAlphaNumericIndexes = nonAlphaNumericArray.map(
 			nonAlphaNumeric => word.indexOf(nonAlphaNumeric)
 		)
