@@ -50,7 +50,7 @@ function Ecommerce() {
 				<PhoneCarousel
 					className='items-center'
 					leftImages={[phone1, phone2, phone3, phone4, phone5]}
-					rigthImages={[imagen2, imagen3, imagen4, imagen5, imagen1]}
+					rightImages={[imagen2, imagen3, imagen4, imagen5, imagen1]}
 				/>
 				<h2 className='text-gray-800 text-3xl text-center'>
 					<Title

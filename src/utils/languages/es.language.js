@@ -119,9 +119,14 @@ export const es = {
 	},
 	/* AffiliatesScreen */
 	affiliatesScreen: {
-		title: 'Comercios afiliados',
-		content:
-			'Trabajamos de la mano con los mejores establecimientos a nivel internacional. Todo pensado para darle usabilidad a tus criptomonedas.',
+		title: {
+			text: 'Comercios afiliados',
+			highlight: ['afiliados'],
+		},
+		content: {
+			text: 'Trabajamos de la mano con los mejores establecimientos a nivel internacional. Todo pensado para darle usabilidad a tus criptomonedas.',
+			highlight: ['criptomonedas'],
+		},
 	},
 	/* Footer */
 	footer: {

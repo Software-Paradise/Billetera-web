@@ -11,6 +11,7 @@ import AppStartup from './components/AppStartup.component'
 import Select from './components/Select.component'
 import UnorderedList from './components/UnorderedList.component'
 import PhoneCarousel from './components/PhoneCarousel.component'
+import ImagePuzzle from './components/ImagePuzzle.component'
 
 export {
 	NavBar,
@@ -26,4 +27,5 @@ export {
 	Select,
 	UnorderedList,
 	PhoneCarousel,
+	ImagePuzzle,
 }

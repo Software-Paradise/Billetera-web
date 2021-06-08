@@ -125,4 +125,12 @@ input[type='password']::-ms-clear {
 
 	/* Custom styles for the PhoneCarosel component */
 	@import url('./styles/components/PhoneCarousel.style');
+
+	/* Custom styles for the affiliates screen */
+	@import url('./styles/screens/AffiliatesScreen.style');
+
+	/* Styles for affiliates screen */
+	.AffiliatesScreen {
+		@apply flex flex-col md:flex-row;
+	}
 }

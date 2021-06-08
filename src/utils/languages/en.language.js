@@ -119,9 +119,14 @@ export const en = {
 	},
 	/* AffiliatesScreen */
 	affiliatesScreen: {
-		title: 'Associated Commerces',
-		content:
-			'We work hand in hand with the best business worldwide. All for you to make use of your cryptocurrencies.',
+		title: {
+			text: 'Associated Commerces',
+			highlight: ['Associated'],
+		},
+		content: {
+			text: 'We work hand in hand with the best business worldwide. All for you to make use of your cryptocurrencies.',
+			highlight: ['cryptocurrencies'],
+		},
 	},
 	/* Footer */
 	footer: {
