@@ -107,13 +107,13 @@ export const es = {
 		content:
 			'Es el sistema de AlySystem para comercios que le brinda la oportunidad de ofrecer sus productos y servicios, recibiendo criptomonedas como forma de pago a nivel mundial.',
 		bottomContent: {
-			question: '¿Cómo der parte de AlyPay E-Commerce?',
-			sections: {
-				1: 'Descarga nuestra App (PLayStore).',
-				2: 'Completa formulario de registro de empresa.',
-				3: 'Revisa tu correo de activación.',
-				4: 'Empieza a obtener los beneficios de AlyPay.',
-			},
+			question: '¿Cómo ser parte de AlyPay E-Commerce?',
+			sections: [
+				'Descarga nuestra App (PlayStore).',
+				'Completa formulario de registro de empresa.',
+				'Revisa tu correo de activación.',
+				'Empieza a obtener los beneficios de AlyPay.',
+			],
 		},
 		support: 'Soporte en línea 24/7',
 	},

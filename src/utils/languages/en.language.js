@@ -108,12 +108,12 @@ export const en = {
 			'It is the AlySystem solution for business that gives you the opportunity to offer your products and services, receiving cryptocurrencies as a form of payment worldwide.',
 		bottomContent: {
 			question: 'How to be part of AlyPay E-Commerce?',
-			sections: {
-				1: 'Download our App (PLayStore) or visit our Website.',
-				2: 'Complete the registry.',
-				3: 'Open the activation email.',
-				4: 'Star using the AlyPay benefits.',
-			},
+			sections: [
+				'Download our App (PLayStore) or visit our Website.',
+				'Complete the registry.',
+				'Open the activation email.',
+				'Star using the AlyPay benefits.',
+			],
 		},
 		support: '24/7 online support',
 	},

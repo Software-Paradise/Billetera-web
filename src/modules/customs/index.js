@@ -9,6 +9,8 @@ import SelectLanguage from './components/SelectLanguage.component'
 import AppLoader from './components/AppLoader.component'
 import AppStartup from './components/AppStartup.component'
 import Select from './components/Select.component'
+import UnorderedList from './components/UnorderedList.component'
+import PhoneCarousel from './components/PhoneCarousel.component'
 
 export {
 	NavBar,
@@ -22,4 +24,6 @@ export {
 	AppLoader,
 	AppStartup,
 	Select,
+	UnorderedList,
+	PhoneCarousel,
 }
