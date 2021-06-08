@@ -1,7 +1,5 @@
 //react import
 import React, { useEffect, useState } from 'react'
-//util imports
-import { randomKey } from 'utils'
 
 /**
  *
@@ -14,7 +12,6 @@ const PhoneCarousel = ({
 	rigthImages = [],
 }) => {
 	const [activeCounter, setActiveCounter] = useState(0)
-	const rkey = randomKey()
 
 	useEffect(() => {
 		setTimeout(
@@ -29,12 +26,14 @@ const PhoneCarousel = ({
 	}, [activeCounter, rigthImages.length])
 
 	return (
-		<div style={style} className={`PhoneCarousel flex ${className}`}>
+		<div
+			style={{ width: '85%', height: '75vh' }}
+			className={`PhoneCarousel flex ${className}`}>
 			<div className='CellImageContainer flex justify-center items-center relative overflow-hidden'>
 				{leftImages.map((image, index) => (
 					<img
 						alt={`cell_image_${index}`}
-						key={`${rkey}_cellImage${index}`}
+						key={`cellImage_${index}`}
 						src={image}
 						style={{ animation: 'none' }}
 						className={`CellImage absolute ${
@@ -47,7 +46,7 @@ const PhoneCarousel = ({
 				{rigthImages.map((image, index) => (
 					<img
 						alt={`image_${index}`}
-						key={`${rkey}_Image${index}`}
+						key={`Image_${index}`}
 						src={image}
 						className={`Image absolute ${
 							activeCounter === index ? 'active' : ''

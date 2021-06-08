@@ -117,7 +117,7 @@ input[type='password']::-ms-clear {
 
 	/* Styles for ecommerce screen */
 	.EcommerceScreen {
-		@apply flex;
+		@apply flex flex-col md:flex-row;
 	}
 
 	/* Custom styles for ecommerce screen */

@@ -25,8 +25,9 @@ const UnorderedList = ({
 						style={{
 							background:
 								'linear-gradient(90deg,rgba(250, 204, 21, 1) -100%,rgba(250, 204, 21, 0) 80%)',
+							minWidth: '2.5rem',
 						}}
-						className='w-10 h-6 mr-4 rounded-full'
+						className='h-6 mr-4 rounded-full'
 					/>
 					{item}
 				</li>
