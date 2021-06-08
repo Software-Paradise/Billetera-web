@@ -19,6 +19,18 @@ import XRP from './svg/XRP.svg'
 import cellphones from './images/Cellphones.png'
 import TopBackground from './images/TopBackground.jpg'
 
+//cellphone images
+import phone1 from './images/telefono/phone1.png'
+import phone2 from './images/telefono/phone2.png'
+import phone3 from './images/telefono/phone3.png'
+import phone4 from './images/telefono/phone4.png'
+import phone5 from './images/telefono/phone5.png'
+import imagen1 from './images/telefono/imagen1.png'
+import imagen2 from './images/telefono/imagen2.png'
+import imagen3 from './images/telefono/imagen3.png'
+import imagen4 from './images/telefono/imagen4.png'
+import imagen5 from './images/telefono/imagen5.png'
+
 export {
 	background,
 	logo,
@@ -36,4 +48,14 @@ export {
 	USDT,
 	XRP,
 	TopBackground,
+	phone1,
+	phone2,
+	phone3,
+	phone4,
+	phone5,
+	imagen1,
+	imagen2,
+	imagen3,
+	imagen4,
+	imagen5,
 }

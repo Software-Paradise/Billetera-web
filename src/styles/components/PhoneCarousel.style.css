@@ -1,40 +1,44 @@
-.CellImage {
+/* image on the left side */
+.CellImageContainer {
 	width: 50%;
 	height: 100%;
-	background-image: url('../../assets/images/telefono/phone1.png');
-	background-size: cover;
-	background-position: center;
-	animation: switchCellImage 3s infinite;
+}
+.CellImage {
+	opacity: 0;
+	transition: opacity 0.3s;
+	min-width: 300%;
 }
 
-@keyframes switchCellImage {
-	0% {
-		background-image: url('../../assets/images/telefono/phone1.png');
-	}
-	100% {
-		background-image: url('../../assets/images/telefono/phone1.png');
-	}
-}
-
-.Image {
+/* image on the right side */
+.ImageContainer {
 	width: 50%;
 	height: 80%;
-	background-image: url('../../assets/images/telefono/imagen1.png');
-	background-size: cover;
-	background-position: center;
-	animation: switchImage 3s infinite;
+}
+.Image {
+	opacity: 0;
+	transition: opacity 0.3s;
+	min-width: 250%;
+	animation: disappear-to-left 0.3s;
 }
 
-/* @keyframes switchImage {
+/* active image showing at the moment*/
+.active {
+	opacity: 1;
+	animation: appear-from-right 0.3s;
+}
+
+/* translate animations */
+@keyframes appear-from-right {
 	0% {
-		background-image: url('../assets/1.png');
+		transform: translateX(100%);
 	}
-	5%,
-	50% {
-		background-image: url('../assets/2.png');
+}
+
+@keyframes disappear-to-left {
+	0% {
+		transform: translateX(0%);
 	}
-	55%,
 	100% {
-		background-image: url('../assets/1.png');
+		transform: translateX(-50%);
 	}
-} */
+}
