@@ -1,5 +1,5 @@
 //react import
-import React, { useMemo } from 'react'
+import React, { useEffect, useMemo } from 'react'
 
 /**
  *
@@ -15,30 +15,46 @@ const ImagePuzzle = ({
 }) => {
 	const mapedCells = useMemo(() => {
 		let skipedCells = [],
-			counter = 0
+			counter = 0,
+			indexArray = []
 		while (counter < skip) {
 			skipedCells.push(
 				<div style={{ margin: `${separation}%`, opacity: 0 }} />
 			)
 			counter++
 		}
-
+		counter = 0
 		const imageAmount = rows * columns - skip
 
-		const imageArray = images.map((image, index) =>
-			index < imageAmount ? (
+		while (counter < imageAmount) {
+			let random = Math.floor(Math.random() * (imageAmount + 1))
+			if (!indexArray.includes(random)) {
+				indexArray.push(random)
+				counter++
+			}
+		}
+
+		const imageArray = images.map((image, index) => {
+			return index < imageAmount ? (
 				<div
 					style={{ margin: `${separation}%` }}
 					className={`${
-						index % 2 === 0 ? 'bg-gray-900' : 'bg-gray-200'
+						index % 2 === 0 ? 'bg-gray-900' : 'bg-gray-600'
 					} flex items-center rounded-lg shadow-md`}>
-					<img alt={`commerce_${index}`} src={image} />
+					<img
+						alt={`commerce_${index}`}
+						src={images[indexArray[index]]}
+					/>
 				</div>
 			) : null
-		)
+		})
 
 		return [...skipedCells, ...imageArray]
 	}, [images, separation, columns, rows, skip])
+
+	useEffect(() => {
+		setTimeout(() => {}, 3000)
+	}, [])
 
 	return (
 		<div className={`ImagePuzzle ${className}`}>

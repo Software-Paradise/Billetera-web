@@ -16,11 +16,16 @@ import {
 	pena,
 	ledezma,
 	Novo,
+	background,
+	logo,
+	powered,
+	alyCoin,
+	empty,
+	cellphones,
 } from '../assets'
 
 function Affiliates() {
 	const { affiliatesScreen } = useSelector(selectLanguage)
-	console.log(affiliatesScreen.title.highlight)
 	return (
 		<section
 			name='AffiliatesScreen'
@@ -49,7 +54,9 @@ function Affiliates() {
 					/>
 				</p>
 			</article>
-			<article className='flex-1 flex items-center py-14 md:p-0 md:min-h-screen'>
+			<article
+				style={{ minWidth: '50vw' }}
+				className='flex-1 flex items-center py-14 md:p-0 md:min-h-screen'>
 				<ImagePuzzle
 					columns={3}
 					rows={3}
@@ -63,6 +70,12 @@ function Affiliates() {
 						patio,
 						pena,
 						ledezma,
+						background,
+						logo,
+						powered,
+						alyCoin,
+						empty,
+						cellphones,
 					]}
 					className='w-full mb-14 md:m-0'
 				/>
