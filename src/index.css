@@ -131,6 +131,6 @@ input[type='password']::-ms-clear {
 
 	/* Styles for affiliates screen */
 	.AffiliatesScreen {
-		@apply flex flex-col md:flex-row;
+		@apply flex flex-col relative md:flex-row;
 	}
 }

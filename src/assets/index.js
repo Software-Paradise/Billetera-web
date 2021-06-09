@@ -18,6 +18,7 @@ import XRP from './svg/XRP.svg'
 //landing page images
 import cellphones from './images/Cellphones.png'
 import TopBackground from './images/TopBackground.jpg'
+import modelo from './images/modelo2.png'
 
 //cellphone images
 import phone1 from './images/telefono/phone1.png'
@@ -30,6 +31,16 @@ import imagen2 from './images/telefono/imagen2.png'
 import imagen3 from './images/telefono/imagen3.png'
 import imagen4 from './images/telefono/imagen4.png'
 import imagen5 from './images/telefono/imagen5.png'
+
+//comerces images
+import teen from './svg/comerces/4teen.svg'
+import almacenAN from './svg/comerces/almacenAN.svg'
+import arthurs from './svg/comerces/arthurs.svg'
+import colon from './svg/comerces/Casa colon.svg'
+import patio from './svg/comerces/el patio.svg'
+import pena from './svg/comerces/la pena.svg'
+import ledezma from './svg/comerces/ledezma.svg'
+import Novo from './svg/comerces/Novo pie.svg'
 
 export {
 	background,
@@ -58,4 +69,13 @@ export {
 	imagen3,
 	imagen4,
 	imagen5,
+	modelo,
+	teen,
+	almacenAN,
+	arthurs,
+	colon,
+	patio,
+	pena,
+	ledezma,
+	Novo,
 }
