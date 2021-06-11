@@ -42,12 +42,12 @@ function Functions() {
 
 	return (
 		<section
+			style={{ minHeight: '42rem' }}
 			name='FunctionsScreen'
-			className='FunctionsScreen min-h-screen'>
-			<h2 className='absolute left-11 top-11 text-gray-900 text-4xl font-light'>
+			className='FunctionsScreen lg:h-screen'>
+			<h2 className='absolute left-11 top-11 text-gray-200 text-4xl font-light'>
 				<Title
 					title={functionsScreen.title}
-					highlight={['AlyPay']}
 					highlightStyle='font-bold'
 				/>
 			</h2>

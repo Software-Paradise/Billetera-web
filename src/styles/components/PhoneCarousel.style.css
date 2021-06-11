@@ -1,3 +1,14 @@
+/* PhoneCarousel width and height */
+.PhoneCarousel {
+	width: 90%;
+	height: 85vh;
+}
+@media (orientation: landscape) {
+	.PhoneCarousel {
+		height: 36rem;
+	}
+}
+
 /* image on the left side */
 .CellImageContainer {
 	width: 50%;
@@ -6,7 +17,7 @@
 .CellImage {
 	opacity: 0;
 	transition: opacity 0.3s;
-	min-width: 300%;
+	width: 100%;
 }
 
 /* image on the right side */
@@ -17,7 +28,7 @@
 .Image {
 	opacity: 0;
 	transition: opacity 0.3s;
-	min-width: 250%;
+	width: 80%;
 	animation: disappear-to-left 0.3s;
 }
 

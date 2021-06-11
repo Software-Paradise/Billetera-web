@@ -1,0 +1,10 @@
+.FunctionsScreen {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.5) 0%
+		),
+		url('../../assets/images/globe.jpg');
+	background-size: 125vw;
+	background-position: center -15rem;
+}

@@ -44,7 +44,7 @@ export const en = {
 	},
 	/* FunctionsScreen */
 	functionsScreen: {
-		title: 'AlyPay Functions',
+		title: 'Functions of',
 		cards: {
 			deposit: {
 				title: 'Deposit',
@@ -109,7 +109,7 @@ export const en = {
 		bottomContent: {
 			question: 'How to be part of AlyPay E-Commerce?',
 			sections: [
-				'Download our App (PLayStore) or visit our Website.',
+				'Download our App (PlayStore) or visit our Website.',
 				'Complete the registry.',
 				'Open the activation email.',
 				'Star using the AlyPay benefits.',

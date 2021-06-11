@@ -71,8 +71,11 @@ input[type='password']::-ms-clear {
 
 	/* Styles for the functions screen */
 	.FunctionsScreen {
-		@apply bg-gray-400 relative pt-40 pb-4 lg:p-0;
+		@apply relative pt-40 pb-4 lg:p-0;
 	}
+
+	/* Custom styles for functions screen */
+	@import url('./styles/screens/FunctionsScreen.style');
 
 	/* Custom styles for the title component */
 	@import url('./styles/components/Title.style');
@@ -109,7 +112,7 @@ input[type='password']::-ms-clear {
 
 	/* Styles for perks screen */
 	.PerksScreen {
-		@apply flex flex-col relative px-1 xl:px-11 pb-5 xl:pb-11 pt-28 bg-gray-500;
+		@apply flex flex-col relative bg-gray-500;
 	}
 
 	/* Custom styles for perks screen */
@@ -133,4 +136,7 @@ input[type='password']::-ms-clear {
 	.AffiliatesScreen {
 		@apply flex flex-col relative md:flex-row;
 	}
+
+	/* styles for ImagePuzzle component */
+	@import url('./styles/components/ImagePuzzle.style');
 }

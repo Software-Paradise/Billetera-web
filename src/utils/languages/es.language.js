@@ -44,7 +44,7 @@ export const es = {
 	},
 	/* FunctionsScreen */
 	functionsScreen: {
-		title: 'Funciones de AlyPay',
+		title: 'Funciones de',
 		cards: {
 			deposit: {
 				title: 'Recargas',

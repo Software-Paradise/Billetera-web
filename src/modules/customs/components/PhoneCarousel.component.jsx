@@ -13,7 +13,7 @@ const PhoneCarousel = ({
 	const [activeCounter, setActiveCounter] = useState(0)
 
 	useEffect(() => {
-		setTimeout(
+		const timer = setTimeout(
 			() =>
 				setActiveCounter(
 					activeCounter === rightImages.length - 1
@@ -22,12 +22,11 @@ const PhoneCarousel = ({
 				),
 			4000
 		)
-	}, [activeCounter, rightImages.length])
+		return () => clearTimeout(timer)
+	}, [activeCounter, rightImages])
 
 	return (
-		<div
-			style={{ width: '85%', height: '75vh' }}
-			className={`PhoneCarousel flex ${className}`}>
+		<div className={`PhoneCarousel flex ${className}`}>
 			<div className='CellImageContainer flex justify-center items-center relative overflow-hidden'>
 				{leftImages.map((image, index) => (
 					<img

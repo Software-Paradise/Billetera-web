@@ -1,0 +1,28 @@
+.ImageCell {
+	opacity: 0;
+	transition: opacity 0.3s;
+	animation: cell-disappear-to-left 0.3s;
+}
+
+.active-cell {
+	opacity: 1;
+	animation: cell-appear-from-right 0.3s;
+}
+
+@keyframes cell-disappear-to-left {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-30%);
+	}
+}
+@keyframes cell-appear-from-right {
+	0% {
+		opacity: 1;
+		transform: translateX(10%);
+	}
+}
+
+.Expand {
+}

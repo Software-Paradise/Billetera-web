@@ -22,6 +22,16 @@ import {
 	alyCoin,
 	empty,
 	cellphones,
+	phone1,
+	phone2,
+	phone3,
+	phone4,
+	phone5,
+	imagen1,
+	imagen2,
+	imagen3,
+	imagen4,
+	imagen5,
 } from '../assets'
 
 function Affiliates() {
@@ -56,28 +66,53 @@ function Affiliates() {
 			</article>
 			<article
 				style={{ minWidth: '50vw' }}
-				className='flex-1 flex items-center py-14 md:p-0 md:min-h-screen'>
+				className='flex-1 flex items-center justify-center py-14 md:p-0 md:min-h-screen'>
 				<ImagePuzzle
+					style={{ width: '90%' }}
 					columns={3}
 					rows={3}
 					skip={1}
 					images={[
-						teen,
-						almacenAN,
-						Novo,
-						arthurs,
-						colon,
-						patio,
-						pena,
-						ledezma,
-						background,
-						logo,
-						powered,
-						alyCoin,
-						empty,
-						cellphones,
+						{
+							image: teen,
+							bgColor: 'bg-blueGray-900',
+							expand: true,
+						},
+						{
+							image: almacenAN,
+							bgColor: 'bg-gray-200',
+							expand: true,
+						},
+						{ image: Novo, bgColor: 'bg-black', expand: true },
+						{
+							image: arthurs,
+							bgColor: 'bg-gray-200',
+							expand: true,
+						},
+						{ image: colon, bgColor: 'bg-blue-900', expand: true },
+						{ image: patio, bgColor: 'bg-gray-200', expand: true },
+						{ image: pena, bgColor: 'bg-amber-900', expand: true },
+						{
+							image: ledezma,
+							bgColor: 'bg-yellow-500',
+							expand: true,
+						},
+						
+						{ image: logo, bgColor: '', expand: true },
+						{ image: background, bgColor: '', expand: true },
+						{ image: powered, bgColor: '', expand: true },
+						{ image: alyCoin, bgColor: '', expand: true },
+						{ image: empty, bgColor: '', expand: true },
+						{ image: cellphones, bgColor: '', expand: true },
+
+						{ image: phone1, bgColor: '', expand: true },
+						{ image: phone2, bgColor: '', expand: true },
+						{ image: phone3, bgColor: '', expand: true },
+						{ image: phone4, bgColor: '', expand: true },
+						{ image: phone5, bgColor: '', expand: true },
+						{ image: imagen1, bgColor: '', expand: true },
 					]}
-					className='w-full mb-14 md:m-0'
+					className='mb-14 md:m-0'
 				/>
 			</article>
 		</section>
