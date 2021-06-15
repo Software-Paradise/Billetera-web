@@ -11,6 +11,10 @@
 	transition: opacity 0.1s;
 }
 
+.CardDisplayer .HiddenCard:hover {
+	opacity: 1;
+}
+
 @media (min-width: 1024px) {
 	.CardDisplayer .HiddenCard {
 		top: -6rem;

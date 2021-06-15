@@ -9,6 +9,8 @@ import { ATM } from '../assets/index'
 //language imports
 import { useSelector } from 'react-redux'
 import { selectLanguage } from 'utils/language.util'
+//assets import
+import { logo } from 'assets'
 
 function Functions() {
 	const { functionsScreen } = useSelector(selectLanguage)
@@ -45,14 +47,19 @@ function Functions() {
 			style={{ minHeight: '42rem' }}
 			name='FunctionsScreen'
 			className='FunctionsScreen lg:h-screen'>
-			<h2 className='absolute left-11 top-11 text-gray-200 text-4xl font-light'>
+			<h2 className='absolute flex items-center left-11 top-11 text-gray-200 text-4xl font-light'>
 				<Title
 					title={functionsScreen.title}
 					highlightStyle='font-bold'
 				/>
+				<img
+					src={logo}
+					alt='AlyPay - El futuro ¡Ahora!'
+					className='w-64 mx-auto md:mx-4'
+				/>
 			</h2>
 			<CardDisplayer
-				className='bg-gray-500'
+				className='bg-gray-500 opacity-80'
 				cardContents={cardContents}
 			/>
 		</section>

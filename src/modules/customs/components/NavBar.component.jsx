@@ -36,7 +36,7 @@ const NavBar = ({ links = [] }) => {
 			<NavLink
 				id='topScroll'
 				icon={<FaHome />}
-				className='fixed bg-yellow-400 text-gray-900
+				className='fixed bg-yellow-400 text-gray-900 z-50
 				flex justify-center p-2 w-14 text-3xl right-0 top-8 rounded-l-full'
 				to='TopScreen'
 				duration={150}

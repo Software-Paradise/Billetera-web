@@ -45,13 +45,11 @@
 
 /* expand from top left*/
 .expand-inactive {
-	z-index: 20;
 	transform: translateY(100%) translateX(100%) scale(3);
 	margin: 0 !important;
 }
 .expand-active {
 	opacity: 1;
-	z-index: 20;
 	transform: translateY(100%) translateX(100%) scale(3);
 	margin: 0 !important;
 }
