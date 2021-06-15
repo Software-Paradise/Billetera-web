@@ -23,24 +23,16 @@ import {
 	empty,
 	cellphones,
 	phone1,
-	phone2,
-	phone3,
-	phone4,
-	phone5,
-	imagen1,
-	imagen2,
-	imagen3,
-	imagen4,
-	imagen5,
 } from '../assets'
 
 function Affiliates() {
 	const { affiliatesScreen } = useSelector(selectLanguage)
+
 	return (
 		<section
 			name='AffiliatesScreen'
 			className='AffiliatesScreen min-h-screen'>
-			<div className='flex absolute bottom-0 left-0 w-full md:w-2/4'>
+			<div className='flex absolute z-20 bottom-0 left-0 w-full md:w-2/4'>
 				<img
 					alt='modelo'
 					style={{ left: '-5%' }}
@@ -66,53 +58,67 @@ function Affiliates() {
 			</article>
 			<article
 				style={{ minWidth: '50vw' }}
-				className='flex-1 flex items-center justify-center py-14 md:p-0 md:min-h-screen'>
+				className='flex-1 flex items-center justify-center py-14 md:p-0 max-h-screen md:min-h-screen'>
 				<ImagePuzzle
-					style={{ width: '90%' }}
-					columns={3}
-					rows={3}
-					skip={1}
 					images={[
 						{
 							image: teen,
 							bgColor: 'bg-blueGray-900',
-							expand: true,
+							expand: { time: 5 },
 						},
 						{
 							image: almacenAN,
 							bgColor: 'bg-gray-200',
-							expand: true,
+							expand: { time: 5 },
 						},
-						{ image: Novo, bgColor: 'bg-black', expand: true },
+						{
+							image: Novo,
+							bgColor: 'bg-black',
+							expand: { time: 5 },
+						},
 						{
 							image: arthurs,
 							bgColor: 'bg-gray-200',
-							expand: true,
+							expand: { time: 5 },
 						},
-						{ image: colon, bgColor: 'bg-blue-900', expand: true },
-						{ image: patio, bgColor: 'bg-gray-200', expand: true },
-						{ image: pena, bgColor: 'bg-amber-900', expand: true },
+						{
+							image: colon,
+							bgColor: 'bg-blue-900',
+							expand: { time: 5 },
+						},
+						{
+							image: patio,
+							bgColor: 'bg-gray-200',
+							expand: { time: 5 },
+						},
+						{
+							image: pena,
+							bgColor: 'bg-amber-900',
+							expand: { time: 5 },
+						},
 						{
 							image: ledezma,
 							bgColor: 'bg-yellow-500',
-							expand: true,
+							expand: { time: 5 },
 						},
-						
-						{ image: logo, bgColor: '', expand: true },
-						{ image: background, bgColor: '', expand: true },
-						{ image: powered, bgColor: '', expand: true },
-						{ image: alyCoin, bgColor: '', expand: true },
-						{ image: empty, bgColor: '', expand: true },
-						{ image: cellphones, bgColor: '', expand: true },
 
-						{ image: phone1, bgColor: '', expand: true },
-						{ image: phone2, bgColor: '', expand: true },
-						{ image: phone3, bgColor: '', expand: true },
-						{ image: phone4, bgColor: '', expand: true },
-						{ image: phone5, bgColor: '', expand: true },
-						{ image: imagen1, bgColor: '', expand: true },
+						{
+							image: logo,
+							bgColor: 'bg-red-300',
+							expand: { time: 5 },
+						},
+						{
+							image: background,
+							bgColor: 'bg-blue-200',
+							expand: { time: 5 },
+						},
+						{ image: powered, bgColor: '', expand: { time: 5 } },
+						{ image: alyCoin, bgColor: '', expand: { time: 5 } },
+						{ image: empty, bgColor: '', expand: { time: 5 } },
+						{ image: cellphones, bgColor: '', expand: { time: 5 } },
+						{ image: phone1, bgColor: '', expand: { time: 5 } },
+						{ image: phone1, bgColor: '', expand: { time: 5 } },
 					]}
-					className='mb-14 md:m-0'
 				/>
 			</article>
 		</section>
