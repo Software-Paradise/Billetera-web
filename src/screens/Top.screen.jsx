@@ -24,9 +24,11 @@ function Top() {
 						className='absolute top-1 z-10'
 						zoom={0.9}
 					/>
-					<div className='flex-1 flex flex-col w-full relative items-center'>
+					<div className='flex flex-col w-full absolute top-0 h-3/5 items-center'>
 						<VideoBackground />
-						<h1 className='font-light z-10 text-gray-200 text-3xl md:text-6xl text-center py-16 mt-16 mb-8'>
+					</div>
+					<div className='w-full absolute bottom-0 h-2/5 items-center'>
+						<h1 className='font-light z-10 text-gray-200 text-4xl text-center py-16 mt-16 mb-8'>
 							<Title
 								title={topScreen.title.text}
 								highlight={topScreen.title.highlight}
@@ -34,6 +36,7 @@ function Top() {
 							/>
 						</h1>
 					</div>
+
 					<Button
 						label={topScreen.downloadButton}
 						variant='outline'
