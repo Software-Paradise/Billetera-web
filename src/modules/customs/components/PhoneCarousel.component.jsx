@@ -7,28 +7,26 @@ import React, { useEffect, useState } from 'react'
  */
 const PhoneCarousel = ({
 	className = '',
-	style = {},
 	leftImages = [],
-	rigthImages = [],
+	rightImages = [],
 }) => {
 	const [activeCounter, setActiveCounter] = useState(0)
 
 	useEffect(() => {
-		setTimeout(
+		const timer = setTimeout(
 			() =>
 				setActiveCounter(
-					activeCounter === rigthImages.length - 1
+					activeCounter === rightImages.length - 1
 						? 0
 						: activeCounter + 1
 				),
 			4000
 		)
-	}, [activeCounter, rigthImages.length])
+		return () => clearTimeout(timer)
+	}, [activeCounter, rightImages])
 
 	return (
-		<div
-			style={{ width: '85%', height: '75vh' }}
-			className={`PhoneCarousel flex ${className}`}>
+		<div className={`PhoneCarousel flex ${className}`}>
 			<div className='CellImageContainer flex justify-center items-center relative overflow-hidden'>
 				{leftImages.map((image, index) => (
 					<img
@@ -43,7 +41,7 @@ const PhoneCarousel = ({
 				))}
 			</div>
 			<div className='ImageContainer flex justify-center items-center relative overflow-hidden'>
-				{rigthImages.map((image, index) => (
+				{rightImages.map((image, index) => (
 					<img
 						alt={`image_${index}`}
 						key={`Image_${index}`}

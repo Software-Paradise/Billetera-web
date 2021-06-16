@@ -44,7 +44,7 @@ export const en = {
 	},
 	/* FunctionsScreen */
 	functionsScreen: {
-		title: 'AlyPay Functions',
+		title: 'Functions of',
 		cards: {
 			deposit: {
 				title: 'Deposit',
@@ -109,7 +109,7 @@ export const en = {
 		bottomContent: {
 			question: 'How to be part of AlyPay E-Commerce?',
 			sections: [
-				'Download our App (PLayStore) or visit our Website.',
+				'Download our App (PlayStore) or visit our Website.',
 				'Complete the registry.',
 				'Open the activation email.',
 				'Star using the AlyPay benefits.',
@@ -119,9 +119,14 @@ export const en = {
 	},
 	/* AffiliatesScreen */
 	affiliatesScreen: {
-		title: 'Associated Commerces',
-		content:
-			'We work hand in hand with the best business worldwide. All for you to make use of your cryptocurrencies.',
+		title: {
+			text: 'Associated Commerces',
+			highlight: ['Associated'],
+		},
+		content: {
+			text: 'We work hand in hand with the best business worldwide. All for you to make use of your cryptocurrencies.',
+			highlight: ['cryptocurrencies'],
+		},
 	},
 	/* Footer */
 	footer: {

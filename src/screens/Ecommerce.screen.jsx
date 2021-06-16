@@ -48,11 +48,11 @@ function Ecommerce() {
 				className='EcommerceScreen__RigthSide min-h-screen flex-1 relative flex flex-col justify-center items-center
 			 bg-gray-200'>
 				<PhoneCarousel
-					className='items-center'
+					className='items-center mt-4'
 					leftImages={[phone1, phone2, phone3, phone4, phone5]}
-					rigthImages={[imagen2, imagen3, imagen4, imagen5, imagen1]}
+					rightImages={[imagen2, imagen3, imagen4, imagen5, imagen1]}
 				/>
-				<h2 className='text-gray-800 text-3xl text-center'>
+				<h2 className='text-gray-800 text-3xl text-center mt-4 mb-8'>
 					<Title
 						title={ecommerceScreen.support}
 						highlight={['24/7']}
