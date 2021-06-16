@@ -21,6 +21,7 @@ const ImagePuzzle = ({
 	const [bottomLimit, setBottomLimit] = useState(0)
 	const [activeCellClass, setActiveCellClass] = useState('')
 	const [expandCellCLass, setExpandCellClass] = useState('')
+	const [flag, setFlag] = useState(false)
 
 	//filter set of images between upper and bottom limits
 	const filteredImageArray = images.filter(
@@ -123,6 +124,7 @@ const ImagePuzzle = ({
 							: upperLimit + imageAmount
 					)
 					setExpandCellClass('')
+					setFlag(!flag)
 					resolve()
 				}, 100)
 			)
@@ -131,7 +133,7 @@ const ImagePuzzle = ({
 		//execute the previously declared function
 		nextCells()
 		return () => {}
-	}, [imageAmount, images, upperLimit])
+	}, [imageAmount, images, upperLimit, flag])
 
 	return (
 		<div

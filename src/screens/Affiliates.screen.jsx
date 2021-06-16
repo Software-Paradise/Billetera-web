@@ -16,13 +16,6 @@ import {
 	pena,
 	ledezma,
 	Novo,
-	background,
-	logo,
-	powered,
-	alyCoin,
-	empty,
-	cellphones,
-	phone1,
 } from '../assets'
 
 function Affiliates() {
@@ -101,23 +94,6 @@ function Affiliates() {
 							bgColor: 'bg-yellow-500',
 							expand: { time: 5 },
 						},
-
-						{
-							image: logo,
-							bgColor: 'bg-red-300',
-							expand: { time: 5 },
-						},
-						{
-							image: background,
-							bgColor: 'bg-blue-200',
-							expand: { time: 5 },
-						},
-						{ image: powered, bgColor: '', expand: { time: 5 } },
-						{ image: alyCoin, bgColor: '', expand: { time: 5 } },
-						{ image: empty, bgColor: '', expand: { time: 5 } },
-						{ image: cellphones, bgColor: '', expand: { time: 5 } },
-						{ image: phone1, bgColor: '', expand: { time: 5 } },
-						{ image: phone1, bgColor: '', expand: { time: 5 } },
 					]}
 				/>
 			</article>

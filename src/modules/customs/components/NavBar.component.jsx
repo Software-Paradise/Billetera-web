@@ -17,7 +17,7 @@ import { randomKey } from 'utils'
 const NavBar = ({ links = [] }) => {
 	const rkey = randomKey()
 	return (
-		<section className='NavBar'>
+		<section className='NavBar z-50'>
 			<img
 				src={logo}
 				alt='AlyPay - El futuro ¡Ahora!'

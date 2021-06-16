@@ -43,7 +43,12 @@ import pena from './svg/comerces/la pena.svg'
 import ledezma from './svg/comerces/ledezma.svg'
 import Novo from './svg/comerces/Novo pie.svg'
 
+//videos
+import headerdark from './videos/headerdark.m4v'
+import infolight from './videos/infolight.m4v'
+
 export {
+	//images
 	background,
 	logo,
 	powered,
@@ -80,4 +85,7 @@ export {
 	ledezma,
 	Novo,
 	globe,
+	//videos
+	headerdark,
+	infolight,
 }

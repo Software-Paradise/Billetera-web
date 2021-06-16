@@ -12,6 +12,7 @@ import Select from './components/Select.component'
 import UnorderedList from './components/UnorderedList.component'
 import PhoneCarousel from './components/PhoneCarousel.component'
 import ImagePuzzle from './components/ImagePuzzle.component'
+import VideoBackground from './components/VideoBackground.component'
 
 export {
 	NavBar,
@@ -28,4 +29,5 @@ export {
 	UnorderedList,
 	PhoneCarousel,
 	ImagePuzzle,
+	VideoBackground,
 }

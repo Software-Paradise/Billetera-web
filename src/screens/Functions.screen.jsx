@@ -47,7 +47,7 @@ function Functions() {
 			style={{ minHeight: '42rem' }}
 			name='FunctionsScreen'
 			className='FunctionsScreen lg:h-screen'>
-			<h2 className='absolute flex items-center left-11 top-11 text-gray-200 text-4xl font-light'>
+			<h2 className='absolute block md:flex items-center left-11 top-11 text-gray-200 text-4xl font-light'>
 				<Title
 					title={functionsScreen.title}
 					highlightStyle='font-bold'
@@ -59,7 +59,7 @@ function Functions() {
 				/>
 			</h2>
 			<CardDisplayer
-				className='bg-gray-500 opacity-80'
+				className='bg-gray-500 opacity-70'
 				cardContents={cardContents}
 			/>
 		</section>

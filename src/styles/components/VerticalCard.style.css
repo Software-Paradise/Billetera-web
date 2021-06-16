@@ -11,10 +11,6 @@
 	transition: opacity 0.1s;
 }
 
-.CardDisplayer .HiddenCard:hover {
-	opacity: 1;
-}
-
 @media (min-width: 1024px) {
 	.CardDisplayer .HiddenCard {
 		top: -6rem;
@@ -24,5 +20,8 @@
 		box-shadow: -2px 0px 5px 0px rgb(12, 12, 12, 0.26) inset;
 		-webkit-box-shadow: -2px 0px 5px 0px rgb(12, 12, 12, 0.26) inset;
 		-moz-box-shadow: -2px 0px 5px 0px rgb(12, 12, 12, 0.26) inset;
+	}
+	.CardDisplayer .HiddenCard:hover {
+		opacity: 1;
 	}
 }
