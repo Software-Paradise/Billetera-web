@@ -51,7 +51,7 @@ function Affiliates() {
 			</article>
 			<article
 				style={{ minWidth: '50vw' }}
-				className='flex-1 flex items-center justify-center py-14 md:p-0 max-h-screen md:min-h-screen'>
+				className='flex-1 flex items-center justify-center py-14 pb-64 md:p-0 max-h-screen md:min-h-screen'>
 				<ImagePuzzle
 					images={[
 						{

@@ -45,7 +45,7 @@ import Novo from './svg/comerces/Novo pie.svg'
 
 //videos
 import headerdark from './videos/headerdark.m4v'
-import presentation from './videos/Alycoin Presentación plus.mp4'
+import presentation from './videos/presentation.m4v'
 import infolight from './videos/infolight.m4v'
 import square from './videos/square.m4v'
 

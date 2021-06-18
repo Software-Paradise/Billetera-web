@@ -1,6 +1,6 @@
 .ImagePuzzle {
-	height: 25rem;
-	width: 25rem;
+	height: 18rem;
+	width: 18rem;
 }
 @media (min-width: 768px) {
 	.ImagePuzzle {
@@ -10,8 +10,8 @@
 }
 @media (min-width: 1280px) {
 	.ImagePuzzle {
-		height: 85vh;
-		width: 95%;
+		height: 80vh;
+		width: 85%;
 	}
 }
 

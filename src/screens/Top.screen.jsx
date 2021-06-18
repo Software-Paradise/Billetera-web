@@ -25,7 +25,7 @@ function Top() {
 					<div className='flex w-full absolute top-0 h-3/5 items-center'>
 						<VideoBackground videoSrc={presentation} />
 						<div className='relative bg-gray-800 bg-opacity-90 h-full w-full flex'>
-							<div className='relative flex flex-col justify-center items-center h-full w-1/3'>
+							<div className='relative flex flex-col justify-center items-center h-full w-full xl:w-1/3'>
 								<SelectLanguage
 									className='absolute top-5 z-10'
 									zoom={0.9}
@@ -53,7 +53,7 @@ function Top() {
 						</div>
 					</div>
 					<div className='flex bg-black bg-opacity-50 justify-center w-full absolute bottom-0 h-2/5 items-center'>
-						<h1 className='font-light z-10 text-gray-200 text-4xl text-center py-16'>
+						<h1 className='font-light z-10 text-gray-200 text-2xl md:text-4xl text-center py-4 md:py-16'>
 							<Title
 								title={topScreen.title.text}
 								highlight={topScreen.title.highlight}

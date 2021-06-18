@@ -138,15 +138,15 @@ export const es = {
 			address2:
 				'Edificio Torrez, Paseo Colón. Piso No.9, Oficina No.909. San José, Costa Rica',
 		},
-		support: {
-			title: 'Soporte',
-			button: 'Contactar a soporte',
-			content: '¿Dudas? vea nuestra lista de preguntas frecuentes.',
-		},
 		download: {
+			title: 'Súmese al cambio',
 			button: 'Descárguela ya',
 			text: 'Para usuarios ios y web ingresar ',
 			linkText: 'aquí',
+		},
+		support: {
+			title: 'Redes sociales',
+			button: 'Contactar a soporte',
 		},
 	},
 }

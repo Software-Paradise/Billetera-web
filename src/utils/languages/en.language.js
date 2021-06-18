@@ -131,20 +131,21 @@ export const en = {
 	/* Footer */
 	footer: {
 		contact: {
-			title: 'Contact us',
+			title: 'Find us',
 			address1:
 				'Discover Building #1, 3rd floor, Villa Fontana. Managua, Nicaragua.',
 			address2:
 				'Torrez Building, Paseo Colón, 9th floor, office #909. San José, Costa Rica.',
 		},
-		support: {
-			title: 'Support',
-			button: 'Contact support',
-			content: 'Questions? Check out our FAQ',
-		},
 		download: {
+			title: 'Join the change',
 			button: 'Download it now',
-			bottomText: 'For IOS and web users, click here',
+			text: 'For IOS and web users, click ',
+			linkText: 'here',
+		},
+		support: {
+			title: 'Social media',
+			button: 'Contact support',
 		},
 	},
 }
