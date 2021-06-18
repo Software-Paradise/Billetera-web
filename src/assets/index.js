@@ -45,7 +45,9 @@ import Novo from './svg/comerces/Novo pie.svg'
 
 //videos
 import headerdark from './videos/headerdark.m4v'
+import presentation from './videos/Alycoin Presentación plus.mp4'
 import infolight from './videos/infolight.m4v'
+import square from './videos/square.m4v'
 
 export {
 	//images
@@ -88,4 +90,6 @@ export {
 	//videos
 	headerdark,
 	infolight,
+	square,
+	presentation,
 }

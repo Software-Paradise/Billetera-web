@@ -1,4 +1,3 @@
-import { headerdark } from 'assets'
 import React from 'react'
 
 /**
@@ -6,10 +5,10 @@ import React from 'react'
  * @param {String} className - style to be applied on 'video'
  * @returns {React.FunctionComponent}
  */
-function VideoBackground({ className = '' }) {
+function VideoBackground({ className = '', videoSrc = '' }) {
 	return (
 		<video
-			src={headerdark}
+			src={videoSrc}
 			autoPlay
 			loop
 			muted

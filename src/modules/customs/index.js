@@ -13,6 +13,7 @@ import UnorderedList from './components/UnorderedList.component'
 import PhoneCarousel from './components/PhoneCarousel.component'
 import ImagePuzzle from './components/ImagePuzzle.component'
 import VideoBackground from './components/VideoBackground.component'
+import Footer from './components/Footer.component'
 
 export {
 	NavBar,
@@ -30,4 +31,5 @@ export {
 	PhoneCarousel,
 	ImagePuzzle,
 	VideoBackground,
+	Footer,
 }

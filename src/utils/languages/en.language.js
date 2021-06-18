@@ -38,7 +38,7 @@ export const en = {
 		rightSide: {
 			title: 'What is AlyPay?',
 			content:
-				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all the associated commerces worldwide.",
+				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all commerces associated to AlyPay E-Commerce worldwide.",
 			highlight: ["AlySystem's"],
 		},
 	},
@@ -139,6 +139,8 @@ export const en = {
 		},
 		support: {
 			title: 'Support',
+			button: 'Contact support',
+			content: 'Questions? Check out our FAQ',
 		},
 		download: {
 			button: 'Download it now',

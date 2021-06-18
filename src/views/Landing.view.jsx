@@ -14,6 +14,8 @@ import {
 	Perks,
 	Top,
 } from '../screens'
+//component imports
+import Footer from 'modules/customs/components/Footer.component'
 
 /**
  * Landind view
@@ -31,6 +33,7 @@ function Landing() {
 			<Perks />
 			<Ecommerce />
 			<Affiliates />
+			<Footer />
 		</main>
 	)
 }

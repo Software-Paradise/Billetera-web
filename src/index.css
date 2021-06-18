@@ -139,4 +139,7 @@ input[type='password']::-ms-clear {
 
 	/* styles for ImagePuzzle component */
 	@import url('./styles/components/ImagePuzzle.style');
+
+	/*styles for the footer*/
+	@import url('./styles/components/Footer.style');
 }
