@@ -14,13 +14,14 @@ import {
 	Perks,
 	Top,
 } from '../screens'
+//component imports
+import Footer from 'modules/customs/components/Footer.component'
 
 /**
  * Landind view
  * @returns {React.FunctionComponent}
  */
 function Landing() {
-	const { loginView } = useSelector(selectLanguage)
 
 	return (
 		<main className='LandingView'>
@@ -31,6 +32,7 @@ function Landing() {
 			<Perks />
 			<Ecommerce />
 			<Affiliates />
+			<Footer />
 		</main>
 	)
 }

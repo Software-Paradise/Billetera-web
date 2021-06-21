@@ -23,7 +23,7 @@ export const es = {
 			text: 'LA MANERA MÁS FÁCIL, RÁPIDA Y SEGURA DE HACER NEGOCIOS CON CRIPTOMONEDAS.',
 			highlight: ['FÁCIL', 'RÁPIDA', 'SEGURA', 'CRIPTOMONEDAS'],
 		},
-		downloadButton: 'Descárgala ya',
+		downloadButton: 'Descárguela ya',
 		bottomText: {
 			text: 'Para usuarios ios y web ingresar ',
 			linkText: 'aquí',
@@ -33,12 +33,12 @@ export const es = {
 	/* InfoScreen */
 	infoScreen: {
 		leftSide: {
-			downloadButton: 'Descárgala ya',
+			downloadButton: 'Descárguela ya',
 		},
 		rightSide: {
 			title: '¿Qué es AlyPay?',
 			content:
-				'Es el sistema de AlySystem para usuarios que le brinda la oportunidad de hacer uso de sus criptomonedas, utilizándolas como medio de pago en los distintos comercios afiliados a nivel mundial.',
+				'Es el sistema de AlySystem para usuarios que le brinda la oportunidad de hacer uso de sus criptomonedas, utilizándolas como medio de pago en los distintos comercios afiliados a AlyPay E-Commerce nivel mundial.',
 			highlight: ['AlySystem'],
 		},
 	},
@@ -48,27 +48,28 @@ export const es = {
 		cards: {
 			deposit: {
 				title: 'Recargas',
-				content: 'Ingreso externo de fondos hacia su wallet Alypay.',
+				content:
+					'Recargue con fondos de wallet externa su wallet AlyPay.',
 			},
 			buy: {
 				title: 'Compra Alycoin',
 				content:
-					'Facilidad de comprar con sus fondos en criptomonedas, cuanto necesite de nuestra moneda fee, Alycoin para poder llevar a cabo sus transacciones.',
+					'Facilidad de compra con sus fondos de criptomonedas, utilizando ALycoin podrá ahorrar en fee en todas sus transacciones.',
 			},
 			transfer: {
 				title: 'Transferencia',
 				content:
-					'Movimiento de fondos de un usuario a otro dentro del sistema.',
+					'Movimiento de fondos de un usuario a otro dentro del sistema AlyPay.',
 			},
 			payment: {
 				title: 'Pago',
 				content:
-					'Compra de productos y/o servicios con sus criptomonedas a través de nuestra plataforma.',
+					'Compra de productos y/o servicios con sus criptomonedas a través de nuestra App.',
 			},
 			withdraw: {
 				title: 'Retirar',
 				content:
-					'Movimiento de fondos de su wallet Alypay a una de terceros.',
+					'Movimiento de fondos de su wallet Alypay a una externa.',
 			},
 		},
 	},
@@ -77,8 +78,8 @@ export const es = {
 		title: 'Monedas AlyPay',
 		badge: 'conoce nuestra moneda',
 		info: {
-			text: 'Criptomoneda fee basada en ethereum creada para efectuar transacciones a un bajo costo auspiciada y gestionada por AlySystem.',
-			highlight: ['Criptomoneda', 'AlySystem'],
+			text: 'Alycoin es la criptomoneda de Alysystem utilizada como moneda de pago y fee a través del Ecosistema de aplicaciones de AlySystem.',
+			highlight: ['Alycoin', 'AlySystem', 'pago', 'fee'],
 		},
 		cryptoTitle: {
 			text: 'TRABAJAMOS CON LAS PRINCIPALES CRIPTOMONEDAS DEL MERCADO',
@@ -97,7 +98,7 @@ export const es = {
 			rightSide: {
 				title: 'Alypay E-commerce',
 				content:
-					'Siendo parte de AlyPay E-Commerce a la hora de vender tus productos se le debitará un fee muy bajo por cada producto que cobre a través de nuestro sistema. Ayudándote a ahorrar en tus gastos.',
+					'Siendo parte de AlyPay E-Commerce a la hora de vender tus productos se le debitará un fee muy bajo por cada producto que cobre a través de nuestro sistema. Ayudándole a ahorrar en sus gastos.',
 			},
 		},
 	},
@@ -109,10 +110,10 @@ export const es = {
 		bottomContent: {
 			question: '¿Cómo ser parte de AlyPay E-Commerce?',
 			sections: [
-				'Descarga nuestra App (PlayStore).',
-				'Completa formulario de registro de empresa.',
-				'Revisa tu correo de activación.',
-				'Empieza a obtener los beneficios de AlyPay.',
+				'Descargue nuestra App (PlayStore).',
+				'Complete el formulario de registro de Empresa.',
+				'Revise su correo de activación.',
+				'Empiece a obtener los beneficios de AlyPay.',
 			],
 		},
 		support: 'Soporte en línea 24/7',
@@ -124,25 +125,28 @@ export const es = {
 			highlight: ['afiliados'],
 		},
 		content: {
-			text: 'Trabajamos de la mano con los mejores establecimientos a nivel internacional. Todo pensado para darle usabilidad a tus criptomonedas.',
+			text: 'Trabajamos de la mano con los mejores establecimientos a nivel internacional. Todo pensado para darle usabilidad a sus criptomonedas.',
 			highlight: ['criptomonedas'],
 		},
 	},
 	/* Footer */
 	footer: {
 		contact: {
-			title: 'Contacto',
+			title: 'Ubicación',
 			address1:
 				'Frente club terraza, Edificio Discover. Tercer piso. Managua, Nicaragua',
 			address2:
 				'Edificio Torrez, Paseo Colón. Piso No.9, Oficina No.909. San José, Costa Rica',
 		},
-		support: {
-			title: 'Soporte',
-		},
 		download: {
-			button: 'Descárgala ya',
-			bottomText: 'Para usuarios ios y web ingresar aquí',
+			title: 'Súmese al cambio',
+			button: 'Descárguela ya',
+			text: 'Para usuarios ios y web ingresar ',
+			linkText: 'aquí',
+		},
+		support: {
+			title: 'Redes sociales',
+			button: 'Contactar a soporte',
 		},
 	},
 }

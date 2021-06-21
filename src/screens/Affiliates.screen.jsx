@@ -24,7 +24,8 @@ function Affiliates() {
 	return (
 		<section
 			name='AffiliatesScreen'
-			className='AffiliatesScreen min-h-screen'>
+			style={{ minHeight: '40rem' }}
+			className='AffiliatesScreen h-auto'>
 			<div className='flex absolute z-20 bottom-0 left-0 w-full md:w-2/4'>
 				<img
 					alt='modelo'
@@ -51,8 +52,9 @@ function Affiliates() {
 			</article>
 			<article
 				style={{ minWidth: '50vw' }}
-				className='flex-1 flex items-center justify-center py-14 md:p-0 max-h-screen md:min-h-screen'>
+				className='PuzzleContainer flex-1 flex items-center justify-center py-14 pb-64 xl:p-0 h-screen'>
 				<ImagePuzzle
+					className='h-auto'
 					images={[
 						{
 							image: teen,

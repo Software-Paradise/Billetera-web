@@ -61,11 +61,12 @@ const ImagePuzzle = ({
 	}
 
 	useEffect(() => {
+		let memory = true
 		const nextCells = async () => {
 			//cells appear from rigth
 			await new Promise(resolve =>
 				setTimeout(() => {
-					setActiveCellClass('active-cell')
+					if (memory) setActiveCellClass('active-cell')
 					resolve()
 				}, 50)
 			)
@@ -75,7 +76,7 @@ const ImagePuzzle = ({
 			//expand topleft cell
 			await new Promise(resolve =>
 				setTimeout(() => {
-					setExpandCellClass('expand-active')
+					if (memory) setExpandCellClass('expand-active')
 					resolve()
 				}, 3000)
 			)
@@ -85,23 +86,24 @@ const ImagePuzzle = ({
 				//hide cells after previous image time has ended
 				await new Promise(resolve =>
 					setTimeout(() => {
-						setExpandCellClass('expand-inactive')
-						setActiveCellClass('')
+						if (memory) setExpandCellClass('expand-inactive')
+						if (memory) setActiveCellClass('')
 						resolve()
 					}, filteredImageArray[i - 1].expand.time * 1000)
 				)
 				//change src of image element and background of cell
 				await new Promise(resolve =>
 					setTimeout(() => {
-						setExpandedColor(filteredImageArray[i].bgColor)
-						setExpandedSrc(filteredImageArray[i].image)
+						if (memory)
+							setExpandedColor(filteredImageArray[i].bgColor)
+						if (memory) setExpandedSrc(filteredImageArray[i].image)
 						resolve()
 					}, 100)
 				)
 				//show cells with changed image source
 				await new Promise(resolve =>
 					setTimeout(() => {
-						setExpandCellClass('expand-active')
+						if (memory) setExpandCellClass('expand-active')
 						resolve()
 					}, 100)
 				)
@@ -109,22 +111,26 @@ const ImagePuzzle = ({
 			//cells dissapear after 5 sec
 			await new Promise(resolve =>
 				setTimeout(() => {
-					setExpandCellClass('expand-inactive')
-					setActiveCellClass('')
+					if (memory) setExpandCellClass('expand-inactive')
+					if (memory) setActiveCellClass('')
 					resolve()
 				}, 5000)
 			)
 			//bottom and upper limits get updated, expanded class resets
 			await new Promise(resolve =>
 				setTimeout(() => {
-					setBottomLimit(upperLimit >= images.length ? 0 : upperLimit)
-					setUpperLimit(
-						upperLimit >= images.length
-							? imageAmount
-							: upperLimit + imageAmount
-					)
-					setExpandCellClass('')
-					setFlag(!flag)
+					if (memory)
+						setBottomLimit(
+							upperLimit >= images.length ? 0 : upperLimit
+						)
+					if (memory)
+						setUpperLimit(
+							upperLimit >= images.length
+								? imageAmount
+								: upperLimit + imageAmount
+						)
+					if (memory) setExpandCellClass('')
+					if (memory) setFlag(!flag)
 					resolve()
 				}, 100)
 			)
@@ -132,7 +138,9 @@ const ImagePuzzle = ({
 
 		//execute the previously declared function
 		nextCells()
-		return () => {}
+		return () => {
+			memory = false
+		}
 	}, [imageAmount, images, upperLimit, flag])
 
 	return (

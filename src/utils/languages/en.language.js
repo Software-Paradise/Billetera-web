@@ -38,7 +38,7 @@ export const en = {
 		rightSide: {
 			title: 'What is AlyPay?',
 			content:
-				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all the associated commerces worldwide.",
+				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all commerces associated to AlyPay E-Commerce worldwide.",
 			highlight: ["AlySystem's"],
 		},
 	},
@@ -131,18 +131,21 @@ export const en = {
 	/* Footer */
 	footer: {
 		contact: {
-			title: 'Contact us',
+			title: 'Find us',
 			address1:
 				'Discover Building #1, 3rd floor, Villa Fontana. Managua, Nicaragua.',
 			address2:
 				'Torrez Building, Paseo Colón, 9th floor, office #909. San José, Costa Rica.',
 		},
-		support: {
-			title: 'Support',
-		},
 		download: {
+			title: 'Join the change',
 			button: 'Download it now',
-			bottomText: 'For IOS and web users, click here',
+			text: 'For IOS and web users, click ',
+			linkText: 'here',
+		},
+		support: {
+			title: 'Social media',
+			button: 'Contact support',
 		},
 	},
 }

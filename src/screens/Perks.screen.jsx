@@ -11,7 +11,7 @@ function Perks() {
 		<div
 			name='PerksScreen'
 			style={{ minHeight: '34rem' }}
-			className='PerksScreen'>
+			className='PerksScreen xl:min-h-screen'>
 			<h2 className='absolute left-11 top-11 text-gray-200 text-4xl'>
 				<Title title={perksScreen.title} />
 			</h2>

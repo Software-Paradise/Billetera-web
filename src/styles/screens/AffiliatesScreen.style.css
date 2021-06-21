@@ -5,3 +5,9 @@
 		rgba(0, 0, 0, 0) 174%
 	);
 }
+
+@media (orientation: landscape) {
+	.PuzzleContainer {
+		min-height: 40rem;
+	}
+}
