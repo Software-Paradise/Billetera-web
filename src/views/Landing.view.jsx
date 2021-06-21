@@ -1,9 +1,5 @@
 //react import
 import React from 'react'
-//redux import
-import { useSelector } from 'react-redux'
-//utils
-import { selectLanguage } from 'utils/language.util'
 //screen imports
 import {
 	Affiliates,
@@ -22,7 +18,6 @@ import Footer from 'modules/customs/components/Footer.component'
  * @returns {React.FunctionComponent}
  */
 function Landing() {
-
 	return (
 		<main className='LandingView'>
 			<Top />

@@ -30,20 +30,28 @@ function Top() {
 									className='absolute top-5 z-10'
 									zoom={0.9}
 								/>
-								<Button
-									label={topScreen.downloadButton}
-									variant='outline'
-									className='DownloadButton capitalize text-xl z-10 mt-3 mb-3 transition border-yellow-400 duration-100 hover:bg-yellow-400 border-4 px-4 py-2'
-									twLabel='text-yellow-400 group-hover:text-gray-900 '
-									twIcon='text-yellow-400 group-hover:text-gray-900'>
-									<p className='text-4xl'>
-										<DiAndroid />
-									</p>
-								</Button>
+								<a
+									href='https://play.google.com/store/apps/details?id=com.alypay&hl=es&gl=US&showAllReviews=true'
+									target='_blank'
+									rel='noopener noreferrer'>
+									<Button
+										label={topScreen.downloadButton}
+										variant='outline'
+										className='DownloadButton capitalize text-xl z-10 mt-3 mb-3 transition border-yellow-400 duration-100 hover:bg-yellow-400 border-4 px-4 py-2'
+										twLabel='text-yellow-400 group-hover:text-gray-900 '
+										twIcon='text-yellow-400 group-hover:text-gray-900'>
+										<p className='text-4xl'>
+											<DiAndroid />
+										</p>
+									</Button>
+								</a>
+
 								<p className='text-gray-200 text-2xl mx-3 font-light z-10 text-center'>
 									{topScreen.bottomText.text}
 									<a
-										href='#'
+										href='https://www.alypay-alysystem.com/'
+										target='_blank'
+										rel='noopener noreferrer'
 										className='text-yellow-400 
 									font-bold text-3xl rounded-md'>
 										{topScreen.bottomText.linkText}

@@ -21,7 +21,7 @@ const NavBar = ({ links = [] }) => {
 			<img
 				src={logo}
 				alt='AlyPay - El futuro ¡Ahora!'
-				className='w-64 mx-auto md:mx-4'
+				className='w-40 mx-auto md:mx-4'
 			/>
 			<div className='hidden mr-16 justify-end items-center overflow-x-auto'>
 				{links.map(({ label, to }, index) => (
