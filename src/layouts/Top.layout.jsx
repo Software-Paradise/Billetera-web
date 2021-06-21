@@ -22,7 +22,9 @@ function Top({ children }) {
 		{ label: navBar.navLinks.afilliates, to: 'AffiliatesScreen' },
 	]
 	return (
-		<div className='TopLayout min-h-screen flex flex-col'>
+		<div
+			style={{ height: 'inherit', minHeight: 'inherit' }}
+			className='TopLayout flex flex-col'>
 			<NavBar links={links} />
 			{children}
 		</div>

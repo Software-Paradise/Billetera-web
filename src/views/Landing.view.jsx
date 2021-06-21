@@ -22,7 +22,6 @@ import Footer from 'modules/customs/components/Footer.component'
  * @returns {React.FunctionComponent}
  */
 function Landing() {
-	const { loginView } = useSelector(selectLanguage)
 
 	return (
 		<main className='LandingView'>

@@ -10,7 +10,7 @@ import { DiAndroid } from 'react-icons/di'
 import { useSelector } from 'react-redux'
 import { selectLanguage } from 'utils/language.util'
 //video import
-import { headerdark, presentation } from 'assets'
+import { presentation } from 'assets'
 
 /**
  *First screen to display in the landing page
@@ -19,12 +19,12 @@ import { headerdark, presentation } from 'assets'
 function Top() {
 	const { topScreen } = useSelector(selectLanguage)
 	return (
-		<div className='TopScreen'>
+		<div className='TopScreen h-screen'>
 			<TopLayout>
 				<div className='BottomDiv relative items-center flex-grow flex flex-col justify-center'>
 					<div className='flex w-full absolute top-0 h-3/5 items-center'>
 						<VideoBackground videoSrc={presentation} />
-						<div className='relative bg-gray-800 bg-opacity-90 h-full w-full flex'>
+						<div className='relative bg-gray-900 bg-opacity-80 h-full w-full flex'>
 							<div className='relative flex flex-col justify-center items-center h-full w-full xl:w-1/3'>
 								<SelectLanguage
 									className='absolute top-5 z-10'
