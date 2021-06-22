@@ -23,7 +23,8 @@ const NavLink = ({
 			className={`NavLink ${className}`}
 			to={to}
 			smooth={true}
-			duration={duration}>
+			duration={duration}
+			delay={50}>
 			{label && <span>{label}</span>}
 			{icon}
 		</Link>

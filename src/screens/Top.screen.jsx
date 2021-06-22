@@ -21,7 +21,7 @@ function Top() {
 	return (
 		<div className='TopScreen h-screen'>
 			<TopLayout>
-				<div className='BottomDiv relative items-center flex-grow flex flex-col justify-center'>
+				<div className='BottomDiv mt-20 relative items-center flex-grow flex flex-col justify-center'>
 					<div className='flex w-full absolute top-0 h-3/5 items-center'>
 						<VideoBackground videoSrc={presentation} />
 						<div className='relative bg-gray-900 bg-opacity-80 h-full w-full flex'>
