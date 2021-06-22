@@ -15,6 +15,7 @@ export const en = {
 			perks: 'Benefits',
 			ecommerce: 'E-commerce',
 			afilliates: 'Commerces',
+			contact: 'Contact us',
 		},
 	},
 	/* TopScreen */

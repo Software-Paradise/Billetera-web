@@ -21,7 +21,9 @@ function Footer() {
 	const year = new Date().getFullYear()
 	const { footer } = useSelector(selectLanguage)
 	return (
-		<div className='Footer flex flex-col h-auto lg:h-96 bg-gray-900'>
+		<div
+			name='Footer'
+			className='Footer flex flex-col h-auto lg:h-96 bg-gray-900'>
 			<div className='Footer__top flex-1 flex flex-col lg:flex-row'>
 				<div
 					style={{ flex: '3' }}
@@ -157,16 +159,21 @@ function Footer() {
 							</Button>
 						</a>
 					</p>
-					<Button
-						variant='outline'
-						className='transition duration-200 capitalize text-xl mx-auto my-3
+					<a
+						href='https://wa.link/yi8r8z'
+						target='_blank'
+						rel='noopener noreferrer'>
+						<Button
+							variant='outline'
+							className='transition duration-200 capitalize text-xl mx-auto my-3
 						border-4 border-gray-200 px-4 py-2 hover:bg-gray-200
 						rounded-full'
-						label={footer.support.button}
-						twLabel='text-gray-200 group-hover:text-gray-900'
-						twIcon='text-gray-200 group-hover:text-gray-900'>
-						<FaWhatsapp className='text-4xl' />
-					</Button>
+							label={footer.support.button}
+							twLabel='text-gray-200 group-hover:text-gray-900'
+							twIcon='text-gray-200 group-hover:text-gray-900'>
+							<FaWhatsapp className='text-4xl' />
+						</Button>
+					</a>
 				</div>
 			</div>
 			<div className='Footer__bottom'>
