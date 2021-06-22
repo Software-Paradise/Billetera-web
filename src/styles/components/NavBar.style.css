@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+	.NavBar div {
+		display: -webkit-inline-box;
+	}
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .NavBar div::-webkit-scrollbar {
+	display: none;
+} */
+
+/*.NavBar div {
+	/*-ms-overflow-style: none; /* IE and Edge */
+/*scrollbar-width: none; /* Firefox */
+/*}*/
+
+/* box shadow of navbar */
+.NavBar {
+	z-index: 10;
+	box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.9);
+	-moz-box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.9);
+}

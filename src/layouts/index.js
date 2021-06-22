@@ -1,4 +1,3 @@
-import ModalLayout from './Modal.layout'
-import ListDetailLayout from './ListDetail.layout'
+import TopLayout from './Top.layout'
 
-export { ModalLayout, ListDetailLayout }
+export { TopLayout }

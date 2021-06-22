@@ -1,5 +1,4 @@
 import { logo } from 'assets'
-import { isTokenStorage, setAuthData } from 'modules/authentication'
 import React, { useEffect } from 'react'
 import Loader from 'react-loader-spinner'
 import { useDispatch, useSelector } from 'react-redux'
@@ -21,15 +20,6 @@ function AppStartup({ className = '', children }) {
 		/* Check the language code in local storage & store it by default in redux store */
 		const language = getLocalStorage('language')
 		dispatch(changeLanguage(language ? language : 'en'))
-
-		/* Check the token in local storage */
-		if (isTokenStorage()) {
-			const authData = getLocalStorage('_alypay_auth')
-
-			/* Check the user data in local storage & store it in redux store */
-			if (authData && Object.keys(authData).length > 0)
-				dispatch(setAuthData(authData))
-		}
 
 		/* Make the app already started */
 		dispatch(AppStarted())
