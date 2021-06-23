@@ -1,0 +1,17 @@
+/* Cards container */
+.CardDisplayer {
+	position: unset;
+	overflow-x: scroll;
+}
+@media (min-width: 1024px) {
+	.CardDisplayer {
+		position: relative;
+		top: 30vh;
+		margin: 0 4vw;
+	}
+}
+
+/* Hide last separator inside CardDisplayer */
+.CardDisplayer .Separator:last-child {
+	display: none;
+}

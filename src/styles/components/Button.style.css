@@ -1,0 +1,9 @@
+/* styles fot the button in the top screen */
+.BottomDiv .DownloadButton {
+	border-radius: 3rem;
+}
+
+/* styles for the button in the info screen */
+.InfoScreen .Button {
+	border-radius: 3rem;
+}

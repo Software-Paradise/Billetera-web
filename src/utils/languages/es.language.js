@@ -6,244 +6,148 @@ export const es = {
 		{ lang: 'Ingles', code: 'en' },
 		{ lang: 'Español', code: 'es' },
 	],
-	/* Welcome */
-	welcome:
-		'¡Bienvenido a AlyPay Web! ¡Seleccione una billetera para comenzar!',
-	/* Login view */
-	loginView: {
-		email: {
-			title: 'Correo electrónico',
-			placeholder: 'Ingrese el correo electrónico aquí',
-			required: 'El correo electrónico es requerido',
-			error: 'El correo electrónico invalido',
-		},
-		password: {
-			title: 'Contraseña',
-			placeholder: 'Ingrese la contraseña aquí',
-			required: 'La contraseña es requerida',
-			error: '',
-		},
-		title: 'Iniciar Sesión',
-		actions: {
-			recovery: 'Olvidé mi contraseña',
-			register: 'Registrarse',
-			login: 'Iniciar Sesión',
-			select: 'Seleccione un idioma',
-		},
-	},
-	/* RegisterView */
-	registerView: {
-		title: 'Registro de usuario',
-		name: {
-			title: 'Nombre',
-			placeholder: 'Ingrese el nombre',
-			required: 'El nombre es requerido',
-			error: '',
-		},
-		lastname: {
-			title: 'Apellido',
-			placeholder: 'Ingrese el apellido',
-			required: 'El apellido es requerido',
-			error: '',
-		},
-		date: {
-			title: 'Fecha de nacimiento',
-			placeholder: 'Ingrese la fecha de nacimiento',
-			required: 'La fecha de nacimiento es requerida',
-			error: '',
-		},
-		telephone: {
-			title: 'Teléfono',
-			placeholder: 'Ingrese el teléfono',
-			required: 'El teléfono es requerido',
-			error: 'El teléfono solo debe contener números',
-			atLeast: 'El teléfono debe contener al menos 7 dígitos',
-		},
-		email: {
-			title: 'Correo electrónico',
-			placeholder: 'Ingrese el correo electrónico',
-			required: 'El correo electrónico es requerido',
-			error: '',
-		},
-		username: {
-			title: 'Nombre de usuario',
-			placeholder: 'Ingrese el nombre de usuario',
-			required: 'El nombre de usuario es requerido',
-			error: '',
-		},
-		password: {
-			title: 'Contraseña',
-			placeholder: 'Ingrese la contraseña',
-			required: 'La contraseña es requerida',
-			error: 'La contraseña debe contener al menos 6 caracteres',
-		},
-		repeatPassword: {
-			title: 'Repetir contraseña',
-			placeholder: 'Repita la contraseña',
-			required: 'La contraseña es requerida',
-			error: 'Las contraseñas no coinciden',
-		},
-		country: {
-			title: 'País',
-			placeholder: 'Seleccione el país',
-			required: 'El país es requerido',
-			error: '',
-		},
-		actions: {
-			accept: 'Accepto los',
-			terms: 'Términos y condiciones',
-			register: 'Registrarse',
-			back: 'Regresar a Iniciar Sesión',
-		},
-	},
-	/*Nav */
-	navView: {
-		source: {
-			placeholder: 'Buscar Hash',
-			error: '',
-		},
-		actions: {
-			back: 'Volver a lista de billeteras',
-			init: 'Inicio',
+	/* NavBar */
+	navBar: {
+		navLinks: {
 			alypay: 'AlyPay',
-			commerces: 'Comercios',
-			logout: 'Cerrar sesión',
+			functions: 'Funciones',
+			currency: 'Monedas',
+			perks: 'Beneficios',
+			ecommerce: 'E-commerce',
+			afilliates: 'Comercios',
+			contact: 'Contáctenos',
 		},
 	},
-	/*Wallet */
-	walletView: {
-		title: 'Billeteras',
-		placeholder: 'Buscar billetera',
-		coin: {
-			marketPrice: 'Precio del mercado',
-			balance: 'Balance',
-			balanceUSD: 'Balance USD',
+	/* TopScreen */
+	topScreen: {
+		title: {
+			text: 'LA MANERA MÁS FÁCIL, RÁPIDA Y SEGURA DE HACER NEGOCIOS CON CRIPTOMONEDAS.',
+			highlight: ['FÁCIL', 'RÁPIDA', 'SEGURA', 'CRIPTOMONEDAS'],
+		},
+		downloadButton: 'Descárguela ya',
+		bottomText: {
+			text: 'Para usuarios ios y web ingresar ',
+			linkText: 'aquí',
+		},
+		languageSelect: 'Seleccione un idioma',
+	},
+	/* InfoScreen */
+	infoScreen: {
+		leftSide: {
+			downloadButton: 'Descárguela ya',
+		},
+		rightSide: {
+			title: '¿Qué es AlyPay?',
+			content:
+				'Es el sistema de AlySystem para usuarios que le brinda la oportunidad de hacer uso de sus criptomonedas, utilizándolas como medio de pago en los distintos comercios afiliados a AlyPay E-Commerce nivel mundial.',
+			highlight: ['AlySystem'],
 		},
 	},
-	/* Table */
-	tableView: {
-		previous: 'Página anterior',
-		next: 'Página siguiente',
-		pp: 'Por página',
-	},
-	/* List */
-	listView: {
-		toTop: 'Regresar al inicio de la lista',
-	},
-	/* ExecutiveView */
-	executiveView: {
-		title: 'Ejecutivo',
-		/*Earnings */
-		earnings: {
-			title: 'Registro de ganancias',
-			placeholder: 'Filtrar registro de ganancias',
-			colums: {
-				commerce: 'Comercio',
-				commission: 'Comisión',
-				earnings: 'Ganancias',
+	/* FunctionsScreen */
+	functionsScreen: {
+		title: 'Funciones de',
+		cards: {
+			deposit: {
+				title: 'Recargas',
+				content:
+					'Recargue con fondos de wallet externa su wallet AlyPay.',
 			},
-			actions: {
-				retire: 'Retirar',
+			buy: {
+				title: 'Compra Alycoin',
+				content:
+					'Facilidad de compra con sus fondos de criptomonedas, utilizando ALycoin podrá ahorrar en fee en todas sus transacciones.',
 			},
-		},
-		/*Historical */
-		history: {
-			title: 'Historial de retiros',
-			placeholder: 'Filtrar historial de retiros',
-			colums: {
-				description: 'Descripción',
-				hash: 'Hash',
-				hour: 'Hora',
-				date: 'Fecha',
-				amount: 'Monto',
+			transfer: {
+				title: 'Transferencia',
+				content:
+					'Movimiento de fondos de un usuario a otro dentro del sistema AlyPay.',
 			},
-		},
-	},
-	/**CommerceView */
-	commerceView: {
-		title: 'Comercios',
-		lists: {
-			title: 'Listado de comercios',
-			placeholder: 'Filtrar listado de comercios',
-			balanceUSD: 'Balance USD',
-			address: 'Dirección',
-		},
-	},
-	/*HistoricalTransactionView */
-	historyView: {
-		title: 'Historial',
-		story: {
-			title: 'Historial de transacciones',
-			placeholder: 'Filtrar historial de transacciones',
-			columns: {
-				description: 'Descripción',
-				hash: 'Hash',
-				hashCopy: 'El hash se copió correctamente',
-				hour: 'Hora',
-				date: 'Fecha',
-				amount: 'Monto',
+			payment: {
+				title: 'Pago',
+				content:
+					'Compra de productos y/o servicios con sus criptomonedas a través de nuestra App.',
+			},
+			withdraw: {
+				title: 'Retirar',
+				content:
+					'Movimiento de fondos de su wallet Alypay a una externa.',
 			},
 		},
-		details: {
-			title: 'Detalles de transacciones',
-			description: 'Descripción',
-			hash: 'Hash',
-			hashCopy: 'El hash se copió correctamente',
-			hour: 'Hora',
-			date: 'Fecha',
-			amountTransaction: 'Monto de transacción',
-			amountUSD: 'Monto USD',
-			currency: 'Moneda',
-			fee: 'Fee USD',
-			total: 'Total USD',
-			walletFrom: 'Billetera de origen',
-			walletFromCopy: 'La billetera de origen se copió correctamente',
-			walletTo: 'Billetera de destino',
-			walletToCopy: 'La billetera de destino se copió correctamente',
+	},
+	/* CurrencyScreen */
+	currencyScreen: {
+		title: 'Monedas AlyPay',
+		badge: 'conoce nuestra moneda',
+		info: {
+			text: 'Alycoin es la criptomoneda de Alysystem utilizada como moneda de pago y fee a través del Ecosistema de aplicaciones de AlySystem.',
+			highlight: ['Alycoin', 'AlySystem', 'pago', 'fee'],
+		},
+		cryptoTitle: {
+			text: 'TRABAJAMOS CON LAS PRINCIPALES CRIPTOMONEDAS DEL MERCADO',
+			highlight: ['CRIPTOMONEDAS'],
 		},
 	},
-	/**ReceiveView */
-	receiveView: {
-		title: 'Recibir',
-		information: {
-			title: 'Recibir fondos',
-			marketPrice: 'Precio del mercado',
-			balance: 'Balance',
-			balanceUSD: 'Balance USD',
-			address: 'Dirección de la billetera',
-		},
-		recharge: {
-			title: 'Recargar billetera',
-			address: 'Dirección de la billetera',
-			amount: 'Cantidad',
-			amountUSD: 'Cantidad (USD)',
-			hash: 'Hash de la transacción',
-		},
-		actions: {
-			confirm: 'Confirmar',
+	/* PerksScreen */
+	perksScreen: {
+		title: 'Beneficios',
+		table: {
+			leftSide: {
+				title: 'Alypay',
+				content:
+					'De la mano con la tecnología blockchain AlyPay ofrece a los usuarios y comercios transacciones rápidas, seguras y una tasa fee muy baja en cada una de sus transferencias. Haciendo de las criptomonedas el mejor medio de pagos a nivel mundial.',
+			},
+			rightSide: {
+				title: 'Alypay E-commerce',
+				content:
+					'Siendo parte de AlyPay E-Commerce a la hora de vender tus productos se le debitará un fee muy bajo por cada producto que cobre a través de nuestro sistema. Ayudándole a ahorrar en sus gastos.',
+			},
 		},
 	},
-	/**SendView */
-	sendView: {
-		title: 'Enviar',
-		information: {
-			title: 'Enviar fondos',
-			marketPrice: 'Precio del mercado',
-			balance: 'Balance',
-			balanceUSD: 'Balance USD',
-			address: 'Dirección de la billetera',
-			amount: 'Monto',
-			amountUSD: 'Monto (USD)',
+	/* EcommerceScreen */
+	ecommerceScreen: {
+		title: 'E-commerce',
+		content:
+			'Es el sistema de AlySystem para comercios que le brinda la oportunidad de ofrecer sus productos y servicios, recibiendo criptomonedas como forma de pago a nivel mundial.',
+		bottomContent: {
+			question: '¿Cómo ser parte de AlyPay E-Commerce?',
+			sections: [
+				'Descargue nuestra App (PlayStore).',
+				'Complete el formulario de registro de Empresa.',
+				'Revise su correo de activación.',
+				'Empiece a obtener los beneficios de AlyPay.',
+			],
 		},
-		retire: {
-			title: 'Retirar fondos',
-			address: 'Dirección de la billetera',
-			amount: 'Monto',
-			amountUSD: 'Monto(USD) aprox.',
+		support: 'Soporte en línea 24/7',
+	},
+	/* AffiliatesScreen */
+	affiliatesScreen: {
+		title: {
+			text: 'Comercios afiliados',
+			highlight: ['afiliados'],
 		},
-		action: {
-			next: 'Siguiente',
-			confirm: 'Confirmar',
+		content: {
+			text: 'Trabajamos de la mano con los mejores establecimientos a nivel internacional. Todo pensado para darle usabilidad a sus criptomonedas.',
+			highlight: ['criptomonedas'],
+		},
+	},
+	/* Footer */
+	footer: {
+		contact: {
+			title: 'Ubicación',
+			address1:
+				'Frente club terraza, Edificio Discover. Tercer piso. Managua, Nicaragua',
+			address2:
+				'Edificio Torrez, Paseo Colón. Piso No.9, Oficina No.909. San José, Costa Rica',
+		},
+		download: {
+			title: 'Súmese al cambio',
+			button: 'Descárguela ya',
+			text: 'Para usuarios ios y web ingresar ',
+			linkText: 'aquí',
+		},
+		support: {
+			title: 'Redes sociales',
+			button: 'Contactar a soporte',
 		},
 	},
 }

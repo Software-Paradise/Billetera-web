@@ -3,7 +3,6 @@
 *:after {
 	padding: 0;
 	margin: 0;
-	user-select: none;
 	-webkit-tap-highlight-color: transparent;
 }
 
@@ -39,12 +38,108 @@ input[type='password']::-ms-clear {
 		@apply w-full;
 	}
 
-	/* Custom tooltip */
-	@import url('./styles/components/tooltip.style');
+	/* Custom NavBar */
+	.NavBar {
+		@apply w-full bg-gray-900 flex flex-col md:flex-row py-5 md:justify-between;
+	}
 
-	/* Custom navlink */
-	@import url('./styles/components/navlink.style');
+	/* Custom Styles for NavBar */
+	@import url('./styles/components/NavBar.style');
 
-	/* Custom dropdown */
-	@import url('./styles/components/dropdown.style');
+	/* React scroll Link used in NavLink custom component */
+	.NavLink {
+		@apply cursor-pointer text-gray-200 font-semibold flex min-w-max flex-grow 
+		p-0.5 items-center pr-4;
+	}
+
+	/* Custom styles for NavLink */
+	@import url('./styles/components/NavLink.style');
+
+	/* Custom styles for bottom div of TopScreen */
+	@import url('./styles/screens/TopScreen.style');
+
+	/* Custom styles for info screen */
+	@import url('./styles/screens/InfoScreen.style');
+
+	/* Styles for the Info screen */
+	.InfoScreen {
+		@apply flex flex-col-reverse md:flex-row;
+	}
+
+	/* Custom styles for the Button component */
+	@import url('./styles/components/Button.style');
+
+	/* Styles for the functions screen */
+	.FunctionsScreen {
+		@apply relative pt-40 pb-4 lg:p-0;
+	}
+
+	/* Custom styles for functions screen */
+	@import url('./styles/screens/FunctionsScreen.style');
+
+	/* Custom styles for the title component */
+	@import url('./styles/components/Title.style');
+
+	/* Card displayer component styles */
+	.CardDisplayer {
+		@apply flex flex-col lg:flex-row shadow-xl rounded-md overflow-visible;
+	}
+
+	/* Custom styles for the CardDisplayer component */
+	@import url('./styles/components/CardDisplayer.style');
+
+	/* Card component styles */
+	.VerticalCard {
+		@apply flex-1 min-w-max flex flex-row lg:flex-col justify-center items-center;
+	}
+	.HiddenCard {
+		@apply text-center items-center flex flex-col justify-start cursor-pointer;
+	}
+
+	/* Custom styles for the vertical cards */
+	@import url('./styles/components/VerticalCard.style');
+
+	/* Styles for the currency screen */
+	.CurrencyScreen {
+		@apply flex relative flex-col-reverse justify-end xl:justify-center xl:flex-row;
+	}
+
+	/* Custom styles for the currency screen */
+	@import url('./styles/screens/CurrencyScreen.style');
+
+	/* Custom styles for the Exhibitor component */
+	@import url('./styles/components/Exhibitor');
+
+	/* Styles for perks screen */
+	.PerksScreen {
+		@apply flex flex-col relative bg-gray-500;
+	}
+
+	/* Custom styles for perks screen */
+	@import url('./styles/screens/PerksScreen.style');
+
+	/* Styles for ecommerce screen */
+	.EcommerceScreen {
+		@apply flex flex-col md:flex-row;
+	}
+
+	/* Custom styles for ecommerce screen */
+	@import url('./styles/screens/EcommerceScreen.style');
+
+	/* Custom styles for the PhoneCarosel component */
+	@import url('./styles/components/PhoneCarousel.style');
+
+	/* Custom styles for the affiliates screen */
+	@import url('./styles/screens/AffiliatesScreen.style');
+
+	/* Styles for affiliates screen */
+	.AffiliatesScreen {
+		@apply flex flex-col relative xl:flex-row;
+	}
+
+	/* styles for ImagePuzzle component */
+	@import url('./styles/components/ImagePuzzle.style');
+
+	/*styles for the footer*/
+	@import url('./styles/components/Footer.style');
 }

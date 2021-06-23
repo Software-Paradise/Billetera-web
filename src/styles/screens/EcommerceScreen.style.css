@@ -1,0 +1,15 @@
+/* styles for left side of ecommerce screen */
+.EcommerceScreen__LeftSide {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.8) 0%
+		),
+		url('/src/assets/images/Laptop.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/* styles for right side of ecommerce screen */
+.EcommerceScreen__RigthSide {
+}
