@@ -36,7 +36,7 @@ const ImagePuzzle = ({
 	const imagePack = () => {
 		//cells with filtered images
 		const mapedCells = filteredImageArray.map(
-			({ image, bgColor, expand }, index) => {
+			({ image, bgColor }, index) => {
 				return (
 					<div
 						key={`mappedCell_${index}`}
@@ -92,24 +92,30 @@ const ImagePuzzle = ({
 					resolve()
 				}, filteredImageArray[index - 1].expand.time * 1000)
 			}
+			//function to changue image source and background color of cell
+			const changeCell = (resolve, index) => {
+				setTimeout(() => {
+					if (isMounted)
+						setExpandedColor(filteredImageArray[index].bgColor)
+					if (isMounted)
+						setExpandedSrc(filteredImageArray[index].image)
+					resolve()
+				}, 100)
+			}
+			//function to show cells
+			const showCells = resolve => {
+				setTimeout(() => {
+					if (isMounted) setExpandCellClass('expand-active')
+					resolve()
+				}, 100)
+			}
 			for (let i = 1; i < filteredImageArray.length; i++) {
 				//hide cells after previous image time has ended
 				await new Promise(resolve => hideCells(resolve, i))
 				//change src of image element and background of cell
-				await new Promise(resolve =>
-					setTimeout(() => {
-						setExpandedColor(filteredImageArray[i].bgColor)
-						setExpandedSrc(filteredImageArray[i].image)
-						resolve()
-					}, 100)
-				)
+				await new Promise(resolve => changeCell(resolve, i))
 				//show cells with changed image source
-				await new Promise(resolve =>
-					setTimeout(() => {
-						setExpandCellClass('expand-active')
-						resolve()
-					}, 100)
-				)
+				await new Promise(resolve => showCells(resolve))
 			}
 
 			//cells dissapear after 5 sec
