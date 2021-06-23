@@ -23,17 +23,16 @@ const ImagePuzzle = ({
 	const [expandCellCLass, setExpandCellClass] = useState('')
 	const [flag, setFlag] = useState(false)
 
-	//filter set of images between upper and bottom limits
-	const filteredImageArray = images.filter(
-		({ image }, index) => index < upperLimit && index >= bottomLimit
-	)
-
 	//array of cells to expand
 	const [expandedSrc, setExpandedSrc] = useState(images[0].image)
 	const [expandedColor, setExpandedColor] = useState(images[0].bgColor)
 
 	//Cells array with skipped and filled cells
 	const imagePack = () => {
+		//filter set of images between upper and bottom limits
+		const filteredImageArray = images.filter(
+			(_, index) => index < upperLimit && index >= bottomLimit
+		)
 		//cells with filtered images
 		const mapedCells = filteredImageArray.map(
 			({ image, bgColor }, index) => {
@@ -63,6 +62,10 @@ const ImagePuzzle = ({
 	useEffect(() => {
 		//boolean to know if the component has already been dismounted to avoid memory leak
 		let isMounted = true
+		//filter set of images between upper and bottom limits
+		const filteredImageArray = images.filter(
+			(_, index) => index < upperLimit && index >= bottomLimit
+		)
 
 		const nextCells = async () => {
 			//cells appear from rigth
@@ -152,7 +155,7 @@ const ImagePuzzle = ({
 		return () => {
 			isMounted = false
 		}
-	}, [imageAmount, images, upperLimit, flag])
+	}, [imageAmount, images, upperLimit, bottomLimit, flag])
 
 	return (
 		<div
