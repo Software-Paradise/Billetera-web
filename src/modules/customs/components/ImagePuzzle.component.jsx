@@ -2,7 +2,11 @@
 import React, { useEffect, useState } from 'react'
 
 /**
- *
+ * Custom grid 3x3 where images are going to be shown in intervals of 9 images
+ * @param {String} className - tailwind styles for the component
+ * @param {Object} style - component styles
+ * @param {Array} images - array of objects, each of them must contain keys "image" (src for image), "bgColor" (tailwind class for bg color) and "expand" (object with key "time" wich is going to be a number of seconds)
+ * @param {Number} separation - margin in % between cells
  * @returns {React.FunctionComponent}
  */
 const ImagePuzzle = ({
