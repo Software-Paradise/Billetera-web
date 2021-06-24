@@ -96,7 +96,7 @@ function Footer() {
 					<p className='text-gray-200 text-base mx-3 mb-14 font-light z-10 text-center'>
 						{footer.download.text}
 						<a
-							href='https://www.alypay-alysystem.com/'
+							href='https://www.alypay-app.com/'
 							target='_blank'
 							rel='noopener noreferrer'
 							className='text-yellow-400 
