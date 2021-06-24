@@ -15,6 +15,7 @@ export const en = {
 			perks: 'Benefits',
 			ecommerce: 'E-commerce',
 			afilliates: 'Commerces',
+			contact: 'Contact us',
 		},
 	},
 	/* TopScreen */
@@ -38,13 +39,13 @@ export const en = {
 		rightSide: {
 			title: 'What is AlyPay?',
 			content:
-				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all the associated commerces worldwide.",
+				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all commerces associated to AlyPay E-Commerce worldwide.",
 			highlight: ["AlySystem's"],
 		},
 	},
 	/* FunctionsScreen */
 	functionsScreen: {
-		title: 'AlyPay Functions',
+		title: 'Functions of',
 		cards: {
 			deposit: {
 				title: 'Deposit',
@@ -109,7 +110,7 @@ export const en = {
 		bottomContent: {
 			question: 'How to be part of AlyPay E-Commerce?',
 			sections: [
-				'Download our App (PLayStore) or visit our Website.',
+				'Download our App (PlayStore) or visit our Website.',
 				'Complete the registry.',
 				'Open the activation email.',
 				'Star using the AlyPay benefits.',
@@ -119,25 +120,33 @@ export const en = {
 	},
 	/* AffiliatesScreen */
 	affiliatesScreen: {
-		title: 'Associated Commerces',
-		content:
-			'We work hand in hand with the best business worldwide. All for you to make use of your cryptocurrencies.',
+		title: {
+			text: 'Associated Commerces',
+			highlight: ['Associated'],
+		},
+		content: {
+			text: 'We work hand in hand with the best business worldwide. All for you to make use of your cryptocurrencies.',
+			highlight: ['cryptocurrencies'],
+		},
 	},
 	/* Footer */
 	footer: {
 		contact: {
-			title: 'Contact us',
+			title: 'Find us',
 			address1:
 				'Discover Building #1, 3rd floor, Villa Fontana. Managua, Nicaragua.',
 			address2:
 				'Torrez Building, Paseo Colón, 9th floor, office #909. San José, Costa Rica.',
 		},
-		support: {
-			title: 'Support',
-		},
 		download: {
+			title: 'Join the change',
 			button: 'Download it now',
-			bottomText: 'For IOS and web users, click here',
+			text: 'For IOS and web users, click ',
+			linkText: 'here',
+		},
+		support: {
+			title: 'Social media',
+			button: 'Contact support',
 		},
 	},
 }

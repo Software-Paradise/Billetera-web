@@ -8,11 +8,14 @@ import { selectLanguage } from 'utils/language.util'
 function Perks() {
 	const { perksScreen } = useSelector(selectLanguage)
 	return (
-		<div name='PerksScreen' className='PerksScreen'>
+		<div
+			name='PerksScreen'
+			style={{ minHeight: '34rem' }}
+			className='PerksScreen xl:min-h-screen'>
 			<h2 className='absolute left-11 top-11 text-gray-200 text-4xl'>
 				<Title title={perksScreen.title} />
 			</h2>
-			<div className='flex relative flex-1 rounded-lg shadow-lg'>
+			<div className='flex relative flex-1 rounded-lg shadow-lg mx-1 xl:mx-11 mb-5 xl:mb-11 mt-28'>
 				<div className='grid absolute p-11 gap-8'>
 					<p className='text-3xl text-center text-yellow-400 font-bold'>
 						{perksScreen.table.leftSide.title}

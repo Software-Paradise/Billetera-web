@@ -22,9 +22,9 @@
 
 /* styles of left and right sides */
 .CurrencyScreen article {
-	width: 100vw;
+	/* width: 100vw; */
 }
-@media (min-width: 1280) {
+@media (min-width: 1280px) {
 	.CurrencyScreen article {
 		width: 50vw;
 	}

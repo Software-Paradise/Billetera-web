@@ -21,4 +21,7 @@
 		-webkit-box-shadow: -2px 0px 5px 0px rgb(12, 12, 12, 0.26) inset;
 		-moz-box-shadow: -2px 0px 5px 0px rgb(12, 12, 12, 0.26) inset;
 	}
+	.CardDisplayer .HiddenCard:hover {
+		opacity: 1;
+	}
 }

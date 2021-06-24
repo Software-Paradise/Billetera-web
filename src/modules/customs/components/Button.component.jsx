@@ -37,13 +37,9 @@ const Button = ({
 				break
 
 			case 'outline':
-				setBaseStyle('bg-transparent border-yellow-400 text-base')
-				setHoverStyle('hover:border-yellow-400 active:bg-transparent')
-				setLabelStyle(
-					twLabel
-						? twLabel
-						: 'text-yellow-400 group-hover:text-gray-900'
-				)
+				setBaseStyle('bg-transparent text-base')
+				setHoverStyle('active:bg-transparent')
+				setLabelStyle(twLabel ? twLabel : 'text-yellow-400')
 				break
 
 			case 'text':
@@ -86,12 +82,12 @@ const Button = ({
 				</i>
 			) : null}
 			{label && (
-				<span
-					className={`truncate ${labelStyle} font-semibold ${
+				<p
+					className={`${labelStyle} ${
 						children ? 'mr-2' : ''
 					} ${twLabel}`}>
 					{label}
-				</span>
+				</p>
 			)}
 		</button>
 	)

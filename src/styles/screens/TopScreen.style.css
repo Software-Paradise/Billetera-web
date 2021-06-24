@@ -1,3 +1,9 @@
+@media (orientation: landscape) {
+	.TopScreen {
+		min-height: 40rem;
+	}
+}
+
 /* background image of top screen */
 .TopScreen .BottomDiv {
 	background: linear-gradient(
@@ -21,8 +27,8 @@
 	max-width: 58.45rem;
 	background: linear-gradient(
 		90deg,
-		rgba(246, 240, 240, 0) 5%,
+		rgba(246, 240, 240, 0) 0%,
 		rgba(255, 255, 255, 0.3) 50%,
-		rgba(246, 240, 240, 0) 95%
+		rgba(246, 240, 240, 0) 100%
 	);
 }
