@@ -49,7 +49,7 @@ function Top() {
 								<p className='text-gray-200 text-2xl mx-3 font-light z-10 text-center'>
 									{topScreen.bottomText.text}
 									<a
-										href='https://www.alypay-alysystem.com/'
+										href='https://www.alypay-app.com/'
 										target='_blank'
 										rel='noopener noreferrer'
 										className='text-yellow-400 
