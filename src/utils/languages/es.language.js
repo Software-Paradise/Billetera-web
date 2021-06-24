@@ -116,6 +116,8 @@ export const es = {
 				'Revise su correo de activación.',
 				'Empiece a obtener los beneficios de AlyPay.',
 			],
+			appButton: 'Descargue nuestra app',
+			webButton: 'Visite nuestra web',
 		},
 		support: 'Soporte en línea 24/7',
 	},
