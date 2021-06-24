@@ -1,16 +1,9 @@
-.BottomDiv .Button {
-	border-width: 0.3rem;
-	padding: 0.6rem 0.8rem;
+/* styles fot the button in the top screen */
+.BottomDiv .DownloadButton {
 	border-radius: 3rem;
 }
 
-.BottomDiv .Button i {
-	color: #facc15;
-}
-
+/* styles for the button in the info screen */
 .InfoScreen .Button {
-	bottom: 11vh;
-	border-width: 0.3rem;
 	border-radius: 3rem;
-	padding: 0.6rem 0.8rem;
 }

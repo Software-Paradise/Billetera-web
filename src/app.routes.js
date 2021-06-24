@@ -8,8 +8,12 @@ export default function AppRoutes() {
 	return (
 		<>
 			<Switch>
-				<Route path='/'>
+				<Route exact path='/'>
 					<Landing />
+				</Route>
+				{/* route to test react lyfe cicle */}
+				<Route exact path='/xenofixion'>
+					<p>hello there</p>
 				</Route>
 			</Switch>
 		</>

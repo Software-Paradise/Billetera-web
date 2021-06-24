@@ -4,12 +4,11 @@
 	}
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.NavBar div::-webkit-scrollbar {
-	display: none;
+/* box shadow of navbar and animation */
+.NavBar {
+	box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.9);
+	-moz-box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.9);
+	transition: all 0.3s ease-in-out;
 }
 
-.NavBar div {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
-}

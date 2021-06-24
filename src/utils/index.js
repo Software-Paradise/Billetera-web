@@ -11,6 +11,7 @@ import {
 import { decodeString, encodeString } from './string-cipher.util'
 /* Util reducers */
 import languageReducer from './language.util'
+import loaderReducer from './loader.util'
 
 export {
 	blobToFile,
@@ -24,4 +25,5 @@ export {
 	encodeString,
 	languageReducer,
 	removeLocalStorage,
+	loaderReducer,
 }

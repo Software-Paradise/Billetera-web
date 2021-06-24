@@ -1,0 +1,13 @@
+.AffiliatesScreen {
+	background: linear-gradient(
+		180deg,
+		rgb(206, 206, 206) 5%,
+		rgba(0, 0, 0, 0) 174%
+	);
+}
+
+@media (orientation: landscape) {
+	.PuzzleContainer {
+		min-height: 40rem;
+	}
+}

@@ -1,0 +1,55 @@
+/* PhoneCarousel width and height */
+.PhoneCarousel {
+	width: 90%;
+	height: 85vh;
+}
+@media (orientation: landscape) {
+	.PhoneCarousel {
+		height: 36rem;
+	}
+}
+
+/* image on the left side */
+.CellImageContainer {
+	width: 50%;
+	height: 100%;
+}
+.CellImage {
+	opacity: 0;
+	transition: opacity 0.3s;
+	width: 100%;
+}
+
+/* image on the right side */
+.ImageContainer {
+	width: 50%;
+	height: 80%;
+}
+.Image {
+	opacity: 0;
+	transition: opacity 0.3s;
+	width: 80%;
+	animation: disappear-to-left 0.3s;
+}
+
+/* active image showing at the moment*/
+.active {
+	opacity: 1;
+	animation: appear-from-right 0.3s;
+}
+
+/* translate animations */
+@keyframes appear-from-right {
+	0% {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes disappear-to-left {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
