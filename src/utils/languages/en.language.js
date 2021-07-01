@@ -115,6 +115,8 @@ export const en = {
 				'Open the activation email.',
 				'Star using the AlyPay benefits.',
 			],
+			appButton: 'Download our app',
+			webButton: 'Visit our website',
 		},
 		support: '24/7 online support',
 	},
