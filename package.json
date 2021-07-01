@@ -28,7 +28,7 @@
         "react-scroll": "^1.8.2"
     },
     "scripts": {
-        "start": "serve -s build",
+        "start": "node server.js",
         "build": "react-scripts build",
         "test": "craco test",
         "eject": "react-scripts eject"
