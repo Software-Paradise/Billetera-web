@@ -38,7 +38,7 @@ const NavBar = ({ links = [], className = '' }) => {
 	return (
 		<section
 			className={`NavBar z-50 fixed ${className} ${
-				scrolled && 'bg-opacity-10 shadow-none'
+				scrolled && 'bg-opacity-50 shadow-none'
 			}`}>
 			<img
 				src={logo}
