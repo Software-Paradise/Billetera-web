@@ -38,11 +38,11 @@ const NavBar = ({ links = [], className = '' }) => {
 	return (
 		<section
 			className={`NavBar z-50 fixed ${className} ${
-				scrolled && 'bg-opacity-10 shadow-none'
+				scrolled && 'bg-opacity-50 shadow-none'
 			}`}>
 			<img
 				src={logo}
-				alt='AlyPay - El futuro ¡Ahora!'
+				alt='AlyPay logo'
 				className={`w-40 mx-auto md:mx-4 transition duration-500 ${
 					scrolled && 'opacity-0'
 				}`}

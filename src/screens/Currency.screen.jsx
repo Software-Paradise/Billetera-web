@@ -38,7 +38,7 @@ function Currency() {
 				<div className='grid gap-8 px-2 md:px-7 xl:px-11 absolute'>
 					<div className='flex items-center bg-gray-900 border-4 border-yellow-400'>
 						<img
-							alt='Alycoin'
+							alt='Alycoin logo'
 							src={ALY}
 							className='h-32 xl:h-24 p-2'
 						/>
