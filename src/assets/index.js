@@ -16,7 +16,6 @@ import USDT from './svg/USDT.svg'
 import XRP from './svg/XRP.svg'
 
 //landing page images
-import cellphones from './images/Cellphones.png'
 import TopBackground from './images/TopBackground.jpg'
 import modelo from './images/modelo2.png'
 import globe from './images/globe.jpg'
@@ -41,7 +40,7 @@ import colon from './svg/comerces/Casa colon.svg'
 import patio from './svg/comerces/el patio.svg'
 import pena from './svg/comerces/la pena.svg'
 import ledezma from './svg/comerces/ledezma.svg'
-import Novo from './svg/comerces/Novo pie.svg'
+import Novo from './svg/comerces/Novo pie.png'
 
 //videos
 import presentation from './videos/presentation.mp4'
@@ -54,7 +53,6 @@ export {
 	powered,
 	alyCoin,
 	empty,
-	cellphones,
 	ATM,
 	ALY,
 	BTC,

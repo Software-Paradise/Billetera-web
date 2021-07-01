@@ -42,7 +42,7 @@ const NavBar = ({ links = [], className = '' }) => {
 			}`}>
 			<img
 				src={logo}
-				alt='AlyPay - El futuro ¡Ahora!'
+				alt='AlyPay logo'
 				className={`w-40 mx-auto md:mx-4 transition duration-500 ${
 					scrolled && 'opacity-0'
 				}`}
