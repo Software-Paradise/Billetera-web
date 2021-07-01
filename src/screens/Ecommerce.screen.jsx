@@ -1,7 +1,7 @@
 //react import
 import React from 'react'
 //component imports
-import { Title, UnorderedList, PhoneCarousel } from 'modules/customs'
+import { Title, UnorderedList, PhoneCarousel, Button } from 'modules/customs'
 //language imports
 import { useSelector } from 'react-redux'
 import { selectLanguage } from 'utils/language.util'
@@ -41,8 +41,36 @@ function Ecommerce() {
 				</h3>
 				<UnorderedList
 					items={ecommerceScreen.bottomContent.sections}
-					className='text-gray-200 text-xl pt-11 px-7 pb-11 md:px-11'
+					className='text-gray-200 text-xl py-7 px-7 md:px-11'
 				/>
+				<div className='flex flex-col justify-center lg:flex-row mb-4'>
+					<a
+						className='mx-4 self-center'
+						href='https://play.google.com/store/apps/details?id=com.alypay_ecommerce&hl=es_NI&gl=US'
+						target='_blank'
+						rel='noopener noreferrer'>
+						<Button
+							label={ecommerceScreen.bottomContent.appButton}
+							variant='outline'
+							className='capitalize text-xl border-4 border-gray-200 px-4 py-2 my-2 lg:my-0
+						transition duration-150 hover:bg-gray-200 rounded-full'
+							twLabel='text-gray-200 group-hover:text-gray-900'
+						/>
+					</a>
+					<a
+						className='mx-4 self-center'
+						href='https://www.alypay-ecommerce.com'
+						target='_blank'
+						rel='noopener noreferrer'>
+						<Button
+							label={ecommerceScreen.bottomContent.webButton}
+							variant='outline'
+							className='capitalize text-xl border-4 border-gray-200 px-4 py-2 my-2 lg:my-0
+						transition duration-150 hover:bg-gray-200 rounded-full'
+							twLabel='text-gray-200 group-hover:text-gray-900'
+						/>
+					</a>
+				</div>
 			</article>
 			<article
 				className='EcommerceScreen__RigthSide min-h-screen flex-1 relative flex flex-col justify-center items-center
