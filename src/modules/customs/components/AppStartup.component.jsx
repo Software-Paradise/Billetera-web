@@ -23,6 +23,7 @@ function AppStartup({ className = '', children }) {
 
 		/* Make the app already started */
 		dispatch(AppStarted())
+		return () => {}
 	}, [dispatch])
 
 	return (
@@ -30,10 +31,10 @@ function AppStartup({ className = '', children }) {
 			{isStarting ? (
 				<main className='AppStartup h-screen flex flex-col justify-center items-center'>
 					<div
-						className={`flex flex-col justify-center items-center bg-black rounded-lg m-2 px-8 py-16 ${className}`}>
+						className={`flex-1 w-full flex flex-col justify-center items-center bg-black rounded-lg m-2 px-8 py-16 ${className}`}>
 						<img
 							src={logo}
-							alt='AlyPay - El futuro ¡Ahora!'
+							alt='AlyPay logo'
 							className='w-64 md:w-80 lg:w-96 pb-8'
 						/>
 

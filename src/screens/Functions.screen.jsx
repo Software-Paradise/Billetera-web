@@ -54,7 +54,7 @@ function Functions() {
 				/>
 				<img
 					src={logo}
-					alt='AlyPay - El futuro ¡Ahora!'
+					alt='AlyPay logo'
 					className='w-64 mx-auto md:mx-4'
 				/>
 			</h2>

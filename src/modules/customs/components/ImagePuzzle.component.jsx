@@ -2,7 +2,11 @@
 import React, { useEffect, useState } from 'react'
 
 /**
- *
+ * Custom grid 3x3 where images are going to be shown in intervals of 9 images
+ * @param {String} className - tailwind styles for the component
+ * @param {Object} style - component styles
+ * @param {Array} images - array of objects, each of them must contain keys "image" (src for image), "bgColor" (tailwind class for bg color) and "expand" (object with key "time" wich is going to be a number of seconds)
+ * @param {Number} separation - margin in % between cells
  * @returns {React.FunctionComponent}
  */
 const ImagePuzzle = ({
@@ -31,11 +35,11 @@ const ImagePuzzle = ({
 	const imagePack = () => {
 		//filter set of images between upper and bottom limits
 		const filteredImageArray = images.filter(
-			({ image }, index) => index < upperLimit && index >= bottomLimit
+			(_, index) => index < upperLimit && index >= bottomLimit
 		)
 		//cells with filtered images
 		const mapedCells = filteredImageArray.map(
-			({ image, bgColor, expand }, index) => {
+			({ image, bgColor }, index) => {
 				return (
 					<div
 						key={`mappedCell_${index}`}
@@ -60,12 +64,12 @@ const ImagePuzzle = ({
 	}
 
 	useEffect(() => {
-		//filter set of images between upper and bottom limits
-		const filteredImageArray = images.filter(
-			({ image }, index) => index < upperLimit && index >= bottomLimit
-		)
 		//boolean to know if the component has already been dismounted to avoid memory leak
 		let isMounted = true
+		//filter set of images between upper and bottom limits
+		const filteredImageArray = images.filter(
+			(_, index) => index < upperLimit && index >= bottomLimit
+		)
 
 		const nextCells = async () => {
 			//cells appear from rigth
@@ -95,24 +99,30 @@ const ImagePuzzle = ({
 					resolve()
 				}, filteredImageArray[index - 1].expand.time * 1000)
 			}
+			//function to changue image source and background color of cell
+			const changeCell = (resolve, index) => {
+				setTimeout(() => {
+					if (isMounted)
+						setExpandedColor(filteredImageArray[index].bgColor)
+					if (isMounted)
+						setExpandedSrc(filteredImageArray[index].image)
+					resolve()
+				}, 100)
+			}
+			//function to show cells
+			const showCells = resolve => {
+				setTimeout(() => {
+					if (isMounted) setExpandCellClass('expand-active')
+					resolve()
+				}, 100)
+			}
 			for (let i = 1; i < filteredImageArray.length; i++) {
 				//hide cells after previous image time has ended
 				await new Promise(resolve => hideCells(resolve, i))
 				//change src of image element and background of cell
-				await new Promise(resolve =>
-					setTimeout(() => {
-						setExpandedColor(filteredImageArray[i].bgColor)
-						setExpandedSrc(filteredImageArray[i].image)
-						resolve()
-					}, 100)
-				)
+				await new Promise(resolve => changeCell(resolve, i))
 				//show cells with changed image source
-				await new Promise(resolve =>
-					setTimeout(() => {
-						setExpandCellClass('expand-active')
-						resolve()
-					}, 100)
-				)
+				await new Promise(resolve => showCells(resolve))
 			}
 
 			//cells dissapear after 5 sec
