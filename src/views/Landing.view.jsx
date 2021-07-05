@@ -19,7 +19,7 @@ import Footer from 'modules/customs/components/Footer.component'
  */
 function Landing() {
 	return (
-		<main className='LandingView'>
+		<main className='LandingView select-none'>
 			<Top />
 			<Info />
 			<Functions />

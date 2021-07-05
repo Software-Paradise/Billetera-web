@@ -35,7 +35,7 @@ function Ecommerce() {
 				<h3 className='font-light text-yellow-400 text-3xl px-7 md:px-11 pt-24'>
 					<Title
 						title={ecommerceScreen.bottomContent.question}
-						highlight={['AlyPay', 'E-Commerce']}
+						highlight={['AlyPay', 'Ecommerce']}
 						highlightStyle='font-bold'
 					/>
 				</h3>

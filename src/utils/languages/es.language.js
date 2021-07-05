@@ -13,7 +13,7 @@ export const es = {
 			functions: 'Funciones',
 			currency: 'Monedas',
 			perks: 'Beneficios',
-			ecommerce: 'E-commerce',
+			ecommerce: 'Ecommerce',
 			afilliates: 'Comercios',
 			contact: 'Contáctenos',
 		},
@@ -39,7 +39,7 @@ export const es = {
 		rightSide: {
 			title: '¿Qué es AlyPay?',
 			content:
-				'Es el sistema de AlySystem para usuarios que le brinda la oportunidad de hacer uso de sus criptomonedas, utilizándolas como medio de pago en los distintos comercios afiliados a AlyPay E-Commerce nivel mundial.',
+				'Es el sistema de AlySystem para usuarios que le brinda la oportunidad de hacer uso de sus criptomonedas, utilizándolas como medio de pago en los distintos comercios afiliados a AlyPay Ecommerce a nivel mundial.',
 			highlight: ['AlySystem'],
 		},
 	},
@@ -92,24 +92,24 @@ export const es = {
 		title: 'Beneficios',
 		table: {
 			leftSide: {
-				title: 'Alypay',
+				title: 'AlyPay',
 				content:
 					'De la mano con la tecnología blockchain AlyPay ofrece a los usuarios y comercios transacciones rápidas, seguras y una tasa fee muy baja en cada una de sus transferencias. Haciendo de las criptomonedas el mejor medio de pagos a nivel mundial.',
 			},
 			rightSide: {
-				title: 'Alypay E-commerce',
+				title: 'AlyPay Ecommerce',
 				content:
-					'Siendo parte de AlyPay E-Commerce a la hora de vender tus productos se le debitará un fee muy bajo por cada producto que cobre a través de nuestro sistema. Ayudándole a ahorrar en sus gastos.',
+					'Siendo parte de AlyPay Ecommerce a la hora de vender tus productos se le debitará un fee muy bajo por cada producto que cobre a través de nuestro sistema. Ayudándole a ahorrar en sus gastos.',
 			},
 		},
 	},
 	/* EcommerceScreen */
 	ecommerceScreen: {
-		title: 'E-commerce',
+		title: 'Ecommerce',
 		content:
 			'Es el sistema de AlySystem para comercios que le brinda la oportunidad de ofrecer sus productos y servicios, recibiendo criptomonedas como forma de pago a nivel mundial.',
 		bottomContent: {
-			question: '¿Cómo ser parte de AlyPay E-Commerce?',
+			question: '¿Cómo ser parte de AlyPay Ecommerce?',
 			sections: [
 				'Descargue nuestra App (PlayStore).',
 				'Complete el formulario de registro de Empresa.',
