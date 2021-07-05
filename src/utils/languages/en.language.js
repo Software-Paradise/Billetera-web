@@ -13,7 +13,7 @@ export const en = {
 			functions: 'Functions',
 			currency: 'Cryptocurrencies',
 			perks: 'Benefits',
-			ecommerce: 'E-commerce',
+			ecommerce: 'Ecommerce',
 			afilliates: 'Commerces',
 			contact: 'Contact us',
 		},
@@ -39,7 +39,7 @@ export const en = {
 		rightSide: {
 			title: 'What is AlyPay?',
 			content:
-				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all commerces associated to AlyPay E-Commerce worldwide.",
+				"It is AlySystem's solution for the users to buy, sell and trade with their cryptocurrencies. Using AlyPay as a payment method on all commerces associated to AlyPay Ecommerce worldwide.",
 			highlight: ["AlySystem's"],
 		},
 	},
@@ -91,24 +91,24 @@ export const en = {
 		title: 'Benefits',
 		table: {
 			leftSide: {
-				title: 'Alypay',
+				title: 'AlyPay',
 				content:
 					'Hand in hand with blockchain technology AlyPay offers users and businesses fast, secure and easy transactions and a very low fee rate on each of their transfers. Making cryptocurrencies the best payment method worldwide.',
 			},
 			rightSide: {
-				title: 'Alypay E-commerce',
+				title: 'AlyPay Ecommerce',
 				content:
-					'Being part of AlyPay E-Commerce when selling your products you will be charged at a very low fee for each product that you charge through our system. Helping you save on your expenses.',
+					'Being part of AlyPay Ecommerce when selling your products you will be charged at a very low fee for each product that you charge through our system. Helping you save on your expenses.',
 			},
 		},
 	},
 	/* EcommerceScreen */
 	ecommerceScreen: {
-		title: 'E-commerce',
+		title: 'Ecommerce',
 		content:
 			'It is the AlySystem solution for business that gives you the opportunity to offer your products and services, receiving cryptocurrencies as a form of payment worldwide.',
 		bottomContent: {
-			question: 'How to be part of AlyPay E-Commerce?',
+			question: 'How to be part of AlyPay Ecommerce?',
 			sections: [
 				'Download our App (PlayStore) or visit our Website.',
 				'Complete the registry.',
