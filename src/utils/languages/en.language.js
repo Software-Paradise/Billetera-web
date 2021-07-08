@@ -148,6 +148,8 @@ export const en = {
 		},
 		support: {
 			title: 'Social media',
+			dropdown: 'Share our website',
+			social: 'Follow us:',
 			button: 'Contact support',
 		},
 	},

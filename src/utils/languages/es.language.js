@@ -149,6 +149,8 @@ export const es = {
 		},
 		support: {
 			title: 'Redes sociales',
+			dropdown: 'Comparta nuestro sitio',
+			social: 'Síganos en:',
 			button: 'Contactar a soporte',
 		},
 	},

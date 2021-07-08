@@ -6,6 +6,9 @@
 		rgba(0, 0, 0, 0) 100%
 	);
 } */
+.Footer {
+	height: auto;
+}
 
 .Separator {
 	background-color: rgba(250, 204, 21, 1);
@@ -14,6 +17,9 @@
 }
 
 @media (min-width: 1024px) {
+	.Footer {
+		height: 35rem;
+	}
 	.Separator {
 		width: 0.05rem;
 		height: 75%;

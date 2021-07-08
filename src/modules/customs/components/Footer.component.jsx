@@ -11,6 +11,7 @@ import {
 	FiMapPin,
 	FiPlus,
 	FiShare2,
+	FiLinkedin,
 } from 'react-icons/fi'
 import { FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa'
 import { DiAndroid } from 'react-icons/di'
@@ -21,9 +22,7 @@ function Footer() {
 	const year = new Date().getFullYear()
 	const { footer } = useSelector(selectLanguage)
 	return (
-		<div
-			name='Footer'
-			className='Footer flex flex-col h-auto lg:h-96 bg-gray-900'>
+		<div name='Footer' className='Footer flex flex-col bg-gray-900'>
 			<div className='Footer__top flex-1 flex flex-col lg:flex-row'>
 				<div
 					style={{ flex: '3' }}
@@ -113,6 +112,16 @@ function Footer() {
 						<FiShare2 className='text-gray-200 text-4xl mr-2' />
 						{footer.support.title}
 					</p>
+					<Button
+						variant='outline'
+						className='transition duration-200 capitalize text-xl mx-auto my-3
+						 px-4 py-2 hover:bg-gray-200
+						rounded-full'
+						label={footer.support.dropdown}
+						twLabel='text-gray-200 group-hover:text-gray-900'
+						twIcon='text-gray-200 group-hover:text-gray-900'
+					/>
+					<p className='text-yellow-400'>{footer.support.social}</p>
 					<p className='flex w-full justify-evenly my-4'>
 						<a
 							href='https://www.facebook.com/AlySystemTechnology'
