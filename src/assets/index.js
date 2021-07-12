@@ -19,6 +19,7 @@ import XRP from './svg/XRP.svg'
 import TopBackground from './images/TopBackground.jpg'
 import modelo from './images/modelo2.png'
 import globe from './images/globe.jpg'
+import alycoinbg from './images/aly-coin-bg.png'
 
 //cellphone images
 import phone1 from './images/telefono/phone1.png'
@@ -45,6 +46,12 @@ import Novo from './svg/comerces/Novo pie.png'
 //videos
 import presentation from './videos/presentation.mp4'
 import square from './videos/square.mp4'
+
+//publicity
+import HOTEL_960x960 from './videos/publicity/HOTEL_960x960.mp4'
+import HOTEL_1920x480 from './videos/publicity/HOTEL_1920x480.mp4'
+import PLANE_960x960 from './videos/publicity/PLANE_960x960.mp4'
+import PLANE_1920x480 from './videos/publicity/PLANE_1920x480.mp4'
 
 export {
 	//images
@@ -83,7 +90,12 @@ export {
 	ledezma,
 	Novo,
 	globe,
+	alycoinbg,
 	//videos
 	square,
 	presentation,
+	HOTEL_960x960,
+	HOTEL_1920x480,
+	PLANE_960x960,
+	PLANE_1920x480,
 }
