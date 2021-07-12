@@ -7,7 +7,7 @@ import { DiAndroid } from 'react-icons/di'
 import { useSelector } from 'react-redux'
 import { selectLanguage } from 'utils/language.util'
 //assets imports
-import { square } from '../assets/index'
+import { square, HOTEL_960x960, PLANE_960x960 } from 'assets'
 
 function Info() {
 	const { infoScreen } = useSelector(selectLanguage)
@@ -17,7 +17,9 @@ function Info() {
 			name='InfoScreen'
 			className='InfoScreen h-auto'>
 			<article className='min-h-screen relative flex flex-1 justify-center items-center'>
-				<VideoBackground videoSrc={square} />
+				<VideoBackground
+					videoArray={[square, HOTEL_960x960, PLANE_960x960]}
+				/>
 			</article>
 			<article
 				className='relative min-h-screen md:flex-1 text-center items-center 

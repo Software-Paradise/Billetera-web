@@ -1,5 +1,5 @@
 //react import
-import React from 'react'
+import React, { useState } from 'react'
 //layout import
 import { TopLayout } from 'layouts'
 //component import
@@ -10,7 +10,7 @@ import { DiAndroid } from 'react-icons/di'
 import { useSelector } from 'react-redux'
 import { selectLanguage } from 'utils/language.util'
 //video import
-import { presentation } from 'assets'
+import { presentation, HOTEL_1920x480, PLANE_1920x480, alycoinbg } from 'assets'
 
 /**
  *First screen to display in the landing page
@@ -18,12 +18,20 @@ import { presentation } from 'assets'
  */
 function Top() {
 	const { topScreen } = useSelector(selectLanguage)
+
 	return (
 		<div className='TopScreen h-screen'>
 			<TopLayout>
 				<div className='BottomDiv mt-20 relative items-center flex-grow flex flex-col justify-center'>
 					<div className='flex w-full absolute top-0 h-3/5 items-center'>
-						<VideoBackground videoSrc={presentation} />
+						<VideoBackground
+							videoArray={[
+								presentation,
+								HOTEL_1920x480,
+								PLANE_1920x480,
+							]}
+							poster={alycoinbg}
+						/>
 						<div className='relative bg-gray-900 bg-opacity-80 h-full w-full flex'>
 							<div className='relative flex flex-col justify-center items-center h-full w-full xl:w-1/3'>
 								<SelectLanguage
