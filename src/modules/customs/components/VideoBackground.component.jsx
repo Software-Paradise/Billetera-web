@@ -30,7 +30,7 @@ function VideoBackground({ className = '', videoArray = [], ...rest }) {
 			autoPlay
 			muted
 			loop={videoArray.length === 1}
-			playsinline
+			playsInline
 			preload='yes'
 			{...rest}
 			className={`VideoBackground absolute inset-0 w-full h-full z-0 object-cover ${className}`}></video>
